@@ -1,112 +1,205 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .summary-container {
+            width: 60%;
+            margin: 0 auto 0.5em auto;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .centered-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+            width: 100%;
+        }
+
+        ol {
+            width: 60%;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        li {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 0.5em 0;
+        }
+
+            li:last-child {
+                border-bottom: none;
+            }
+
+        .li-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .li-name {
+            text-align: left;
+            flex: 1 1 auto;
+        }
+
+        .li-value {
+            text-align: right;
+            min-width: 80px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        small {
+            color: #888;
+        }
+
+        h2, i {
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
-
-<h2>Most Losses for a Team</h2>
-<i>Includes regular season and playoff losses.</i>
-
-<ol>
-        <li>
-            199
-            Marauding Nomads
-        </li>
-        <li>
-            197
-            Rocky Mountain Oysters
-        </li>
-        <li>
-            192
-            Team Bean
-        </li>
-        <li>
-            185
-            Wolves
-        </li>
-        <li>
-            174
-            Sporky&#39;s Revenge
-        </li>
-        <li>
-            169
-            Phantoms
-        </li>
-        <li>
-            168
-            Bayou Boys
-        </li>
-        <li>
-            146
-            Dominators
-        </li>
-        <li>
-            146
-            Ultracogs
-        </li>
-        <li>
-            104
-            Just Too Lucky
-        </li>
-        <li>
-            98
-            Truffle Shuffle
-        </li>
-        <li>
-            91
-            Fighting Calrissians
-        </li>
-        <li>
-            82
-            Speed Demons
-        </li>
-        <li>
-            72
-            TD Matrix
-        </li>
-        <li>
-            69
-            X-Factor
-        </li>
-        <li>
-            64
-            Red Raiders
-        </li>
-        <li>
-            55
-            Doom Patrol
-        </li>
-        <li>
-            49
-            Everett Eternals
-        </li>
-        <li>
-            48
-            Brawlers II
-        </li>
-        <li>
-            47
-            Don&#39;t Tase Me Bro
-        </li>
-        <li>
-            47
-            Koothrapaulli Browns
-        </li>
-        <li>
-            46
-            Anal Cleansing Technicians
-        </li>
-        <li>
-            45
-            The TecmoBowlers
-        </li>
-        <li>
-            29
-            Low Expectations
-        </li>
-        <li>
-            28
-            Spokanites
-        </li>
-</ol>
-
+    <h2>Career Losses</h2>
+    <div class="summary-container">
+        <i>Every loss tells a story. Explore the teams that have faced adversity more than any other, and see how they’ve endured through the toughest seasons!</i>
+    </div>
+    <div class="centered-list">
+        <ol>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Marauding Nomads
+                        </span>
+                        <span class="li-value">209</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Rocky Mountain Oysters
+                        </span>
+                        <span class="li-value">206</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Team Bean
+                        </span>
+                        <span class="li-value">202</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Wolves
+                        </span>
+                        <span class="li-value">193</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                        </span>
+                        <span class="li-value">177</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Sporky&#39;s Revenge
+                        </span>
+                        <span class="li-value">177</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Phantoms
+                        </span>
+                        <span class="li-value">176</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Dominators
+                        </span>
+                        <span class="li-value">153</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Ultracogs
+                        </span>
+                        <span class="li-value">153</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Just Too Lucky
+                        </span>
+                        <span class="li-value">112</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Truffle Shuffle
+                        </span>
+                        <span class="li-value">108</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Fighting Calrissians
+                        </span>
+                        <span class="li-value">91</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Speed Demons
+                        </span>
+                        <span class="li-value">88</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            TD Matrix
+                        </span>
+                        <span class="li-value">72</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            X-Factor
+                        </span>
+                        <span class="li-value">69</span>
+                    </span>
+                </li>
+        </ol>
+    </div>
 </body>
 </html>

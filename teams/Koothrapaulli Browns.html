@@ -1,223 +1,399 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .main-container {
+            width: 60%;
+            background: #fff;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .team-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .team-meta {
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .other-names {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 1em;
+        }
+
+        .record-section {
+            margin-bottom: 1em;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .headtohead-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f9f9f9;
+            margin-bottom: 1.5em;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+            .headtohead-table th, .headtohead-table td {
+                padding: 0.5em 1em;
+                border-bottom: 1px solid #e0e0e0;
+                text-align: left;
+            }
+
+            .headtohead-table th {
+                background: #f1f3f4;
+                font-weight: bold;
+            }
+
+            .headtohead-table tr:last-child td {
+                border-bottom: none;
+            }
+
+        .season-title {
+            font-weight: bold;
+        }
+
+        .game-details {
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
+</head>
 <body>
-    <p>Uday Unni</p>
+    <div class="main-container">
+        <div class="team-header">Koothrapaulli Browns</div>
+        <div class="team-meta">
+            Coach: Uday Unni<br />
+                <span>(2018 - 2024)</span>
+        </div>
+        <div class="record-section">
+            <div>Record: <strong>48 - 50</strong> (0.490)</div>
+            <div>Playoffs: <strong>4 - 6</strong> (0.400)</div>
+        </div>
 
-<p>Koothrapaulli Browns 
-    (2018 - 2023)
-<br/>
-</p>
+        <div class="section-title">Head to Head:</div>
+        <table class="headtohead-table">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Head-to-head Record</th>
+                    <th>Percentage</th>
+                    <th>Playoff Head-to-head</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Sporky&#39;s Revenge</td>
+                        <td>9-5</td>
+                        <td>0.643</td>
+                        <td>
+                                <span>1-2</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rocky Mountain Oysters</td>
+                        <td>5-9</td>
+                        <td>0.357</td>
+                        <td>
+                                <span>1-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Just Too Lucky</td>
+                        <td>8-6</td>
+                        <td>0.571</td>
+                        <td>
+                                <span>1-0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dominators</td>
+                        <td>4-3</td>
+                        <td>0.571</td>
+                        <td>
+                                <span>1-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bayou Boys</td>
+                        <td>5-2</td>
+                        <td>0.714</td>
+                        <td>
+                                <span>0-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wolves</td>
+                        <td>4-3</td>
+                        <td>0.571</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ultracogs</td>
+                        <td>3-4</td>
+                        <td>0.429</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Truffle Shuffle</td>
+                        <td>1-3</td>
+                        <td>0.250</td>
+                        <td>
+                                <span>0-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Team Bean</td>
+                        <td>2-2</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>The TecmoBowlers</td>
+                        <td>1-3</td>
+                        <td>0.250</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marauding Nomads</td>
+                        <td>1-3</td>
+                        <td>0.250</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phantoms</td>
+                        <td>0-3</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Speed Demons</td>
+                        <td>2-1</td>
+                        <td>0.667</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Low Expectations</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Baldwin on a Budget</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>X-Factor</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fish On</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fantasy Cognoscenti</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
 
-    <p>Record: 42 - 42 (0.500)</p>
-    <p>Playoffs: 3 - 5 (0.375)</p>
-
-<p>Head to Head:</p>
-<ul>
-        <li>Sporky&#39;s Revenge
-            8-4 0.667
-
-                (1 - 1)
-        </li>
-        <li>Rocky Mountain Oysters
-            4-8 0.333
-
-                (1 - 1)
-        </li>
-        <li>Just Too Lucky
-            7-5 0.583
-
-                (1 - 0)
-        </li>
-        <li>Bayou Boys
-            5-1 0.833
-
-                (0 - 1)
-        </li>
-        <li>Dominators
-            4-2 0.667
-
-                (0 - 1)
-        </li>
-        <li>Wolves
-            3-3 0.500
-
-        </li>
-        <li>Ultracogs
-            3-3 0.500
-
-        </li>
-        <li>Truffle Shuffle
-            0-3 0.000
-
-                (0 - 1)
-        </li>
-        <li>Team Bean
-            2-1 0.667
-
-        </li>
-        <li>The TecmoBowlers
-            0-3 0.000
-
-        </li>
-        <li>Marauding Nomads
-            1-2 0.333
-
-        </li>
-        <li>Phantoms
-            0-3 0.000
-
-        </li>
-        <li>Speed Demons
-            2-1 0.667
-
-        </li>
-        <li>Low Expectations
-            1-1 0.500
-
-        </li>
-        <li>Baldwin on a Budget
-            1-0 1.000
-
-        </li>
-        <li>X-Factor
-            1-0 1.000
-
-        </li>
-        <li>Fish On
-            0-1 0.000
-
-        </li>
-        <li>Fantasy Cognoscenti
-            0-1 0.000
-
-        </li>
-</ul>
-
-<p>Seasons:</p>
-<ul>
-        <li>
-            <strong>2023</strong> 5-9 <i>(0.357)</i>
-            <ol>
-                    <li>L 703-711 vs Just Too Lucky Week 1 2023</li>
-                    <li>L 1040-1189 vs Rocky Mountain Oysters Week 2 2023</li>
-                    <li>W 1277-1025 vs Sporky&#39;s Revenge Week 3 2023</li>
-                    <li>L 815-999 vs Wolves Week 4 2023</li>
-                    <li>W 622-565 vs Bayou Boys Week 5 2023</li>
-                    <li>W 1211-800 vs Low Expectations Week 6 2023</li>
-                    <li>W 628-618 vs Speed Demons Week 7 2023</li>
-                    <li>L 890-930 vs Phantoms Week 8 2023</li>
-                    <li>L 522-606 vs Fantasy Cognoscenti Week 9 2023</li>
-                    <li>L 1142-1470 vs Dominators Week 10 2023</li>
-                    <li>L 550-551 vs Ultracogs Week 11 2023</li>
-                    <li>W 1108-832 vs Sporky&#39;s Revenge Week 12 2023</li>
-                    <li>L 880-1664 vs Rocky Mountain Oysters Week 13 2023</li>
-                    <li>L 606-646 vs Just Too Lucky Week 14 2023</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2022</strong> 6-8 <i>(0.429)</i>
-            <ol>
-                    <li>W 1210-770 vs Sporky&#39;s Revenge Week 1 2022</li>
-                    <li>W 797-765 vs Just Too Lucky Week 2 2022</li>
-                    <li>L 792-1043 vs Rocky Mountain Oysters Week 3 2022</li>
-                    <li>W 1089-1036 vs Ultracogs Week 4 2022</li>
-                    <li>L 788-984 vs Wolves Week 5 2022</li>
-                    <li>L 487-664 vs Team Bean Week 6 2022</li>
-                    <li>L 848-1008 vs The TecmoBowlers Week 7 2022</li>
-                    <li>L 639-1459 vs Truffle Shuffle Week 8 2022</li>
-                    <li>L 980-1039 vs Marauding Nomads Week 9 2022</li>
-                    <li>W 871-520 vs Dominators Week 10 2022</li>
-                    <li>W 1282-1216 vs Bayou Boys Week 11 2022</li>
-                    <li>L 652-950 vs Rocky Mountain Oysters Week 12 2022</li>
-                    <li>W 1282-739 vs Just Too Lucky Week 13 2022</li>
-                    <li>L 763-888 vs Sporky&#39;s Revenge Week 14 2022</li>
-                    <li>W 974-843 vs Sporky&#39;s Revenge Wild Card Week 2022</li>
-                    <li>L 1211-1268 vs Dominators Divisional Week 2022</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2021</strong> 6-8 <i>(0.429)</i>
-            <ol>
-                    <li>L 857-1052 vs Rocky Mountain Oysters Week 1 2021</li>
-                    <li>L 877-1050 vs Sporky&#39;s Revenge Week 2 2021</li>
-                    <li>W 947-855 vs Just Too Lucky Week 3 2021</li>
-                    <li>L 781-843 vs Bayou Boys Week 4 2021</li>
-                    <li>W 1327-595 vs Dominators Week 5 2021</li>
-                    <li>L 585-985 vs Low Expectations Week 6 2021</li>
-                    <li>L 599-1477 vs Speed Demons Week 7 2021</li>
-                    <li>L 809-905 vs Fish On Week 8 2021</li>
-                    <li>L 735-1041 vs Phantoms Week 9 2021</li>
-                    <li>L 421-908 vs Wolves Week 10 2021</li>
-                    <li>W 1115-1048 vs Ultracogs Week 11 2021</li>
-                    <li>W 1067-642 vs Just Too Lucky Week 12 2021</li>
-                    <li>W 1226-798 vs Sporky&#39;s Revenge Week 13 2021</li>
-                    <li>W 1380-898 vs Rocky Mountain Oysters Week 14 2021</li>
-                    <li>L 680-722 vs Rocky Mountain Oysters Wild Card Week 2021</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2020</strong> 7-7 <i>(0.500)</i>
-            <ol>
-                    <li>W 1123-966 vs Just Too Lucky Week 1 2020</li>
-                    <li>L 856-951 vs Sporky&#39;s Revenge Week 2 2020</li>
-                    <li>W 1437-789 vs Rocky Mountain Oysters Week 3 2020</li>
-                    <li>W 1066-1056 vs Dominators Week 4 2020</li>
-                    <li>W 909-841 vs Bayou Boys Week 5 2020</li>
-                    <li>L 861-955 vs Truffle Shuffle Week 6 2020</li>
-                    <li>L 1152-1664 vs The TecmoBowlers Week 7 2020</li>
-                    <li>L 791-890 vs Marauding Nomads Week 8 2020</li>
-                    <li>W 1258-761 vs Team Bean Week 9 2020</li>
-                    <li>L 731-740 vs Ultracogs Week 10 2020</li>
-                    <li>W 1006-967 vs Wolves Week 11 2020</li>
-                    <li>L 1010-1557 vs Rocky Mountain Oysters Week 12 2020</li>
-                    <li>W 987-742 vs Sporky&#39;s Revenge Week 13 2020</li>
-                    <li>L 1133-1201 vs Just Too Lucky Week 14 2020</li>
-                    <li>L 547-676 vs Sporky&#39;s Revenge Wild Card Week 2020</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2019</strong> 10-4 <i>(0.714)</i>
-            <ol>
-                    <li>L 1061-1313 vs Just Too Lucky Week 1 2019</li>
-                    <li>W 780-755 vs Sporky&#39;s Revenge Week 2 2019</li>
-                    <li>L 804-1107 vs Rocky Mountain Oysters Week 3 2019</li>
-                    <li>W 916-587 vs Bayou Boys Week 4 2019</li>
-                    <li>L 1173-1793 vs Ultracogs Week 5 2019</li>
-                    <li>L 902-1147 vs Phantoms Week 6 2019</li>
-                    <li>W 903-851 vs Speed Demons Week 7 2019</li>
-                    <li>W 906-691 vs Baldwin on a Budget Week 8 2019</li>
-                    <li>W 890-702 vs X-Factor Week 9 2019</li>
-                    <li>W 915-742 vs Dominators Week 10 2019</li>
-                    <li>W 967-681 vs Wolves Week 11 2019</li>
-                    <li>W 874-646 vs Just Too Lucky Week 12 2019</li>
-                    <li>W 850-427 vs Sporky&#39;s Revenge Week 13 2019</li>
-                    <li>W 1687-778 vs Rocky Mountain Oysters Week 14 2019</li>
-                    <li>L 1196-1220 vs Bayou Boys Wild Card Week 2019</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2018</strong> 8-6 <i>(0.571)</i>
-            <ol>
-                    <li>L 622-987 vs Sporky&#39;s Revenge Week 1 2018</li>
-                    <li>L 771-774 vs Rocky Mountain Oysters Week 2 2018</li>
-                    <li>L 647-765 vs Just Too Lucky Week 3 2018</li>
-                    <li>W 1303-1175 vs Bayou Boys Week 4 2018</li>
-                    <li>W 1279-738 vs Wolves Week 5 2018</li>
-                    <li>W 916-445 vs Team Bean Week 6 2018</li>
-                    <li>L 660-903 vs The TecmoBowlers Week 7 2018</li>
-                    <li>W 892-822 vs Marauding Nomads Week 8 2018</li>
-                    <li>L 722-898 vs Truffle Shuffle Week 9 2018</li>
-                    <li>L 732-984 vs Dominators Week 10 2018</li>
-                    <li>W 1242-528 vs Ultracogs Week 11 2018</li>
-                    <li>W 808-583 vs Sporky&#39;s Revenge Week 12 2018</li>
-                    <li>W 1516-846 vs Rocky Mountain Oysters Week 13 2018</li>
-                    <li>W 968-803 vs Just Too Lucky Week 14 2018</li>
-                    <li>W 662-443 vs Just Too Lucky Wild Card Week 2018</li>
-                    <li>W 983-644 vs Rocky Mountain Oysters Conference Championship 2018</li>
-                    <li>L 771-1205 vs Truffle Shuffle Fantasy Bowl XXIII 2018</li>
-            </ol>
-        </li>
-</ul>
-
+        <div class="section-title">Seasons:</div>
+        <ul>
+                <li>
+                    <span class="season-title">2024</span>
+                    <span> 6-8 <i>(0.429)</i></span>
+                    <ol>
+                            <li class="game-details">L 670-1133 vs Sporky&#39;s Revenge Week 1 2024</li>
+                            <li class="game-details">L 686-917 vs Rocky Mountain Oysters Week 2 2024</li>
+                            <li class="game-details">W 773-751 vs Just Too Lucky Week 3 2024</li>
+                            <li class="game-details">L 740-1178 vs Dominators Week 4 2024</li>
+                            <li class="game-details">L 812-1120 vs Bayou Boys Week 5 2024</li>
+                            <li class="game-details">L 848-1034 vs Marauding Nomads Week 6 2024</li>
+                            <li class="game-details">L 948-1072 vs Team Bean Week 7 2024</li>
+                            <li class="game-details">W 997-831 vs The TecmoBowlers Week 8 2024</li>
+                            <li class="game-details">W 956-874 vs Truffle Shuffle Week 9 2024</li>
+                            <li class="game-details">L 828-1184 vs Ultracogs Week 10 2024</li>
+                            <li class="game-details">W 947-899 vs Wolves Week 11 2024</li>
+                            <li class="game-details">L 501-507 vs Just Too Lucky Week 12 2024</li>
+                            <li class="game-details">W 851-563 vs Rocky Mountain Oysters Week 13 2024</li>
+                            <li class="game-details">W 1217-632 vs Sporky&#39;s Revenge Week 14 2024</li>
+                            <li class="game-details">W 983-486 vs Dominators Wild Card Week 2024</li>
+                            <li class="game-details">L 1163-1202 vs Sporky&#39;s Revenge Divisional Week 2024</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2023</span>
+                    <span> 5-9 <i>(0.357)</i></span>
+                    <ol>
+                            <li class="game-details">L 703-711 vs Just Too Lucky Week 1 2023</li>
+                            <li class="game-details">L 1040-1189 vs Rocky Mountain Oysters Week 2 2023</li>
+                            <li class="game-details">W 1277-1025 vs Sporky&#39;s Revenge Week 3 2023</li>
+                            <li class="game-details">L 815-999 vs Wolves Week 4 2023</li>
+                            <li class="game-details">W 622-565 vs Bayou Boys Week 5 2023</li>
+                            <li class="game-details">W 1211-800 vs Low Expectations Week 6 2023</li>
+                            <li class="game-details">W 628-618 vs Speed Demons Week 7 2023</li>
+                            <li class="game-details">L 890-930 vs Phantoms Week 8 2023</li>
+                            <li class="game-details">L 522-606 vs Fantasy Cognoscenti Week 9 2023</li>
+                            <li class="game-details">L 1142-1470 vs Dominators Week 10 2023</li>
+                            <li class="game-details">L 550-551 vs Ultracogs Week 11 2023</li>
+                            <li class="game-details">W 1108-832 vs Sporky&#39;s Revenge Week 12 2023</li>
+                            <li class="game-details">L 880-1664 vs Rocky Mountain Oysters Week 13 2023</li>
+                            <li class="game-details">L 606-646 vs Just Too Lucky Week 14 2023</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2022</span>
+                    <span> 6-8 <i>(0.429)</i></span>
+                    <ol>
+                            <li class="game-details">W 1210-770 vs Sporky&#39;s Revenge Week 1 2022</li>
+                            <li class="game-details">W 797-765 vs Just Too Lucky Week 2 2022</li>
+                            <li class="game-details">L 792-1043 vs Rocky Mountain Oysters Week 3 2022</li>
+                            <li class="game-details">W 1089-1036 vs Ultracogs Week 4 2022</li>
+                            <li class="game-details">L 788-984 vs Wolves Week 5 2022</li>
+                            <li class="game-details">L 487-664 vs Team Bean Week 6 2022</li>
+                            <li class="game-details">L 848-1008 vs The TecmoBowlers Week 7 2022</li>
+                            <li class="game-details">L 639-1459 vs Truffle Shuffle Week 8 2022</li>
+                            <li class="game-details">L 980-1039 vs Marauding Nomads Week 9 2022</li>
+                            <li class="game-details">W 871-520 vs Dominators Week 10 2022</li>
+                            <li class="game-details">W 1282-1216 vs Bayou Boys Week 11 2022</li>
+                            <li class="game-details">L 652-950 vs Rocky Mountain Oysters Week 12 2022</li>
+                            <li class="game-details">W 1282-739 vs Just Too Lucky Week 13 2022</li>
+                            <li class="game-details">L 763-888 vs Sporky&#39;s Revenge Week 14 2022</li>
+                            <li class="game-details">W 974-843 vs Sporky&#39;s Revenge Wild Card Week 2022</li>
+                            <li class="game-details">L 1211-1268 vs Dominators Divisional Week 2022</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2021</span>
+                    <span> 6-8 <i>(0.429)</i></span>
+                    <ol>
+                            <li class="game-details">L 857-1052 vs Rocky Mountain Oysters Week 1 2021</li>
+                            <li class="game-details">L 877-1050 vs Sporky&#39;s Revenge Week 2 2021</li>
+                            <li class="game-details">W 947-855 vs Just Too Lucky Week 3 2021</li>
+                            <li class="game-details">L 781-843 vs Bayou Boys Week 4 2021</li>
+                            <li class="game-details">W 1327-595 vs Dominators Week 5 2021</li>
+                            <li class="game-details">L 585-985 vs Low Expectations Week 6 2021</li>
+                            <li class="game-details">L 599-1477 vs Speed Demons Week 7 2021</li>
+                            <li class="game-details">L 809-905 vs Fish On Week 8 2021</li>
+                            <li class="game-details">L 735-1041 vs Phantoms Week 9 2021</li>
+                            <li class="game-details">L 421-908 vs Wolves Week 10 2021</li>
+                            <li class="game-details">W 1115-1048 vs Ultracogs Week 11 2021</li>
+                            <li class="game-details">W 1067-642 vs Just Too Lucky Week 12 2021</li>
+                            <li class="game-details">W 1226-798 vs Sporky&#39;s Revenge Week 13 2021</li>
+                            <li class="game-details">W 1380-898 vs Rocky Mountain Oysters Week 14 2021</li>
+                            <li class="game-details">L 680-722 vs Rocky Mountain Oysters Wild Card Week 2021</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2020</span>
+                    <span> 7-7 <i>(0.500)</i></span>
+                    <ol>
+                            <li class="game-details">W 1123-966 vs Just Too Lucky Week 1 2020</li>
+                            <li class="game-details">L 856-951 vs Sporky&#39;s Revenge Week 2 2020</li>
+                            <li class="game-details">W 1437-789 vs Rocky Mountain Oysters Week 3 2020</li>
+                            <li class="game-details">W 1066-1056 vs Dominators Week 4 2020</li>
+                            <li class="game-details">W 909-841 vs Bayou Boys Week 5 2020</li>
+                            <li class="game-details">L 861-955 vs Truffle Shuffle Week 6 2020</li>
+                            <li class="game-details">L 1152-1664 vs The TecmoBowlers Week 7 2020</li>
+                            <li class="game-details">L 791-890 vs Marauding Nomads Week 8 2020</li>
+                            <li class="game-details">W 1258-761 vs Team Bean Week 9 2020</li>
+                            <li class="game-details">L 731-740 vs Ultracogs Week 10 2020</li>
+                            <li class="game-details">W 1006-967 vs Wolves Week 11 2020</li>
+                            <li class="game-details">L 1010-1557 vs Rocky Mountain Oysters Week 12 2020</li>
+                            <li class="game-details">W 987-742 vs Sporky&#39;s Revenge Week 13 2020</li>
+                            <li class="game-details">L 1133-1201 vs Just Too Lucky Week 14 2020</li>
+                            <li class="game-details">L 547-676 vs Sporky&#39;s Revenge Wild Card Week 2020</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2019</span>
+                    <span> 10-4 <i>(0.714)</i></span>
+                    <ol>
+                            <li class="game-details">L 1061-1313 vs Just Too Lucky Week 1 2019</li>
+                            <li class="game-details">W 780-755 vs Sporky&#39;s Revenge Week 2 2019</li>
+                            <li class="game-details">L 804-1107 vs Rocky Mountain Oysters Week 3 2019</li>
+                            <li class="game-details">W 916-587 vs Bayou Boys Week 4 2019</li>
+                            <li class="game-details">L 1173-1793 vs Ultracogs Week 5 2019</li>
+                            <li class="game-details">L 902-1147 vs Phantoms Week 6 2019</li>
+                            <li class="game-details">W 903-851 vs Speed Demons Week 7 2019</li>
+                            <li class="game-details">W 906-691 vs Baldwin on a Budget Week 8 2019</li>
+                            <li class="game-details">W 890-702 vs X-Factor Week 9 2019</li>
+                            <li class="game-details">W 915-742 vs Dominators Week 10 2019</li>
+                            <li class="game-details">W 967-681 vs Wolves Week 11 2019</li>
+                            <li class="game-details">W 874-646 vs Just Too Lucky Week 12 2019</li>
+                            <li class="game-details">W 850-427 vs Sporky&#39;s Revenge Week 13 2019</li>
+                            <li class="game-details">W 1687-778 vs Rocky Mountain Oysters Week 14 2019</li>
+                            <li class="game-details">L 1196-1220 vs Bayou Boys Wild Card Week 2019</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2018</span>
+                    <span> 8-6 <i>(0.571)</i></span>
+                    <ol>
+                            <li class="game-details">L 622-987 vs Sporky&#39;s Revenge Week 1 2018</li>
+                            <li class="game-details">L 771-774 vs Rocky Mountain Oysters Week 2 2018</li>
+                            <li class="game-details">L 647-765 vs Just Too Lucky Week 3 2018</li>
+                            <li class="game-details">W 1303-1175 vs Bayou Boys Week 4 2018</li>
+                            <li class="game-details">W 1279-738 vs Wolves Week 5 2018</li>
+                            <li class="game-details">W 916-445 vs Team Bean Week 6 2018</li>
+                            <li class="game-details">L 660-903 vs The TecmoBowlers Week 7 2018</li>
+                            <li class="game-details">W 892-822 vs Marauding Nomads Week 8 2018</li>
+                            <li class="game-details">L 722-898 vs Truffle Shuffle Week 9 2018</li>
+                            <li class="game-details">L 732-984 vs Dominators Week 10 2018</li>
+                            <li class="game-details">W 1242-528 vs Ultracogs Week 11 2018</li>
+                            <li class="game-details">W 808-583 vs Sporky&#39;s Revenge Week 12 2018</li>
+                            <li class="game-details">W 1516-846 vs Rocky Mountain Oysters Week 13 2018</li>
+                            <li class="game-details">W 968-803 vs Just Too Lucky Week 14 2018</li>
+                            <li class="game-details">W 662-443 vs Just Too Lucky Wild Card Week 2018</li>
+                            <li class="game-details">W 983-644 vs Rocky Mountain Oysters Conference Championship 2018</li>
+                            <li class="game-details">L 771-1205 vs Truffle Shuffle Fantasy Bowl XXIII 2018</li>
+                    </ol>
+                </li>
+        </ul>
+    </div>
 </body>
 </html>

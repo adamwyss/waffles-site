@@ -1,125 +1,269 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .main-container {
+            width: 60%;
+            background: #fff;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .team-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .team-meta {
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .other-names {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 1em;
+        }
+
+        .record-section {
+            margin-bottom: 1em;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .headtohead-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f9f9f9;
+            margin-bottom: 1.5em;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+            .headtohead-table th, .headtohead-table td {
+                padding: 0.5em 1em;
+                border-bottom: 1px solid #e0e0e0;
+                text-align: left;
+            }
+
+            .headtohead-table th {
+                background: #f1f3f4;
+                font-weight: bold;
+            }
+
+            .headtohead-table tr:last-child td {
+                border-bottom: none;
+            }
+
+        .season-title {
+            font-weight: bold;
+        }
+
+        .game-details {
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
+</head>
 <body>
-    <p>Subodh Kumar</p>
+    <div class="main-container">
+        <div class="team-header">Kumar&#39;s Klan</div>
+        <div class="team-meta">
+            Coach: Subodh Kumar<br />
+                <span>(2016 - 2017)</span>
+        </div>
+        <div class="record-section">
+            <div>Record: <strong>8 - 20</strong> (0.286)</div>
+            <div>Playoffs: <strong>0 - 0</strong> (NaN)</div>
+        </div>
 
-<p>Kumar&#39;s Klan 
-    (2016 - 2017)
-<br/>
-</p>
+        <div class="section-title">Head to Head:</div>
+        <table class="headtohead-table">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Head-to-head Record</th>
+                    <th>Percentage</th>
+                    <th>Playoff Head-to-head</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Dominators</td>
+                        <td>1-3</td>
+                        <td>0.250</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ultracogs</td>
+                        <td>3-1</td>
+                        <td>0.750</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>X-Factor</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Speed Demons</td>
+                        <td>0-2</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Monica Loves Clinton Dix</td>
+                        <td>0-2</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bayou Boys</td>
+                        <td>0-2</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wolves</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>The TecmoBowlers</td>
+                        <td>0-2</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marauding Nomads</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Truffle Shuffle</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Don&#39;t Tase Me Bro</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Team Bean</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sporky&#39;s Revenge</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phantoms</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Just Too Lucky</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rocky Mountain Oysters</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
 
-    <p>Record: 8 - 20 (0.286)</p>
-    <p>Playoffs: 0 - 0 (NaN)</p>
-
-<p>Head to Head:</p>
-<ul>
-        <li>Dominators
-            1-3 0.250
-
-        </li>
-        <li>Ultracogs
-            3-1 0.750
-
-        </li>
-        <li>X-Factor
-            1-1 0.500
-
-        </li>
-        <li>Speed Demons
-            0-2 0.000
-
-        </li>
-        <li>Monica Loves Clinton Dix
-            0-2 0.000
-
-        </li>
-        <li>Bayou Boys
-            0-2 0.000
-
-        </li>
-        <li>Wolves
-            1-1 0.500
-
-        </li>
-        <li>The TecmoBowlers
-            0-2 0.000
-
-        </li>
-        <li>Marauding Nomads
-            1-0 1.000
-
-        </li>
-        <li>Truffle Shuffle
-            0-1 0.000
-
-        </li>
-        <li>Don&#39;t Tase Me Bro
-            1-0 1.000
-
-        </li>
-        <li>Team Bean
-            0-1 0.000
-
-        </li>
-        <li>Sporky&#39;s Revenge
-            0-1 0.000
-
-        </li>
-        <li>Phantoms
-            0-1 0.000
-
-        </li>
-        <li>Just Too Lucky
-            0-1 0.000
-
-        </li>
-        <li>Rocky Mountain Oysters
-            0-1 0.000
-
-        </li>
-</ul>
-
-<p>Seasons:</p>
-<ul>
-        <li>
-            <strong>2017</strong> 4-10 <i>(0.286)</i>
-            <ol>
-                    <li>W 406-354 vs Ultracogs Week 1 2017</li>
-                    <li>L 325-870 vs The TecmoBowlers Week 2 2017</li>
-                    <li>W 1430-893 vs Dominators Week 3 2017</li>
-                    <li>L 1031-1042 vs Speed Demons Week 4 2017</li>
-                    <li>W 958-699 vs Wolves Week 5 2017</li>
-                    <li>L 777-844 vs Sporky&#39;s Revenge Week 6 2017</li>
-                    <li>L 993-1086 vs Phantoms Week 7 2017</li>
-                    <li>L 520-1105 vs Just Too Lucky Week 8 2017</li>
-                    <li>L 420-567 vs Rocky Mountain Oysters Week 9 2017</li>
-                    <li>L 314-648 vs Monica Loves Clinton Dix Week 10 2017</li>
-                    <li>L 464-777 vs Bayou Boys Week 11 2017</li>
-                    <li>L 458-653 vs Dominators Week 12 2017</li>
-                    <li>W 921-887 vs Ultracogs Week 13 2017</li>
-                    <li>L 688-698 vs The TecmoBowlers Week 14 2017</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2016</strong> 4-10 <i>(0.286)</i>
-            <ol>
-                    <li>L 927-1017 vs Dominators Week 1 2016</li>
-                    <li>W 1135-878 vs X-Factor Week 2 2016</li>
-                    <li>L 773-1277 vs Ultracogs Week 3 2016</li>
-                    <li>L 563-906 vs Speed Demons Week 4 2016</li>
-                    <li>L 528-1280 vs Monica Loves Clinton Dix Week 5 2016</li>
-                    <li>W 934-843 vs Marauding Nomads Week 6 2016</li>
-                    <li>L 281-943 vs Truffle Shuffle Week 7 2016</li>
-                    <li>W 572-496 vs Don&#39;t Tase Me Bro Week 8 2016</li>
-                    <li>L 490-686 vs Team Bean Week 9 2016</li>
-                    <li>L 962-1045 vs Bayou Boys Week 10 2016</li>
-                    <li>L 581-1000 vs Wolves Week 11 2016</li>
-                    <li>W 913-836 vs Ultracogs Week 12 2016</li>
-                    <li>L 548-1136 vs X-Factor Week 13 2016</li>
-                    <li>L 617-1058 vs Dominators Week 14 2016</li>
-            </ol>
-        </li>
-</ul>
-
+        <div class="section-title">Seasons:</div>
+        <ul>
+                <li>
+                    <span class="season-title">2017</span>
+                    <span> 4-10 <i>(0.286)</i></span>
+                    <ol>
+                            <li class="game-details">W 406-354 vs Ultracogs Week 1 2017</li>
+                            <li class="game-details">L 325-870 vs The TecmoBowlers Week 2 2017</li>
+                            <li class="game-details">W 1430-893 vs Dominators Week 3 2017</li>
+                            <li class="game-details">L 1031-1042 vs Speed Demons Week 4 2017</li>
+                            <li class="game-details">W 958-699 vs Wolves Week 5 2017</li>
+                            <li class="game-details">L 777-844 vs Sporky&#39;s Revenge Week 6 2017</li>
+                            <li class="game-details">L 993-1086 vs Phantoms Week 7 2017</li>
+                            <li class="game-details">L 520-1105 vs Just Too Lucky Week 8 2017</li>
+                            <li class="game-details">L 420-567 vs Rocky Mountain Oysters Week 9 2017</li>
+                            <li class="game-details">L 314-648 vs Monica Loves Clinton Dix Week 10 2017</li>
+                            <li class="game-details">L 464-777 vs Bayou Boys Week 11 2017</li>
+                            <li class="game-details">L 458-653 vs Dominators Week 12 2017</li>
+                            <li class="game-details">W 921-887 vs Ultracogs Week 13 2017</li>
+                            <li class="game-details">L 688-698 vs The TecmoBowlers Week 14 2017</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2016</span>
+                    <span> 4-10 <i>(0.286)</i></span>
+                    <ol>
+                            <li class="game-details">L 927-1017 vs Dominators Week 1 2016</li>
+                            <li class="game-details">W 1135-878 vs X-Factor Week 2 2016</li>
+                            <li class="game-details">L 773-1277 vs Ultracogs Week 3 2016</li>
+                            <li class="game-details">L 563-906 vs Speed Demons Week 4 2016</li>
+                            <li class="game-details">L 528-1280 vs Monica Loves Clinton Dix Week 5 2016</li>
+                            <li class="game-details">W 934-843 vs Marauding Nomads Week 6 2016</li>
+                            <li class="game-details">L 281-943 vs Truffle Shuffle Week 7 2016</li>
+                            <li class="game-details">W 572-496 vs Don&#39;t Tase Me Bro Week 8 2016</li>
+                            <li class="game-details">L 490-686 vs Team Bean Week 9 2016</li>
+                            <li class="game-details">L 962-1045 vs Bayou Boys Week 10 2016</li>
+                            <li class="game-details">L 581-1000 vs Wolves Week 11 2016</li>
+                            <li class="game-details">W 913-836 vs Ultracogs Week 12 2016</li>
+                            <li class="game-details">L 548-1136 vs X-Factor Week 13 2016</li>
+                            <li class="game-details">L 617-1058 vs Dominators Week 14 2016</li>
+                    </ol>
+                </li>
+        </ul>
+    </div>
 </body>
 </html>

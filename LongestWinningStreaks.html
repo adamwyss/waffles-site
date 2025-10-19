@@ -1,37 +1,256 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .summary-container {
+            width: 60%;
+            margin: 0 auto 0.5em auto;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .centered-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+            width: 100%;
+        }
+
+        ol {
+            width: 60%;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        li {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 0.5em 0;
+        }
+
+            li:last-child {
+                border-bottom: none;
+            }
+
+        .li-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .li-name {
+            text-align: left;
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .li-week {
+            margin-left: 1.5em;
+            font-size: 0.95em;
+            color: #888;
+            font-weight: normal;
+            opacity: 0.85;
+        }
+
+        .li-value {
+            text-align: right;
+            min-width: 80px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        h2, i {
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
-
-<h2>LongestWinningStreaks</h2>
-<i></i>
-
-<ol>
-        <li>Marauding Nomads 11 (Week 3 2010 - Week 13 2010)</li>
-        <li>Rocky Mountain Oysters 11 (Week 1 2011 - Week 11 2011)</li>
-        <li>TD Matrix 11 (Week 4 2003 - Week 14 2003)</li>
-        <li>Sporky&#39;s Revenge 11 (Week 5 2011 - Week 1 2012)</li>
-        <li>Marauding Nomads 10 (Week 7 2020 - Week 2 2021)</li>
-        <li>Marauding Nomads 9 (Week 13 2001 - Week 7 2002)</li>
-        <li>A-Team 9 (Week 7 1998 - Week 1 1999)</li>
-        <li>Bayou Boys 9 (Week 6 2006 - Week 14 2006)</li>
-        <li>Dominators 9 (Week 8 2005 - Week 2 2006)</li>
-        <li>Ultracogs 9 (Week 1 2005 - Week 9 2005)</li>
-        <li>Truffle Shuffle 9 (Week 11 2018 - Week 5 2019)</li>
-        <li>Truffle Shuffle 9 (Week 7 2019 - Week 1 2020)</li>
-        <li>Koothrapaulli Browns 9 (Week 7 2019 - Week 1 2020)</li>
-        <li>Marauding Nomads 8 (Week 11 2004 - Week 4 2005)</li>
-        <li>Bayou Boys 8 (Week 13 2020 - Week 6 2021)</li>
-        <li>TD Matrix 8 (Week 1 2007 - Week 8 2007)</li>
-        <li>Red Raiders 8 (Week 4 2002 - Week 11 2002)</li>
-        <li>Team Bean 8 (Week 2 2022 - Week 9 2022)</li>
-        <li>Drunken Squirrels 8 (Week 8 2004 - Week 1 2005)</li>
-        <li>Ultracogs 8 (Week 7 2023 - Week 14 2023)</li>
-        <li>Don&#39;t Tase Me Bro 8 (Week 4 2014 - Week 11 2014)</li>
-        <li>Just Too Lucky 8 (Week 8 2015 - Week 1 2016)</li>
-        <li>The TecmoBowlers 8 (Week 4 2022 - Week 11 2022)</li>
-        <li>Marauding Nomads 7 (Week 14 2003 - Week 6 2004)</li>
-        <li>Marshal Law 7 (Week 8 1999 - Week 14 1999)</li>
-</ol>
-
+    <h2>Winning Streaks</h2>
+    <div class="summary-container">
+        <i>Unstoppable! These teams strung together the longest winning streaks, proving their dominance week after week!</i>
+    </div>
+    <div class="centered-list">
+        <ol>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            The TecmoBowlers
+                            <span class="li-week">
+                                (Week 9 2023 - Week 6 2024)
+                            </span>
+                        </span>
+                        <span class="li-value">12</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Sporky&#39;s Revenge
+                            <span class="li-week">
+                                (Week 5 2011 - Week 1 2012)
+                            </span>
+                        </span>
+                        <span class="li-value">11</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Rocky Mountain Oysters
+                            <span class="li-week">
+                                (Week 1 2011 - Week 11 2011)
+                            </span>
+                        </span>
+                        <span class="li-value">11</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Marauding Nomads
+                            <span class="li-week">
+                                (Week 3 2010 - Week 13 2010)
+                            </span>
+                        </span>
+                        <span class="li-value">11</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            TD Matrix
+                            <span class="li-week">
+                                (Week 4 2003 - Week 14 2003)
+                            </span>
+                        </span>
+                        <span class="li-value">11</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Marauding Nomads
+                            <span class="li-week">
+                                (Week 7 2020 - Week 2 2021)
+                            </span>
+                        </span>
+                        <span class="li-value">10</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Truffle Shuffle
+                            <span class="li-week">
+                                (Week 7 2019 - Week 1 2020)
+                            </span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Koothrapaulli Browns
+                            <span class="li-week">
+                                (Week 7 2019 - Week 1 2020)
+                            </span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Truffle Shuffle
+                            <span class="li-week">
+                                (Week 11 2018 - Week 5 2019)
+                            </span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                            <span class="li-week">
+                                (Week 6 2006 - Week 14 2006)
+                            </span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Dominators
+                            <span class="li-week">
+                                (Week 8 2005 - Week 2 2006)
+                            </span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Ultracogs
+                            <span class="li-week">
+                                (Week 1 2005 - Week 9 2005)
+                            </span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Marauding Nomads
+                            <span class="li-week">
+                                (Week 13 2001 - Week 7 2002)
+                            </span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            A-Team
+                            <span class="li-week">
+                                (Week 7 1998 - Week 1 1999)
+                            </span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Ultracogs
+                            <span class="li-week">
+                                (Week 7 2023 - Week 14 2023)
+                            </span>
+                        </span>
+                        <span class="li-value">8</span>
+                    </span>
+                </li>
+        </ol>
+    </div>
 </body>
 </html>

@@ -1,37 +1,226 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .summary-container {
+            width: 60%;
+            margin: 0 auto 0.5em auto;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .centered-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+            width: 100%;
+        }
+
+        ol {
+            width: 60%;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        li {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 0.5em 0;
+        }
+
+            li:last-child {
+                border-bottom: none;
+            }
+
+        .li-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .li-name {
+            text-align: left;
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .li-year {
+            margin-left: 1.5em;
+            font-size: 0.95em;
+            color: #888;
+            font-weight: normal;
+            opacity: 0.85;
+        }
+
+        .li-value {
+            text-align: right;
+            min-width: 80px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        h2, i {
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
-
-<h2>Most Wins in a Single Season</h2>
-<i>Includes regular season wins and playoff wins.</i>
-
-<ol>
-        <li>14 1998 A-Team</li>
-        <li>14 2011 Rocky Mountain Oysters</li>
-        <li>14 1999 Marshal Law</li>
-        <li>14 2018 Truffle Shuffle</li>
-        <li>14 2019 Truffle Shuffle</li>
-        <li>13 2020 Marauding Nomads</li>
-        <li>13 2007 Rocky Mountain Oysters</li>
-        <li>13 2017 Rocky Mountain Oysters</li>
-        <li>13 1997 Procrastinators</li>
-        <li>13 2004 Bayou Boys</li>
-        <li>13 2003 TD Matrix</li>
-        <li>13 2004 Drunken Squirrels</li>
-        <li>13 2005 Dominators</li>
-        <li>13 2022 The TecmoBowlers</li>
-        <li>12 1996 Eskimoes</li>
-        <li>12 1998 M&amp;M Connection</li>
-        <li>12 2000 Bayou Boys</li>
-        <li>12 2002 Bayou Boys</li>
-        <li>12 2017 Bayou Boys</li>
-        <li>12 2021 Bayou Boys</li>
-        <li>12 2001 Sporky&#39;s Revenge</li>
-        <li>12 2020 Sporky&#39;s Revenge</li>
-        <li>12 2021 Sporky&#39;s Revenge</li>
-        <li>12 2023 Ultracogs</li>
-        <li>12 2011 Truffle Shuffle</li>
-</ol>
-
+    <h2>Season Wins</h2>
+    <div class="summary-container">
+        <i>Which teams have put together the most dominant single-season runs? Relive the campaigns that set new standards for excellence!</i>
+    </div>
+    <div class="centered-list">
+        <ol>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            A-Team
+                            <span class="li-year">1998</span>
+                        </span>
+                        <span class="li-value">14</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Rocky Mountain Oysters
+                            <span class="li-year">2011</span>
+                        </span>
+                        <span class="li-value">14</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Marshal Law
+                            <span class="li-year">1999</span>
+                        </span>
+                        <span class="li-value">14</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Sporky&#39;s Revenge
+                            <span class="li-year">2024</span>
+                        </span>
+                        <span class="li-value">14</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Truffle Shuffle
+                            <span class="li-year">2018</span>
+                        </span>
+                        <span class="li-value">14</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Truffle Shuffle
+                            <span class="li-year">2019</span>
+                        </span>
+                        <span class="li-value">14</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Marauding Nomads
+                            <span class="li-year">2020</span>
+                        </span>
+                        <span class="li-value">13</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Rocky Mountain Oysters
+                            <span class="li-year">2007</span>
+                        </span>
+                        <span class="li-value">13</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Rocky Mountain Oysters
+                            <span class="li-year">2017</span>
+                        </span>
+                        <span class="li-value">13</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Procrastinators
+                            <span class="li-year">1997</span>
+                        </span>
+                        <span class="li-value">13</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                            <span class="li-year">2004</span>
+                        </span>
+                        <span class="li-value">13</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            TD Matrix
+                            <span class="li-year">2003</span>
+                        </span>
+                        <span class="li-value">13</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Drunken Squirrels
+                            <span class="li-year">2004</span>
+                        </span>
+                        <span class="li-value">13</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Dominators
+                            <span class="li-year">2005</span>
+                        </span>
+                        <span class="li-value">13</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            The TecmoBowlers
+                            <span class="li-year">2022</span>
+                        </span>
+                        <span class="li-value">13</span>
+                    </span>
+                </li>
+        </ol>
+    </div>
 </body>
 </html>

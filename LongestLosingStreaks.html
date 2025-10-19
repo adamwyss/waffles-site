@@ -1,37 +1,256 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .summary-container {
+            width: 60%;
+            margin: 0 auto 0.5em auto;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .centered-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+            width: 100%;
+        }
+
+        ol {
+            width: 60%;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        li {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 0.5em 0;
+        }
+
+            li:last-child {
+                border-bottom: none;
+            }
+
+        .li-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .li-name {
+            text-align: left;
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .li-week {
+            margin-left: 1.5em;
+            font-size: 0.95em;
+            color: #888;
+            font-weight: normal;
+            opacity: 0.85;
+        }
+
+        .li-value {
+            text-align: right;
+            min-width: 80px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        h2, i {
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
-
-<h2>LongestLosingStreaks</h2>
-<i></i>
-
-<ol>
-        <li>Dominators 15 (Week 6 2020 - Week 6 2021)</li>
-        <li>Ultracogs 11 (Week 4 2018 - Week 14 2018)</li>
-        <li>Wolves 10 (Week 2 2017 - Week 11 2017)</li>
-        <li>Anal Cleansing Technicians 9 (Week 5 1999 - Week 13 1999)</li>
-        <li>Rocky Mountain Oysters 9 (Week 7 1997 - Week 1 1998)</li>
-        <li>Rocky Mountain Oysters 9 (Week 13 2019 - Week 7 2020)</li>
-        <li>Bayou Boys 9 (Week 5 2012 - Week 13 2012)</li>
-        <li>Red Raiders 9 (Week 10 2004 - Week 4 2005)</li>
-        <li>Speed Demons 9 (Week 6 2015 - Week 14 2015)</li>
-        <li>Marauding Nomads 8 (Week 2 2023 - Week 9 2023)</li>
-        <li>Erasers 8 (Week 7 1998 - Week 14 1998)</li>
-        <li>Brawlers II 8 (Week 14 2001 - Week 7 2002)</li>
-        <li>Team Bean 8 (Week 6 2023 - Week 13 2023)</li>
-        <li>Overpaid Crybabies 8 (Week 4 2004 - Week 11 2004)</li>
-        <li>Drunken Squirrels 8 (Week 2 2005 - Week 9 2005)</li>
-        <li>Just Too Lucky 8 (Week 8 2011 - Week 1 2012)</li>
-        <li>Low Expectations 8 (Week 5 2023 - Week 12 2023)</li>
-        <li>Anal Cleansing Technicians 7 (Week 4 1998 - Week 10 1998)</li>
-        <li>Red Raiders 7 (Week 8 2000 - Week 14 2000)</li>
-        <li>Red Raiders 7 (Week 3 2007 - Week 9 2007)</li>
-        <li>Wolves 7 (Week 1 2018 - Week 7 2018)</li>
-        <li>Team Bean 7 (Week 10 2004 - Week 2 2005)</li>
-        <li>Team Bean 7 (Week 7 2020 - Week 13 2020)</li>
-        <li>Fighting Calrissians 7 (Week 14 2014 - Week 6 2015)</li>
-        <li>X-Factor 7 (Week 11 2018 - Week 3 2019)</li>
-</ol>
-
+    <h2>Losing Streaks</h2>
+    <div class="summary-container">
+        <i>Endurance through adversity—these are the longest losing streaks, where teams battled through tough times and kept fighting!</i>
+    </div>
+    <div class="centered-list">
+        <ol>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Dominators
+                            <span class="li-week">
+                                (Week 6 2020 - Week 6 2021)
+                            </span>
+                        </span>
+                        <span class="li-value">15</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Ultracogs
+                            <span class="li-week">
+                                (Week 4 2018 - Week 14 2018)
+                            </span>
+                        </span>
+                        <span class="li-value">11</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Wolves
+                            <span class="li-week">
+                                (Week 2 2017 - Week 11 2017)
+                            </span>
+                        </span>
+                        <span class="li-value">10</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Rocky Mountain Oysters
+                            <span class="li-week">
+                                (Week 13 2019 - Week 7 2020)
+                            </span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Speed Demons
+                            <span class="li-week">
+                                (Week 6 2015 - Week 14 2015)
+                            </span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                            <span class="li-week">
+                                (Week 5 2012 - Week 13 2012)
+                            </span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Red Raiders
+                            <span class="li-week">
+                                (Week 10 2004 - Week 4 2005)
+                            </span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Anal Cleansing Technicians
+                            <span class="li-week">
+                                (Week 5 1999 - Week 13 1999)
+                            </span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Rocky Mountain Oysters
+                            <span class="li-week">
+                                (Week 7 1997 - Week 1 1998)
+                            </span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Marauding Nomads
+                            <span class="li-week">
+                                (Week 12 2023 - Week 5 2024)
+                            </span>
+                        </span>
+                        <span class="li-value">8</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Marauding Nomads
+                            <span class="li-week">
+                                (Week 2 2023 - Week 9 2023)
+                            </span>
+                        </span>
+                        <span class="li-value">8</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Team Bean
+                            <span class="li-week">
+                                (Week 6 2023 - Week 13 2023)
+                            </span>
+                        </span>
+                        <span class="li-value">8</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Low Expectations
+                            <span class="li-week">
+                                (Week 5 2023 - Week 12 2023)
+                            </span>
+                        </span>
+                        <span class="li-value">8</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Just Too Lucky
+                            <span class="li-week">
+                                (Week 8 2011 - Week 1 2012)
+                            </span>
+                        </span>
+                        <span class="li-value">8</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Drunken Squirrels
+                            <span class="li-week">
+                                (Week 2 2005 - Week 9 2005)
+                            </span>
+                        </span>
+                        <span class="li-value">8</span>
+                    </span>
+                </li>
+        </ol>
+    </div>
 </body>
 </html>

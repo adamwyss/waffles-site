@@ -1,37 +1,226 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .summary-container {
+            width: 60%;
+            margin: 0 auto 0.5em auto;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .centered-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+            width: 100%;
+        }
+
+        ol {
+            width: 60%;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        li {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 0.5em 0;
+        }
+
+            li:last-child {
+                border-bottom: none;
+            }
+
+        .li-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .li-name {
+            text-align: left;
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .li-week {
+            margin-left: 1.5em;
+            font-size: 0.95em;
+            color: #888;
+            font-weight: normal;
+            opacity: 0.85;
+        }
+
+        .li-value {
+            text-align: right;
+            min-width: 80px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        h2, i {
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
-
-<h2>BestSingleGameLosingScores</h2>
-<i></i>
-
-<ol>
-        <li>1469 Red Raiders Week 3 2002</li>
-        <li>1464 Marauding Nomads Week 5 2015</li>
-        <li>1443 Just Too Lucky Week 4 2014</li>
-        <li>1411 Rocky Mountain Oysters Week 2 2016</li>
-        <li>1408 Marauding Nomads Week 11 2012</li>
-        <li>1398 Wolves Week 12 2003</li>
-        <li>1393 Dominators Week 1 2013</li>
-        <li>1384 The TecmoBowlers Week 2 2019</li>
-        <li>1382 Truffle Shuffle Week 8 2015</li>
-        <li>1331 X-Factor Week 10 2014</li>
-        <li>1316 Ultracogs Week 6 2014</li>
-        <li>1313 Phantoms Week 1 2011</li>
-        <li>1312 Bayou Boys Week 5 2002</li>
-        <li>1309 Bayou Boys Week 3 1998</li>
-        <li>1308 Just Too Lucky Week 2 2013</li>
-        <li>1288 Marauding Nomads Week 7 2007</li>
-        <li>1283 Just Too Lucky Week 7 2013</li>
-        <li>1271 Marauding Nomads Week 7 2000</li>
-        <li>1268 Rocky Mountain Oysters Week 3 2023</li>
-        <li>1265 Team Bean Week 2 2000</li>
-        <li>1262 Speed Demons Week 6 2013</li>
-        <li>1251 Ultracogs Week 7 2006</li>
-        <li>1247 Rocky Mountain Oysters Week 14 2014</li>
-        <li>1241 Phantoms Week 6 2012</li>
-        <li>1236 Bayou Boys Week 4 2016</li>
-</ol>
-
+    <h2>High-Scoring Losses</h2>
+    <div class="summary-container">
+        <i>Scoring big but coming up short—these teams put up huge numbers in defeat, proving that sometimes even greatness isn’t enough!</i>
+    </div>
+    <div class="centered-list">
+        <ol>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Red Raiders
+                            <span class="li-week">Week 3 2002</span>
+                        </span>
+                        <span class="li-value">1469</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Marauding Nomads
+                            <span class="li-week">Week 5 2015</span>
+                        </span>
+                        <span class="li-value">1464</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Just Too Lucky
+                            <span class="li-week">Week 4 2014</span>
+                        </span>
+                        <span class="li-value">1443</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Rocky Mountain Oysters
+                            <span class="li-week">Week 2 2016</span>
+                        </span>
+                        <span class="li-value">1411</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Marauding Nomads
+                            <span class="li-week">Week 11 2012</span>
+                        </span>
+                        <span class="li-value">1408</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Wolves
+                            <span class="li-week">Week 12 2003</span>
+                        </span>
+                        <span class="li-value">1398</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Dominators
+                            <span class="li-week">Week 1 2013</span>
+                        </span>
+                        <span class="li-value">1393</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            The TecmoBowlers
+                            <span class="li-week">Week 2 2019</span>
+                        </span>
+                        <span class="li-value">1384</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Truffle Shuffle
+                            <span class="li-week">Week 8 2015</span>
+                        </span>
+                        <span class="li-value">1382</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Phantoms
+                            <span class="li-week">Week 5 2024</span>
+                        </span>
+                        <span class="li-value">1371</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            X-Factor
+                            <span class="li-week">Week 10 2014</span>
+                        </span>
+                        <span class="li-value">1331</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Ultracogs
+                            <span class="li-week">Week 6 2014</span>
+                        </span>
+                        <span class="li-value">1316</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Phantoms
+                            <span class="li-week">Week 1 2011</span>
+                        </span>
+                        <span class="li-value">1313</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                            <span class="li-week">Week 5 2002</span>
+                        </span>
+                        <span class="li-value">1312</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                            <span class="li-week">Week 3 1998</span>
+                        </span>
+                        <span class="li-value">1309</span>
+                    </span>
+                </li>
+        </ol>
+    </div>
 </body>
 </html>

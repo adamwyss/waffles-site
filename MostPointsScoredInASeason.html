@@ -1,37 +1,226 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .summary-container {
+            width: 60%;
+            margin: 0 auto 0.5em auto;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .centered-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+            width: 100%;
+        }
+
+        ol {
+            width: 60%;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        li {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 0.5em 0;
+        }
+
+            li:last-child {
+                border-bottom: none;
+            }
+
+        .li-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .li-name {
+            text-align: left;
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .li-year {
+            margin-left: 1.5em;
+            font-size: 0.95em;
+            color: #888;
+            font-weight: normal;
+            opacity: 0.85;
+        }
+
+        .li-value {
+            text-align: right;
+            min-width: 80px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        h2, i {
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
-
-<h2>MostPointsScoredInASeason</h2>
-<i></i>
-
-<ol>
-        <li>16233 2019 Truffle Shuffle</li>
-        <li>16068 2018 Phantoms</li>
-        <li>15775 2016 Bayou Boys</li>
-        <li>15770 1996 Marauding Nomads</li>
-        <li>15628 2018 Truffle Shuffle</li>
-        <li>15371 2017 Just Too Lucky</li>
-        <li>15344 2000 Bayou Boys</li>
-        <li>15318 2011 Truffle Shuffle</li>
-        <li>15144 2011 Bayou Boys</li>
-        <li>15126 2004 Bayou Boys</li>
-        <li>15068 2011 Dominators</li>
-        <li>15050 2002 Bayou Boys</li>
-        <li>15020 1998 Bayou Boys</li>
-        <li>14828 2012 Phantoms</li>
-        <li>14777 2006 Fighting Calrissians</li>
-        <li>14767 2023 Truffle Shuffle</li>
-        <li>14730 2014 Don&#39;t Tase Me Bro</li>
-        <li>14707 2015 Bayou Boys</li>
-        <li>14693 2018 Monica Loves Clinton Dix</li>
-        <li>14667 2014 Rocky Mountain Oysters</li>
-        <li>14600 2014 Speed Demons</li>
-        <li>14596 2021 Ultracogs</li>
-        <li>14578 2022 The TecmoBowlers</li>
-        <li>14555 2020 Fish On</li>
-        <li>14545 1998 A-Team</li>
-</ol>
-
+    <h2>Season Points</h2>
+    <div class="summary-container">
+        <i>Offensive explosions! Find out which teams have posted the highest point totals in a single season and redefined what’s possible on the scoreboard!</i>
+    </div>
+    <div class="centered-list">
+        <ol>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Truffle Shuffle
+                            <span class="li-year">2019</span>
+                        </span>
+                        <span class="li-value">16,233</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Phantoms
+                            <span class="li-year">2018</span>
+                        </span>
+                        <span class="li-value">16,068</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                            <span class="li-year">2016</span>
+                        </span>
+                        <span class="li-value">15,775</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Marauding Nomads
+                            <span class="li-year">1996</span>
+                        </span>
+                        <span class="li-value">15,770</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Truffle Shuffle
+                            <span class="li-year">2018</span>
+                        </span>
+                        <span class="li-value">15,628</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Just Too Lucky
+                            <span class="li-year">2017</span>
+                        </span>
+                        <span class="li-value">15,371</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                            <span class="li-year">2000</span>
+                        </span>
+                        <span class="li-value">15,344</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Truffle Shuffle
+                            <span class="li-year">2011</span>
+                        </span>
+                        <span class="li-value">15,318</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Sporky&#39;s Revenge
+                            <span class="li-year">2024</span>
+                        </span>
+                        <span class="li-value">15,254</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                            <span class="li-year">2011</span>
+                        </span>
+                        <span class="li-value">15,144</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                            <span class="li-year">2004</span>
+                        </span>
+                        <span class="li-value">15,126</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Dominators
+                            <span class="li-year">2011</span>
+                        </span>
+                        <span class="li-value">15,068</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                            <span class="li-year">2002</span>
+                        </span>
+                        <span class="li-value">15,050</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                            <span class="li-year">1998</span>
+                        </span>
+                        <span class="li-value">15,020</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Phantoms
+                            <span class="li-year">2012</span>
+                        </span>
+                        <span class="li-value">14,828</span>
+                    </span>
+                </li>
+        </ol>
+    </div>
 </body>
 </html>

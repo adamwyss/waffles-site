@@ -1,82 +1,204 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .main-container {
+            width: 60%;
+            background: #fff;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .team-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .team-meta {
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .other-names {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 1em;
+        }
+
+        .record-section {
+            margin-bottom: 1em;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .headtohead-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f9f9f9;
+            margin-bottom: 1.5em;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+            .headtohead-table th, .headtohead-table td {
+                padding: 0.5em 1em;
+                border-bottom: 1px solid #e0e0e0;
+                text-align: left;
+            }
+
+            .headtohead-table th {
+                background: #f1f3f4;
+                font-weight: bold;
+            }
+
+            .headtohead-table tr:last-child td {
+                border-bottom: none;
+            }
+
+        .season-title {
+            font-weight: bold;
+        }
+
+        .game-details {
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
+</head>
 <body>
-    <p>Will Millard</p>
+    <div class="main-container">
+        <div class="team-header">Fourteen Fourteen</div>
+        <div class="team-meta">
+            Coach: Will Millard<br />
+                <span>(1999)</span>
+        </div>
+        <div class="record-section">
+            <div>Record: <strong>9 - 5</strong> (0.643)</div>
+            <div>Playoffs: <strong>1 - 1</strong> (0.500)</div>
+        </div>
 
-<p>Fourteen Fourteen 
-    (1999)
-<br/>
-</p>
+        <div class="section-title">Head to Head:</div>
+        <table class="headtohead-table">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Head-to-head Record</th>
+                    <th>Percentage</th>
+                    <th>Playoff Head-to-head</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Bayou Boys</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                                <span>1-0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marshal Law</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                                <span>0-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Brawlers II</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Anal Cleansing Technicians</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phantoms</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-Team</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nick Baker&#39;s Touchdown Makers</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Stanwood Stampede</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>TD Matrix</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
 
-    <p>Record: 9 - 5 (0.643)</p>
-    <p>Playoffs: 1 - 1 (0.500)</p>
-
-<p>Head to Head:</p>
-<ul>
-        <li>Bayou Boys
-            2-0 1.000
-
-                (1 - 0)
-        </li>
-        <li>Marshal Law
-            1-1 0.500
-
-                (0 - 1)
-        </li>
-        <li>Brawlers II
-            1-1 0.500
-
-        </li>
-        <li>Anal Cleansing Technicians
-            1-1 0.500
-
-        </li>
-        <li>Phantoms
-            1-1 0.500
-
-        </li>
-        <li>A-Team
-            1-0 1.000
-
-        </li>
-        <li>Nick Baker&#39;s Touchdown Makers
-            1-0 1.000
-
-        </li>
-        <li>Stanwood Stampede
-            1-0 1.000
-
-        </li>
-        <li>TD Matrix
-            0-1 0.000
-
-        </li>
-</ul>
-
-<p>Seasons:</p>
-<ul>
-        <li>
-            <strong>1999</strong> 9-5 <i>(0.643)</i>
-            <ol>
-                    <li>W 1168-405 vs Bayou Boys Week 1 1999</li>
-                    <li>L 535-689 vs Brawlers II Week 2 1999</li>
-                    <li>W 788-735 vs Marshal Law Week 3 1999</li>
-                    <li>L 877-899 vs Anal Cleansing Technicians Week 4 1999</li>
-                    <li>W 1222-617 vs Phantoms Week 5 1999</li>
-                    <li>W 909-695 vs A-Team Week 6 1999</li>
-                    <li>W 1122-909 vs Nick Baker&#39;s Touchdown Makers Week 7 1999</li>
-                    <li>W 791-608 vs Stanwood Stampede Week 8 1999</li>
-                    <li>L 824-964 vs TD Matrix Week 9 1999</li>
-                    <li>W 845-442 vs Bayou Boys Week 10 1999</li>
-                    <li>W 661-530 vs Brawlers II Week 11 1999</li>
-                    <li>L 529-838 vs Marshal Law Week 12 1999</li>
-                    <li>W 1167-695 vs Anal Cleansing Technicians Week 13 1999</li>
-                    <li>L 594-1178 vs Phantoms Week 14 1999</li>
-                    <li>W 718-493 vs Bayou Boys Wild Card 1999</li>
-                    <li>L 624-937 vs Marshal Law Conference Championship 1999</li>
-            </ol>
-        </li>
-</ul>
-
+        <div class="section-title">Seasons:</div>
+        <ul>
+                <li>
+                    <span class="season-title">1999</span>
+                    <span> 9-5 <i>(0.643)</i></span>
+                    <ol>
+                            <li class="game-details">W 1168-405 vs Bayou Boys Week 1 1999</li>
+                            <li class="game-details">L 535-689 vs Brawlers II Week 2 1999</li>
+                            <li class="game-details">W 788-735 vs Marshal Law Week 3 1999</li>
+                            <li class="game-details">L 877-899 vs Anal Cleansing Technicians Week 4 1999</li>
+                            <li class="game-details">W 1222-617 vs Phantoms Week 5 1999</li>
+                            <li class="game-details">W 909-695 vs A-Team Week 6 1999</li>
+                            <li class="game-details">W 1122-909 vs Nick Baker&#39;s Touchdown Makers Week 7 1999</li>
+                            <li class="game-details">W 791-608 vs Stanwood Stampede Week 8 1999</li>
+                            <li class="game-details">L 824-964 vs TD Matrix Week 9 1999</li>
+                            <li class="game-details">W 845-442 vs Bayou Boys Week 10 1999</li>
+                            <li class="game-details">W 661-530 vs Brawlers II Week 11 1999</li>
+                            <li class="game-details">L 529-838 vs Marshal Law Week 12 1999</li>
+                            <li class="game-details">W 1167-695 vs Anal Cleansing Technicians Week 13 1999</li>
+                            <li class="game-details">L 594-1178 vs Phantoms Week 14 1999</li>
+                            <li class="game-details">W 718-493 vs Bayou Boys Wild Card 1999</li>
+                            <li class="game-details">L 624-937 vs Marshal Law Conference Championship 1999</li>
+                    </ol>
+                </li>
+        </ul>
+    </div>
 </body>
 </html>

@@ -1,160 +1,314 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .main-container {
+            width: 60%;
+            background: #fff;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .team-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .team-meta {
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .other-names {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 1em;
+        }
+
+        .record-section {
+            margin-bottom: 1em;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .headtohead-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f9f9f9;
+            margin-bottom: 1.5em;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+            .headtohead-table th, .headtohead-table td {
+                padding: 0.5em 1em;
+                border-bottom: 1px solid #e0e0e0;
+                text-align: left;
+            }
+
+            .headtohead-table th {
+                background: #f1f3f4;
+                font-weight: bold;
+            }
+
+            .headtohead-table tr:last-child td {
+                border-bottom: none;
+            }
+
+        .season-title {
+            font-weight: bold;
+        }
+
+        .game-details {
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
+</head>
 <body>
-    <p>Nick Baker</p>
+    <div class="main-container">
+        <div class="team-header">Nick Baker&#39;s Touchdown Makers</div>
+        <div class="team-meta">
+            Coach: Nick Baker<br />
+                <span>(1997 - 1999)</span>
+        </div>
+        <div class="record-section">
+            <div>Record: <strong>16 - 26</strong> (0.381)</div>
+            <div>Playoffs: <strong>1 - 1</strong> (0.500)</div>
+        </div>
 
-<p>Nick Baker&#39;s Touchdown Makers 
-    (1997 - 1999)
-<br/>
-</p>
+        <div class="section-title">Head to Head:</div>
+        <table class="headtohead-table">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Head-to-head Record</th>
+                    <th>Percentage</th>
+                    <th>Playoff Head-to-head</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>M&amp;M Connection</td>
+                        <td>2-3</td>
+                        <td>0.400</td>
+                        <td>
+                                <span>0-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marauding Nomads</td>
+                        <td>4-1</td>
+                        <td>0.800</td>
+                        <td>
+                                <span>1-0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Big Daddy Spanks</td>
+                        <td>2-2</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-Team</td>
+                        <td>2-2</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Anal Cleansing Technicians</td>
+                        <td>1-2</td>
+                        <td>0.333</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Procrastinators</td>
+                        <td>0-2</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Eskimoes</td>
+                        <td>0-2</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nonoxynol Nightmares</td>
+                        <td>0-2</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Erasers</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bayou Boys</td>
+                        <td>0-2</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>TD Matrix</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Stanwood Stampede</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Oklahoma City Bombers</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Twin Bombers</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Magic City Rams</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rocky Mountain Oysters</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phantoms</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fourteen Fourteen</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marshal Law</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
 
-    <p>Record: 16 - 26 (0.381)</p>
-    <p>Playoffs: 1 - 1 (0.500)</p>
-
-<p>Head to Head:</p>
-<ul>
-        <li>M&amp;M Connection
-            2-3 0.400
-
-                (0 - 1)
-        </li>
-        <li>Marauding Nomads
-            4-1 0.800
-
-                (1 - 0)
-        </li>
-        <li>Big Daddy Spanks
-            2-2 0.500
-
-        </li>
-        <li>A-Team
-            2-2 0.500
-
-        </li>
-        <li>Anal Cleansing Technicians
-            1-2 0.333
-
-        </li>
-        <li>Procrastinators
-            0-2 0.000
-
-        </li>
-        <li>Eskimoes
-            0-2 0.000
-
-        </li>
-        <li>Nonoxynol Nightmares
-            0-2 0.000
-
-        </li>
-        <li>Erasers
-            2-0 1.000
-
-        </li>
-        <li>Bayou Boys
-            0-2 0.000
-
-        </li>
-        <li>TD Matrix
-            2-0 1.000
-
-        </li>
-        <li>Stanwood Stampede
-            1-1 0.500
-
-        </li>
-        <li>Oklahoma City Bombers
-            0-1 0.000
-
-        </li>
-        <li>Twin Bombers
-            0-1 0.000
-
-        </li>
-        <li>Magic City Rams
-            0-1 0.000
-
-        </li>
-        <li>Rocky Mountain Oysters
-            0-1 0.000
-
-        </li>
-        <li>Phantoms
-            0-1 0.000
-
-        </li>
-        <li>Fourteen Fourteen
-            0-1 0.000
-
-        </li>
-        <li>Marshal Law
-            0-1 0.000
-
-        </li>
-</ul>
-
-<p>Seasons:</p>
-<ul>
-        <li>
-            <strong>1999</strong> 8-6 <i>(0.571)</i>
-            <ol>
-                    <li>W 1077-446 vs Marauding Nomads Week 1 1999</li>
-                    <li>W 1379-873 vs TD Matrix Week 2 1999</li>
-                    <li>L 701-1111 vs Stanwood Stampede Week 3 1999</li>
-                    <li>L 995-1357 vs M&amp;M Connection Week 4 1999</li>
-                    <li>W 1027-815 vs A-Team Week 5 1999</li>
-                    <li>L 628-1226 vs Phantoms Week 6 1999</li>
-                    <li>L 909-1122 vs Fourteen Fourteen Week 7 1999</li>
-                    <li>L 1058-1168 vs Marshal Law Week 8 1999</li>
-                    <li>W 900-497 vs Anal Cleansing Technicians Week 9 1999</li>
-                    <li>W 1144-572 vs Marauding Nomads Week 10 1999</li>
-                    <li>W 959-597 vs TD Matrix Week 11 1999</li>
-                    <li>W 865-818 vs Stanwood Stampede Week 12 1999</li>
-                    <li>L 1108-1204 vs M&amp;M Connection Week 13 1999</li>
-                    <li>W 1182-1073 vs A-Team Week 14 1999</li>
-                    <li>W 1210-894 vs Marauding Nomads Wild Card 1999</li>
-                    <li>L 586-1334 vs M&amp;M Connection Conference Championship 1999</li>
-            </ol>
-        </li>
-        <li>
-            <strong>1998</strong> 3-11 <i>(0.214)</i>
-            <ol>
-                    <li>L 564-910 vs Big Daddy Spanks Week 1 1998</li>
-                    <li>L 863-1046 vs M&amp;M Connection Week 2 1998</li>
-                    <li>W 781-472 vs Marauding Nomads Week 3 1998</li>
-                    <li>L 766-846 vs Bayou Boys Week 4 1998</li>
-                    <li>L 684-909 vs A-Team Week 5 1998</li>
-                    <li>L 911-1166 vs Twin Bombers Week 6 1998</li>
-                    <li>L 577-667 vs Magic City Rams Week 7 1998</li>
-                    <li>W 717-535 vs Erasers Week 8 1998</li>
-                    <li>L 630-790 vs Rocky Mountain Oysters Week 9 1998</li>
-                    <li>L 514-1192 vs Big Daddy Spanks Week 10 1998</li>
-                    <li>W 829-642 vs M&amp;M Connection Week 11 1998</li>
-                    <li>L 667-1044 vs Marauding Nomads Week 12 1998</li>
-                    <li>L 721-1433 vs Bayou Boys Week 13 1998</li>
-                    <li>L 850-1569 vs A-Team Week 14 1998</li>
-            </ol>
-        </li>
-        <li>
-            <strong>1997</strong> 5-9 <i>(0.357)</i>
-            <ol>
-                    <li>L 863-1278 vs Procrastinators Week 1 1997</li>
-                    <li>L 359-982 vs Eskimoes Week 2 1997</li>
-                    <li>W 707-694 vs Big Daddy Spanks Week 3 1997</li>
-                    <li>L 975-1049 vs Nonoxynol Nightmares Week 4 1997</li>
-                    <li>L 768-949 vs Anal Cleansing Technicians Week 5 1997</li>
-                    <li>W 652-583 vs M&amp;M Connection Week 6 1997</li>
-                    <li>W 824-316 vs Erasers Week 7 1997</li>
-                    <li>L 700-789 vs Oklahoma City Bombers Week 8 1997</li>
-                    <li>W 942-877 vs Marauding Nomads Week 9 1997</li>
-                    <li>L 486-1074 vs Procrastinators Week 10 1997</li>
-                    <li>L 591-780 vs Eskimoes Week 11 1997</li>
-                    <li>W 876-770 vs Big Daddy Spanks Week 12 1997</li>
-                    <li>L 813-1066 vs Nonoxynol Nightmares Week 13 1997</li>
-                    <li>L 545-1081 vs Anal Cleansing Technicians Week 14 1997</li>
-            </ol>
-        </li>
-</ul>
-
+        <div class="section-title">Seasons:</div>
+        <ul>
+                <li>
+                    <span class="season-title">1999</span>
+                    <span> 8-6 <i>(0.571)</i></span>
+                    <ol>
+                            <li class="game-details">W 1077-446 vs Marauding Nomads Week 1 1999</li>
+                            <li class="game-details">W 1379-873 vs TD Matrix Week 2 1999</li>
+                            <li class="game-details">L 701-1111 vs Stanwood Stampede Week 3 1999</li>
+                            <li class="game-details">L 995-1357 vs M&amp;M Connection Week 4 1999</li>
+                            <li class="game-details">W 1027-815 vs A-Team Week 5 1999</li>
+                            <li class="game-details">L 628-1226 vs Phantoms Week 6 1999</li>
+                            <li class="game-details">L 909-1122 vs Fourteen Fourteen Week 7 1999</li>
+                            <li class="game-details">L 1058-1168 vs Marshal Law Week 8 1999</li>
+                            <li class="game-details">W 900-497 vs Anal Cleansing Technicians Week 9 1999</li>
+                            <li class="game-details">W 1144-572 vs Marauding Nomads Week 10 1999</li>
+                            <li class="game-details">W 959-597 vs TD Matrix Week 11 1999</li>
+                            <li class="game-details">W 865-818 vs Stanwood Stampede Week 12 1999</li>
+                            <li class="game-details">L 1108-1204 vs M&amp;M Connection Week 13 1999</li>
+                            <li class="game-details">W 1182-1073 vs A-Team Week 14 1999</li>
+                            <li class="game-details">W 1210-894 vs Marauding Nomads Wild Card 1999</li>
+                            <li class="game-details">L 586-1334 vs M&amp;M Connection Conference Championship 1999</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">1998</span>
+                    <span> 3-11 <i>(0.214)</i></span>
+                    <ol>
+                            <li class="game-details">L 564-910 vs Big Daddy Spanks Week 1 1998</li>
+                            <li class="game-details">L 863-1046 vs M&amp;M Connection Week 2 1998</li>
+                            <li class="game-details">W 781-472 vs Marauding Nomads Week 3 1998</li>
+                            <li class="game-details">L 766-846 vs Bayou Boys Week 4 1998</li>
+                            <li class="game-details">L 684-909 vs A-Team Week 5 1998</li>
+                            <li class="game-details">L 911-1166 vs Twin Bombers Week 6 1998</li>
+                            <li class="game-details">L 577-667 vs Magic City Rams Week 7 1998</li>
+                            <li class="game-details">W 717-535 vs Erasers Week 8 1998</li>
+                            <li class="game-details">L 630-790 vs Rocky Mountain Oysters Week 9 1998</li>
+                            <li class="game-details">L 514-1192 vs Big Daddy Spanks Week 10 1998</li>
+                            <li class="game-details">W 829-642 vs M&amp;M Connection Week 11 1998</li>
+                            <li class="game-details">L 667-1044 vs Marauding Nomads Week 12 1998</li>
+                            <li class="game-details">L 721-1433 vs Bayou Boys Week 13 1998</li>
+                            <li class="game-details">L 850-1569 vs A-Team Week 14 1998</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">1997</span>
+                    <span> 5-9 <i>(0.357)</i></span>
+                    <ol>
+                            <li class="game-details">L 863-1278 vs Procrastinators Week 1 1997</li>
+                            <li class="game-details">L 359-982 vs Eskimoes Week 2 1997</li>
+                            <li class="game-details">W 707-694 vs Big Daddy Spanks Week 3 1997</li>
+                            <li class="game-details">L 975-1049 vs Nonoxynol Nightmares Week 4 1997</li>
+                            <li class="game-details">L 768-949 vs Anal Cleansing Technicians Week 5 1997</li>
+                            <li class="game-details">W 652-583 vs M&amp;M Connection Week 6 1997</li>
+                            <li class="game-details">W 824-316 vs Erasers Week 7 1997</li>
+                            <li class="game-details">L 700-789 vs Oklahoma City Bombers Week 8 1997</li>
+                            <li class="game-details">W 942-877 vs Marauding Nomads Week 9 1997</li>
+                            <li class="game-details">L 486-1074 vs Procrastinators Week 10 1997</li>
+                            <li class="game-details">L 591-780 vs Eskimoes Week 11 1997</li>
+                            <li class="game-details">W 876-770 vs Big Daddy Spanks Week 12 1997</li>
+                            <li class="game-details">L 813-1066 vs Nonoxynol Nightmares Week 13 1997</li>
+                            <li class="game-details">L 545-1081 vs Anal Cleansing Technicians Week 14 1997</li>
+                    </ol>
+                </li>
+        </ul>
+    </div>
 </body>
 </html>

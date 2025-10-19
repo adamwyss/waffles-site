@@ -1,78 +1,200 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .main-container {
+            width: 60%;
+            background: #fff;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .team-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .team-meta {
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .other-names {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 1em;
+        }
+
+        .record-section {
+            margin-bottom: 1em;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .headtohead-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f9f9f9;
+            margin-bottom: 1.5em;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+            .headtohead-table th, .headtohead-table td {
+                padding: 0.5em 1em;
+                border-bottom: 1px solid #e0e0e0;
+                text-align: left;
+            }
+
+            .headtohead-table th {
+                background: #f1f3f4;
+                font-weight: bold;
+            }
+
+            .headtohead-table tr:last-child td {
+                border-bottom: none;
+            }
+
+        .season-title {
+            font-weight: bold;
+        }
+
+        .game-details {
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
+</head>
 <body>
-    <p>Nickolas Hanson</p>
+    <div class="main-container">
+        <div class="team-header">Nuclear181</div>
+        <div class="team-meta">
+            Coach: Nickolas Hanson<br />
+                <span>(2003)</span>
+        </div>
+        <div class="record-section">
+            <div>Record: <strong>5 - 9</strong> (0.357)</div>
+            <div>Playoffs: <strong>0 - 0</strong> (NaN)</div>
+        </div>
 
-<p>Nuclear181 
-    (2003)
-<br/>
-</p>
+        <div class="section-title">Head to Head:</div>
+        <table class="headtohead-table">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Head-to-head Record</th>
+                    <th>Percentage</th>
+                    <th>Playoff Head-to-head</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Team Bean</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Brawlers II</td>
+                        <td>0-2</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marauding Nomads</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rocky Mountain Oysters</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sporky&#39;s Revenge</td>
+                        <td>0-2</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phantoms</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>TD Matrix</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bayou Boys</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wolves</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
 
-    <p>Record: 5 - 9 (0.357)</p>
-    <p>Playoffs: 0 - 0 (NaN)</p>
-
-<p>Head to Head:</p>
-<ul>
-        <li>Team Bean
-            1-1 0.500
-
-        </li>
-        <li>Brawlers II
-            0-2 0.000
-
-        </li>
-        <li>Marauding Nomads
-            1-1 0.500
-
-        </li>
-        <li>Rocky Mountain Oysters
-            1-1 0.500
-
-        </li>
-        <li>Sporky&#39;s Revenge
-            0-2 0.000
-
-        </li>
-        <li>Phantoms
-            1-0 1.000
-
-        </li>
-        <li>TD Matrix
-            0-1 0.000
-
-        </li>
-        <li>Bayou Boys
-            1-0 1.000
-
-        </li>
-        <li>Wolves
-            0-1 0.000
-
-        </li>
-</ul>
-
-<p>Seasons:</p>
-<ul>
-        <li>
-            <strong>2003</strong> 5-9 <i>(0.357)</i>
-            <ol>
-                    <li>W 1018-441 vs Team Bean Week 1 2003</li>
-                    <li>L 586-1470 vs Brawlers II Week 2 2003</li>
-                    <li>W 632-567 vs Phantoms Week 3 2003</li>
-                    <li>L 650-999 vs Marauding Nomads Week 4 2003</li>
-                    <li>L 735-1034 vs Rocky Mountain Oysters Week 5 2003</li>
-                    <li>L 723-949 vs Sporky&#39;s Revenge Week 6 2003</li>
-                    <li>W 1259-549 vs Marauding Nomads Week 7 2003</li>
-                    <li>L 928-1025 vs Team Bean Week 8 2003</li>
-                    <li>L 445-840 vs TD Matrix Week 9 2003</li>
-                    <li>W 795-503 vs Bayou Boys Week 10 2003</li>
-                    <li>L 479-830 vs Sporky&#39;s Revenge Week 11 2003</li>
-                    <li>L 763-1023 vs Brawlers II Week 12 2003</li>
-                    <li>L 670-927 vs Wolves Week 13 2003</li>
-                    <li>W 1155-625 vs Rocky Mountain Oysters Week 14 2003</li>
-            </ol>
-        </li>
-</ul>
-
+        <div class="section-title">Seasons:</div>
+        <ul>
+                <li>
+                    <span class="season-title">2003</span>
+                    <span> 5-9 <i>(0.357)</i></span>
+                    <ol>
+                            <li class="game-details">W 1018-441 vs Team Bean Week 1 2003</li>
+                            <li class="game-details">L 586-1470 vs Brawlers II Week 2 2003</li>
+                            <li class="game-details">W 632-567 vs Phantoms Week 3 2003</li>
+                            <li class="game-details">L 650-999 vs Marauding Nomads Week 4 2003</li>
+                            <li class="game-details">L 735-1034 vs Rocky Mountain Oysters Week 5 2003</li>
+                            <li class="game-details">L 723-949 vs Sporky&#39;s Revenge Week 6 2003</li>
+                            <li class="game-details">W 1259-549 vs Marauding Nomads Week 7 2003</li>
+                            <li class="game-details">L 928-1025 vs Team Bean Week 8 2003</li>
+                            <li class="game-details">L 445-840 vs TD Matrix Week 9 2003</li>
+                            <li class="game-details">W 795-503 vs Bayou Boys Week 10 2003</li>
+                            <li class="game-details">L 479-830 vs Sporky&#39;s Revenge Week 11 2003</li>
+                            <li class="game-details">L 763-1023 vs Brawlers II Week 12 2003</li>
+                            <li class="game-details">L 670-927 vs Wolves Week 13 2003</li>
+                            <li class="game-details">W 1155-625 vs Rocky Mountain Oysters Week 14 2003</li>
+                    </ol>
+                </li>
+        </ul>
+    </div>
 </body>
 </html>

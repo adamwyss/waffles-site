@@ -1,34 +1,226 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .summary-container {
+            width: 60%;
+            margin: 0 auto 0.5em auto;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .centered-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+            width: 100%;
+        }
+
+        ol {
+            width: 60%;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        li {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 0.5em 0;
+        }
+
+            li:last-child {
+                border-bottom: none;
+            }
+
+        .li-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .li-name {
+            text-align: left;
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .li-week {
+            margin-left: 1.5em;
+            font-size: 0.95em;
+            color: #888;
+            font-weight: normal;
+            opacity: 0.85;
+        }
+
+        .li-value {
+            text-align: right;
+            min-width: 80px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        h2, i {
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
-
-<ol>
-        <li>752-751 Marauding Nomads vs Oklahoma City Bombers Week 3 1997</li>
-        <li>805-804 Team Bean vs Buffy&#39;s Bombardiers Week 5 2001</li>
-        <li>968-967 Sporky&#39;s Revenge vs Wolves Week 9 2012</li>
-        <li>551-550 Ultracogs vs Koothrapaulli Browns Week 11 2023</li>
-        <li>707-706 Ultracogs vs Bayou Boys Week 13 2023</li>
-        <li>804-802 Rocky Mountain Oysters vs Team Bean Fantasy Bowl XI 2006</li>
-        <li>672-670 Sporky&#39;s Revenge vs Wolves Week 7 2014</li>
-        <li>740-738 Wolves vs The TecmoBowlers Week 6 2019</li>
-        <li>811-808 Buffy&#39;s Bombardiers vs Spokanites Week 9 2000</li>
-        <li>748-745 Demons vs Sporky&#39;s Revenge Week 5 2002</li>
-        <li>799-796 Phantoms vs Fighting Calrissians Week 9 2008</li>
-        <li>982-979 Wolves vs Everett Eternals Week 14 2010</li>
-        <li>1385-1382 Monica Loves Clinton Dix vs Truffle Shuffle Week 8 2015</li>
-        <li>774-771 Rocky Mountain Oysters vs Koothrapaulli Browns Week 2 2018</li>
-        <li>957-954 Sporky&#39;s Revenge vs Ultracogs Week 4 2020</li>
-        <li>766-763 The TecmoBowlers vs Team Bean Week 2 2021</li>
-        <li>1110-1106 Anal Cleansing Technicians vs Marauding Nomads Week 15 1996</li>
-        <li>1269-1265 Spokanites vs Team Bean Week 2 2000</li>
-        <li>501-497 Rocky Mountain Oysters vs Red Raiders Week 10 2000</li>
-        <li>690-686 Marauding Nomads vs Fighting Calrissians Week 8 2004</li>
-        <li>886-882 X-Factor vs Team Bean Week 6 2011</li>
-        <li>1023-1019 Dominators vs Wolves Week 4 2013</li>
-        <li>792-788 Bayou Boys vs Wolves Week 12 2014</li>
-        <li>846-842 Just Too Lucky vs Dominators Wild Card Week 2019</li>
-        <li>1082-1078 Sporky&#39;s Revenge vs Phantoms Week 7 2021</li>
-</ol>
-
+    <h2>Closest Games</h2>
+    <div class="summary-container">
+        <i>Every point counts! These nail-biters were decided by the slimmest of margins, keeping fans on the edge of their seats until the final whistle!</i>
+    </div>
+    <div class="centered-list">
+        <ol>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Marauding Nomads vs Oklahoma City Bombers
+                            <span class="li-week">Week 3 1997</span>
+                        </span>
+                        <span class="li-value">752-751</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Team Bean vs Buffy&#39;s Bombardiers
+                            <span class="li-week">Week 5 2001</span>
+                        </span>
+                        <span class="li-value">805-804</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Sporky&#39;s Revenge vs Wolves
+                            <span class="li-week">Week 9 2012</span>
+                        </span>
+                        <span class="li-value">968-967</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Ultracogs vs Koothrapaulli Browns
+                            <span class="li-week">Week 11 2023</span>
+                        </span>
+                        <span class="li-value">551-550</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Ultracogs vs Bayou Boys
+                            <span class="li-week">Week 13 2023</span>
+                        </span>
+                        <span class="li-value">707-706</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Rocky Mountain Oysters vs Team Bean
+                            <span class="li-week">Fantasy Bowl XI 2006</span>
+                        </span>
+                        <span class="li-value">804-802</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Sporky&#39;s Revenge vs Wolves
+                            <span class="li-week">Week 7 2014</span>
+                        </span>
+                        <span class="li-value">672-670</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Wolves vs The TecmoBowlers
+                            <span class="li-week">Week 6 2019</span>
+                        </span>
+                        <span class="li-value">740-738</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Buffy&#39;s Bombardiers vs Spokanites
+                            <span class="li-week">Week 9 2000</span>
+                        </span>
+                        <span class="li-value">811-808</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Demons vs Sporky&#39;s Revenge
+                            <span class="li-week">Week 5 2002</span>
+                        </span>
+                        <span class="li-value">748-745</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Phantoms vs Fighting Calrissians
+                            <span class="li-week">Week 9 2008</span>
+                        </span>
+                        <span class="li-value">799-796</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Wolves vs Everett Eternals
+                            <span class="li-week">Week 14 2010</span>
+                        </span>
+                        <span class="li-value">982-979</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Monica Loves Clinton Dix vs Truffle Shuffle
+                            <span class="li-week">Week 8 2015</span>
+                        </span>
+                        <span class="li-value">1385-1382</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Rocky Mountain Oysters vs Koothrapaulli Browns
+                            <span class="li-week">Week 2 2018</span>
+                        </span>
+                        <span class="li-value">774-771</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Sporky&#39;s Revenge vs Ultracogs
+                            <span class="li-week">Week 4 2020</span>
+                        </span>
+                        <span class="li-value">957-954</span>
+                    </span>
+                </li>
+        </ol>
+    </div>
 </body>
 </html>

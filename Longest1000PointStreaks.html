@@ -1,37 +1,256 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .summary-container {
+            width: 60%;
+            margin: 0 auto 0.5em auto;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .centered-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+            width: 100%;
+        }
+
+        ol {
+            width: 60%;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        li {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 0.5em 0;
+        }
+
+            li:last-child {
+                border-bottom: none;
+            }
+
+        .li-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .li-name {
+            text-align: left;
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .li-week {
+            margin-left: 1.5em;
+            font-size: 0.95em;
+            color: #888;
+            font-weight: normal;
+            opacity: 0.85;
+        }
+
+        .li-value {
+            text-align: right;
+            min-width: 80px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        h2, i {
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
-
-<h2>Longest1000PointStreaks</h2>
-<i></i>
-
-<ol>
-        <li>Just Too Lucky 10 (Week 5 2017 - Week 14 2017)</li>
-        <li>Truffle Shuffle 9 (Week 7 2019 - Week 1 2020)</li>
-        <li>Speed Demons 7 (Week 13 2013 - Week 5 2014)</li>
-        <li>Overpaid Crybabies 6 (Week 6 2006 - Week 11 2006)</li>
-        <li>Wolfins 6 (Week 1 2006 - Week 6 2006)</li>
-        <li>Truffle Shuffle 6 (Week 5 2015 - Week 10 2015)</li>
-        <li>Speed Demons 6 (Week 14 2020 - Week 5 2021)</li>
-        <li>Marauding Nomads 5 (Week 4 1996 - Week 8 1996)</li>
-        <li>Marauding Nomads 5 (Week 8 2012 - Week 12 2012)</li>
-        <li>Procrastinators 5 (Week 1 1997 - Week 5 1997)</li>
-        <li>Bayou Boys 5 (Week 10 2000 - Week 14 2000)</li>
-        <li>Bayou Boys 5 (Week 8 2002 - Week 12 2002)</li>
-        <li>Bayou Boys 5 (Week 14 2010 - Week 4 2011)</li>
-        <li>TD Matrix 5 (Week 12 2003 - Week 2 2004)</li>
-        <li>Phantoms 5 (Week 7 2017 - Week 11 2017)</li>
-        <li>Phantoms 5 (Week 14 2017 - Week 4 2018)</li>
-        <li>Dominators 5 (Week 12 2012 - Week 2 2013)</li>
-        <li>Koothrapaulli Browns 5 (Week 11 2021 - Week 1 2022)</li>
-        <li>Marauding Nomads 4 (Week 14 1996 - Week 2 1997)</li>
-        <li>Marauding Nomads 4 (Week 4 2002 - Week 7 2002)</li>
-        <li>Rocky Mountain Oysters 4 (Week 3 2010 - Week 6 2010)</li>
-        <li>Rocky Mountain Oysters 4 (Week 1 2011 - Week 4 2011)</li>
-        <li>Rocky Mountain Oysters 4 (Week 14 2014 - Week 3 2015)</li>
-        <li>Bayou Boys 4 (Week 11 1998 - Week 14 1998)</li>
-        <li>Bayou Boys 4 (Week 9 2001 - Week 12 2001)</li>
-</ol>
-
+    <h2>1000 Point Streaks</h2>
+    <div class="summary-container">
+        <i>Sustained excellence! These teams have delivered 1000-point games in consecutive weeks, setting a new standard for offensive firepower!</i>
+    </div>
+    <div class="centered-list">
+        <ol>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Just Too Lucky
+                            <span class="li-week">
+                                (Week 5 2017 - Week 14 2017)
+                            </span>
+                        </span>
+                        <span class="li-value">10</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Truffle Shuffle
+                            <span class="li-week">
+                                (Week 7 2019 - Week 1 2020)
+                            </span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Speed Demons
+                            <span class="li-week">
+                                (Week 13 2013 - Week 5 2014)
+                            </span>
+                        </span>
+                        <span class="li-value">7</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Overpaid Crybabies
+                            <span class="li-week">
+                                (Week 6 2006 - Week 11 2006)
+                            </span>
+                        </span>
+                        <span class="li-value">6</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Wolfins
+                            <span class="li-week">
+                                (Week 1 2006 - Week 6 2006)
+                            </span>
+                        </span>
+                        <span class="li-value">6</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Truffle Shuffle
+                            <span class="li-week">
+                                (Week 5 2015 - Week 10 2015)
+                            </span>
+                        </span>
+                        <span class="li-value">6</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Speed Demons
+                            <span class="li-week">
+                                (Week 14 2020 - Week 5 2021)
+                            </span>
+                        </span>
+                        <span class="li-value">6</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Marauding Nomads
+                            <span class="li-week">
+                                (Week 4 1996 - Week 8 1996)
+                            </span>
+                        </span>
+                        <span class="li-value">5</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Marauding Nomads
+                            <span class="li-week">
+                                (Week 8 2012 - Week 12 2012)
+                            </span>
+                        </span>
+                        <span class="li-value">5</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Procrastinators
+                            <span class="li-week">
+                                (Week 1 1997 - Week 5 1997)
+                            </span>
+                        </span>
+                        <span class="li-value">5</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                            <span class="li-week">
+                                (Week 10 2000 - Week 14 2000)
+                            </span>
+                        </span>
+                        <span class="li-value">5</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                            <span class="li-week">
+                                (Week 8 2002 - Week 12 2002)
+                            </span>
+                        </span>
+                        <span class="li-value">5</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                            <span class="li-week">
+                                (Week 14 2010 - Week 4 2011)
+                            </span>
+                        </span>
+                        <span class="li-value">5</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            TD Matrix
+                            <span class="li-week">
+                                (Week 12 2003 - Week 2 2004)
+                            </span>
+                        </span>
+                        <span class="li-value">5</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            TD Matrix
+                            <span class="li-week">
+                                (Week 3 2007 - Week 7 2007)
+                            </span>
+                        </span>
+                        <span class="li-value">5</span>
+                    </span>
+                </li>
+        </ol>
+    </div>
 </body>
 </html>

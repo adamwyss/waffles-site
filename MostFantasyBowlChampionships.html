@@ -1,107 +1,220 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .summary-container {
+            width: 60%;
+            margin: 0 auto 0.5em auto;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .centered-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+            width: 100%;
+        }
+
+        ol {
+            width: 60%;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        li {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 0.5em 0;
+        }
+
+            li:last-child {
+                border-bottom: none;
+            }
+
+        .li-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .li-name {
+            text-align: left;
+            flex: 1 1 auto;
+        }
+
+        .li-value {
+            text-align: right;
+            min-width: 80px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        small {
+            color: #888;
+        }
+
+        h2, i {
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
-
-<h2>Most Fantasy Championships</h2>
-<i>Who has won the Fantasy bowl the most times.</i>
-
-<ol>
-        <li>
-            4
-            Sporky&#39;s Revenge
-                <small>(<em>2003,2005,2012,2020</em>)</small>
-        </li>
-        <li>
-            3
-            Bayou Boys
-                <small>(<em>2000,2002,2004</em>)</small>
-        </li>
-        <li>
-            3
-            Rocky Mountain Oysters
-                <small>(<em>2006,2007,2017</em>)</small>
-        </li>
-        <li>
-            2
-            Don&#39;t Tase Me Bro
-                <small>(<em>2013,2015</em>)</small>
-        </li>
-        <li>
-            1
-            Eskimoes
-                <small>(<em>1996</em>)</small>
-        </li>
-        <li>
-            1
-            Procrastinators
-                <small>(<em>1997</em>)</small>
-        </li>
-        <li>
-            1
-            A-Team
-                <small>(<em>1998</em>)</small>
-        </li>
-        <li>
-            1
-            Marshal Law
-                <small>(<em>1999</em>)</small>
-        </li>
-        <li>
-            1
-            TD Matrix
-                <small>(<em>2001</em>)</small>
-        </li>
-        <li>
-            1
-            Wolves
-                <small>(<em>2008</em>)</small>
-        </li>
-        <li>
-            1
-            Fighting Calrissians
-                <small>(<em>2009</em>)</small>
-        </li>
-        <li>
-            1
-            Phantoms
-                <small>(<em>2010</em>)</small>
-        </li>
-        <li>
-            1
-            Greatest Show on Paper
-                <small>(<em>2011</em>)</small>
-        </li>
-        <li>
-            1
-            Doom Patrol
-                <small>(<em>2014</em>)</small>
-        </li>
-        <li>
-            1
-            Just Too Lucky
-                <small>(<em>2016</em>)</small>
-        </li>
-        <li>
-            1
-            Truffle Shuffle
-                <small>(<em>2018</em>)</small>
-        </li>
-        <li>
-            1
-            Team Bean
-                <small>(<em>2019</em>)</small>
-        </li>
-        <li>
-            1
-            Marauding Nomads
-                <small>(<em>2021</em>)</small>
-        </li>
-        <li>
-            1
-            Ultracogs
-                <small>(<em>2022</em>)</small>
-        </li>
-</ol>
-
+    <h2>Fantasy Bowl Champions</h2>
+    <div class="summary-container">
+        <i>Uncover the dynasties that have conquered the Fantasy Bowl time and time again. These teams have turned championship dreams into reality!</i>
+    </div>
+    <div class="centered-list">
+        <ol>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Sporky&#39;s Revenge
+                                <small>(<em>2003,2005,2012,2020,2024</em>)</small>
+                        </span>
+                        <span class="li-value">5</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Rocky Mountain Oysters
+                                <small>(<em>2006,2007,2017</em>)</small>
+                        </span>
+                        <span class="li-value">3</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                                <small>(<em>2000,2002,2004</em>)</small>
+                        </span>
+                        <span class="li-value">3</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Don&#39;t Tase Me Bro
+                                <small>(<em>2013,2015</em>)</small>
+                        </span>
+                        <span class="li-value">2</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Fantasy Cognoscenti
+                                <small>(<em>2023</em>)</small>
+                        </span>
+                        <span class="li-value">1</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Ultracogs
+                                <small>(<em>2022</em>)</small>
+                        </span>
+                        <span class="li-value">1</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Marauding Nomads
+                                <small>(<em>2021</em>)</small>
+                        </span>
+                        <span class="li-value">1</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Team Bean
+                                <small>(<em>2019</em>)</small>
+                        </span>
+                        <span class="li-value">1</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Truffle Shuffle
+                                <small>(<em>2018</em>)</small>
+                        </span>
+                        <span class="li-value">1</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Just Too Lucky
+                                <small>(<em>2016</em>)</small>
+                        </span>
+                        <span class="li-value">1</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Doom Patrol
+                                <small>(<em>2014</em>)</small>
+                        </span>
+                        <span class="li-value">1</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Greatest Show on Paper
+                                <small>(<em>2011</em>)</small>
+                        </span>
+                        <span class="li-value">1</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Phantoms
+                                <small>(<em>2010</em>)</small>
+                        </span>
+                        <span class="li-value">1</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Fighting Calrissians
+                                <small>(<em>2009</em>)</small>
+                        </span>
+                        <span class="li-value">1</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Wolves
+                                <small>(<em>2008</em>)</small>
+                        </span>
+                        <span class="li-value">1</span>
+                    </span>
+                </li>
+        </ol>
+    </div>
 </body>
 </html>

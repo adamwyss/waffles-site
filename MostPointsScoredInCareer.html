@@ -1,112 +1,205 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .summary-container {
+            width: 60%;
+            margin: 0 auto 0.5em auto;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .centered-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+            width: 100%;
+        }
+
+        ol {
+            width: 60%;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        li {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 0.5em 0;
+        }
+
+            li:last-child {
+                border-bottom: none;
+            }
+
+        .li-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .li-name {
+            text-align: left;
+            flex: 1 1 auto;
+        }
+
+        .li-value {
+            text-align: right;
+            min-width: 80px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        small {
+            color: #888;
+        }
+
+        h2, i {
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
-
-<h2>MostPointsScoredInCareer</h2>
-<i></i>
-
-<ol>
-        <li>
-            370,029
-            Bayou Boys
-        </li>
-        <li>
-            365,744
-            Marauding Nomads
-        </li>
-        <li>
-            350,577
-            Rocky Mountain Oysters
-        </li>
-        <li>
-            307,486
-            Sporky&#39;s Revenge
-        </li>
-        <li>
-            298,769
-            Wolves
-        </li>
-        <li>
-            293,856
-            Team Bean
-        </li>
-        <li>
-            268,805
-            Dominators
-        </li>
-        <li>
-            258,515
-            Phantoms
-        </li>
-        <li>
-            256,762
-            Ultracogs
-        </li>
-        <li>
-            206,909
-            Truffle Shuffle
-        </li>
-        <li>
-            184,102
-            Just Too Lucky
-        </li>
-        <li>
-            159,943
-            Fighting Calrissians
-        </li>
-        <li>
-            147,213
-            TD Matrix
-        </li>
-        <li>
-            139,690
-            Speed Demons
-        </li>
-        <li>
-            100,475
-            The TecmoBowlers
-        </li>
-        <li>
-            99,358
-            Don&#39;t Tase Me Bro
-        </li>
-        <li>
-            93,563
-            X-Factor
-        </li>
-        <li>
-            90,509
-            Doom Patrol
-        </li>
-        <li>
-            85,250
-            Koothrapaulli Browns
-        </li>
-        <li>
-            73,722
-            Red Raiders
-        </li>
-        <li>
-            71,398
-            Brawlers II
-        </li>
-        <li>
-            67,204
-            Everett Eternals
-        </li>
-        <li>
-            57,178
-            A-Team
-        </li>
-        <li>
-            56,451
-            Anal Cleansing Technicians
-        </li>
-        <li>
-            51,331
-            Monica Loves Clinton Dix
-        </li>
-</ol>
-
+    <h2>Career Points</h2>
+    <div class="summary-container">
+        <i>Consistency is king. These teams have piled up points year after year, cementing their place among the league’s all-time greats!</i>
+    </div>
+    <div class="centered-list">
+        <ol>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                        </span>
+                        <span class="li-value">384,435</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Marauding Nomads
+                        </span>
+                        <span class="li-value">378,199</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Rocky Mountain Oysters
+                        </span>
+                        <span class="li-value">362,905</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Sporky&#39;s Revenge
+                        </span>
+                        <span class="li-value">325,873</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Wolves
+                        </span>
+                        <span class="li-value">310,061</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Team Bean
+                        </span>
+                        <span class="li-value">306,051</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Dominators
+                        </span>
+                        <span class="li-value">282,708</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Phantoms
+                        </span>
+                        <span class="li-value">272,403</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Ultracogs
+                        </span>
+                        <span class="li-value">272,201</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Truffle Shuffle
+                        </span>
+                        <span class="li-value">224,316</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Just Too Lucky
+                        </span>
+                        <span class="li-value">197,108</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Fighting Calrissians
+                        </span>
+                        <span class="li-value">159,943</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Speed Demons
+                        </span>
+                        <span class="li-value">153,587</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            TD Matrix
+                        </span>
+                        <span class="li-value">147,804</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            The TecmoBowlers
+                        </span>
+                        <span class="li-value">115,843</span>
+                    </span>
+                </li>
+        </ol>
+    </div>
 </body>
 </html>

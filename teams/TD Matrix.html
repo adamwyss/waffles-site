@@ -1,387 +1,594 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .main-container {
+            width: 60%;
+            background: #fff;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .team-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .team-meta {
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .other-names {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 1em;
+        }
+
+        .record-section {
+            margin-bottom: 1em;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .headtohead-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f9f9f9;
+            margin-bottom: 1.5em;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+            .headtohead-table th, .headtohead-table td {
+                padding: 0.5em 1em;
+                border-bottom: 1px solid #e0e0e0;
+                text-align: left;
+            }
+
+            .headtohead-table th {
+                background: #f1f3f4;
+                font-weight: bold;
+            }
+
+            .headtohead-table tr:last-child td {
+                border-bottom: none;
+            }
+
+        .season-title {
+            font-weight: bold;
+        }
+
+        .game-details {
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
+</head>
 <body>
-    <p>Tyler Mellema</p>
+    <div class="main-container">
+        <div class="team-header">TD Matrix</div>
+        <div class="team-meta">
+            Coach: Tyler Mellema<br />
+                <span>(1999 - 2009)</span>
+        </div>
+            <div class="other-names">
+                Also known as:
+                    <span>TD Prowler</span><br />
+            </div>
+        <div class="record-section">
+            <div>Record: <strong>89 - 65</strong> (0.578)</div>
+            <div>Playoffs: <strong>6 - 7</strong> (0.462)</div>
+        </div>
 
-<p>TD Matrix 
-    (1999 - 2009)
-<br/>
-    <small>TD Prowler</small><br/>
-</p>
+        <div class="section-title">Head to Head:</div>
+        <table class="headtohead-table">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Head-to-head Record</th>
+                    <th>Percentage</th>
+                    <th>Playoff Head-to-head</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Marauding Nomads</td>
+                        <td>6-6</td>
+                        <td>0.500</td>
+                        <td>
+                                <span>0-2</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sporky&#39;s Revenge</td>
+                        <td>6-6</td>
+                        <td>0.500</td>
+                        <td>
+                                <span>1-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bayou Boys</td>
+                        <td>6-5</td>
+                        <td>0.545</td>
+                        <td>
+                                <span>1-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fighting Calrissians</td>
+                        <td>4-6</td>
+                        <td>0.400</td>
+                        <td>
+                                <span>0-2</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wolves</td>
+                        <td>4-6</td>
+                        <td>0.400</td>
+                        <td>
+                                <span>1-0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rocky Mountain Oysters</td>
+                        <td>7-3</td>
+                        <td>0.700</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Brawlers II</td>
+                        <td>3-5</td>
+                        <td>0.375</td>
+                        <td>
+                                <span>1-0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phantoms</td>
+                        <td>5-3</td>
+                        <td>0.625</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Team Bean</td>
+                        <td>6-1</td>
+                        <td>0.857</td>
+                        <td>
+                                <span>1-0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Red Raiders</td>
+                        <td>5-2</td>
+                        <td>0.714</td>
+                        <td>
+                                <span>1-0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ultracogs</td>
+                        <td>2-6</td>
+                        <td>0.250</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dominators</td>
+                        <td>4-3</td>
+                        <td>0.571</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Everett Eternals</td>
+                        <td>4-1</td>
+                        <td>0.800</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Buffy&#39;s Bombardiers</td>
+                        <td>3-1</td>
+                        <td>0.750</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Demons</td>
+                        <td>4-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Drunken Squirrels</td>
+                        <td>3-0</td>
+                        <td>1.000</td>
+                        <td>
+                                <span>0-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Spokanites</td>
+                        <td>2-1</td>
+                        <td>0.667</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-Team</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nick Baker&#39;s Touchdown Makers</td>
+                        <td>0-2</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Stanwood Stampede</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>M&amp;M Connection</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Anal Cleansing Technicians</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Spartans</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Overpaid Crybabies</td>
+                        <td>0-2</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Stormtroopers</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Anayalaters</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fourteen Fourteen</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nuclear181</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wolfins</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>McBoo</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wishbone</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Blitzkrieg</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Doom Patrol</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
 
-    <p>Record: 89 - 65 (0.578)</p>
-    <p>Playoffs: 6 - 7 (0.462)</p>
-
-<p>Head to Head:</p>
-<ul>
-        <li>Marauding Nomads
-            7-6 0.538
-
-                (0 - 2)
-        </li>
-        <li>Bayou Boys
-            6-5 0.545
-
-                (1 - 1)
-        </li>
-        <li>Sporky&#39;s Revenge
-            5-6 0.455
-
-                (1 - 1)
-        </li>
-        <li>Fighting Calrissians
-            4-6 0.400
-
-                (0 - 2)
-        </li>
-        <li>Wolves
-            4-6 0.400
-
-                (1 - 0)
-        </li>
-        <li>Rocky Mountain Oysters
-            7-3 0.700
-
-        </li>
-        <li>Brawlers II
-            3-5 0.375
-
-                (1 - 0)
-        </li>
-        <li>Phantoms
-            5-3 0.625
-
-        </li>
-        <li>Team Bean
-            6-1 0.857
-
-                (1 - 0)
-        </li>
-        <li>Red Raiders
-            5-2 0.714
-
-                (1 - 0)
-        </li>
-        <li>Ultracogs
-            2-6 0.250
-
-        </li>
-        <li>Dominators
-            4-3 0.571
-
-        </li>
-        <li>Everett Eternals
-            4-1 0.800
-
-        </li>
-        <li>Buffy&#39;s Bombardiers
-            3-1 0.750
-
-        </li>
-        <li>Demons
-            4-0 1.000
-
-        </li>
-        <li>Drunken Squirrels
-            3-0 1.000
-
-                (0 - 1)
-        </li>
-        <li>Spokanites
-            2-1 0.667
-
-        </li>
-        <li>A-Team
-            1-1 0.500
-
-        </li>
-        <li>Nick Baker&#39;s Touchdown Makers
-            0-2 0.000
-
-        </li>
-        <li>Stanwood Stampede
-            2-0 1.000
-
-        </li>
-        <li>M&amp;M Connection
-            1-1 0.500
-
-        </li>
-        <li>Anal Cleansing Technicians
-            1-1 0.500
-
-        </li>
-        <li>Spartans
-            2-0 1.000
-
-        </li>
-        <li>Overpaid Crybabies
-            0-2 0.000
-
-        </li>
-        <li>Stormtroopers
-            2-0 1.000
-
-        </li>
-        <li>Anayalaters
-            1-1 0.500
-
-        </li>
-        <li>Fourteen Fourteen
-            1-0 1.000
-
-        </li>
-        <li>Nuclear181
-            1-0 1.000
-
-        </li>
-        <li>Wolfins
-            1-0 1.000
-
-        </li>
-        <li>McBoo
-            0-1 0.000
-
-        </li>
-        <li>Wishbone
-            1-0 1.000
-
-        </li>
-        <li>Blitzkrieg
-            0-1 0.000
-
-        </li>
-        <li>Doom Patrol
-            1-0 1.000
-
-        </li>
-</ul>
-
-<p>Seasons:</p>
-<ul>
-        <li>
-            <strong>2009</strong> 6-8 <i>(0.429)</i>
-            <ol>
-                    <li>L 368-819 vs Ultracogs Week 1 2009</li>
-                    <li>L 728-995 vs Fighting Calrissians Week 2 2009</li>
-                    <li>W 891-753 vs Dominators Week 3 2009</li>
-                    <li>W 1005-493 vs Sporky&#39;s Revenge Week 4 2009</li>
-                    <li>W 949-839 vs Bayou Boys Week 5 2009</li>
-                    <li>W 589-497 vs Wishbone Week 6 2009</li>
-                    <li>W 1011-665 vs Everett Eternals Week 7 2009</li>
-                    <li>L 638-957 vs Blitzkrieg Week 8 2009</li>
-                    <li>W 829-618 vs Doom Patrol Week 9 2009</li>
-                    <li>L 955-1042 vs Wolves Week 10 2009</li>
-                    <li>L 942-1020 vs Rocky Mountain Oysters Week 11 2009</li>
-                    <li>L 342-866 vs Ultracogs Week 12 2009</li>
-                    <li>L 581-765 vs Fighting Calrissians Week 13 2009</li>
-                    <li>L 417-1452 vs Dominators Week 14 2009</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2008</strong> 5-9 <i>(0.357)</i>
-            <ol>
-                    <li>L 695-1207 vs Ultracogs Week 1 2008</li>
-                    <li>W 970-927 vs Fighting Calrissians Week 2 2008</li>
-                    <li>L 799-990 vs Dominators Week 3 2008</li>
-                    <li>W 1286-550 vs Rocky Mountain Oysters Week 4 2008</li>
-                    <li>L 314-1000 vs Marauding Nomads Week 5 2008</li>
-                    <li>W 1183-467 vs Anayalaters Week 6 2008</li>
-                    <li>W 1862-476 vs Sporky&#39;s Revenge Week 7 2008</li>
-                    <li>L 771-824 vs Phantoms Week 8 2008</li>
-                    <li>L 684-803 vs McBoo Week 9 2008</li>
-                    <li>L 816-1435 vs Wolves Week 10 2008</li>
-                    <li>W 833-588 vs Bayou Boys Week 11 2008</li>
-                    <li>L 734-804 vs Ultracogs Week 12 2008</li>
-                    <li>L 687-888 vs Fighting Calrissians Week 13 2008</li>
-                    <li>L 741-901 vs Dominators Week 14 2008</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2007</strong> 11-3 <i>(0.786)</i>
-            <ol>
-                    <li>W 1268-1004 vs Fighting Calrissians Week 1 2007</li>
-                    <li>W 892-841 vs Phantoms Week 2 2007</li>
-                    <li>W 1029-750 vs Ultracogs Week 3 2007</li>
-                    <li>W 1010-313 vs Red Raiders Week 4 2007</li>
-                    <li>W 1064-502 vs Everett Eternals Week 5 2007</li>
-                    <li>W 736-390 vs Marauding Nomads Week 6 2007</li>
-                    <li>W 1512-1288 vs Marauding Nomads Week 7 2007</li>
-                    <li>W 736-390 vs Dominators Week 8 2007</li>
-                    <li>L 697-1352 vs Bayou Boys Week 9 2007</li>
-                    <li>L 228-359 vs Anayalaters Week 10 2007</li>
-                    <li>W 854-287 vs Wolfins Week 11 2007</li>
-                    <li>W 1172-1148 vs Fighting Calrissians Week 12 2007</li>
-                    <li>L 775-988 vs Phantoms Week 13 2007</li>
-                    <li>W 1460-920 vs Ultracogs Week 14 2007</li>
-                    <li>L 453-615 vs Fighting Calrissians Wild Card Week 2007</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2006</strong> 8-6 <i>(0.571)</i>
-            <ol>
-                    <li>W 1058-562 vs Rocky Mountain Oysters Week 1 2006</li>
-                    <li>L 936-1235 vs Fighting Calrissians Week 2 2006</li>
-                    <li>W 768-688 vs Phantoms Week 3 2006</li>
-                    <li>W 731-713 vs Dominators Week 4 2006</li>
-                    <li>W 860-356 vs Red Raiders Week 5 2006</li>
-                    <li>L 777-808 vs Marauding Nomads Week 6 2006</li>
-                    <li>W 628-438 vs Drunken Squirrels Week 7 2006</li>
-                    <li>W 739-584 vs Wolves Week 8 2006</li>
-                    <li>W 726-637 vs Everett Eternals Week 9 2006</li>
-                    <li>L 603-688 vs Bayou Boys Week 10 2006</li>
-                    <li>L 500-888 vs Sporky&#39;s Revenge Week 11 2006</li>
-                    <li>W 1239-712 vs Rocky Mountain Oysters Week 12 2006</li>
-                    <li>L 363-735 vs Fighting Calrissians Week 13 2006</li>
-                    <li>L 708-853 vs Phantoms Week 14 2006</li>
-                    <li>L 728-822 vs Fighting Calrissians Wild Card Week 2006</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2005</strong> 10-4 <i>(0.714)</i>
-            <ol>
-                    <li>L 740-996 vs Marauding Nomads Week 1 2005</li>
-                    <li>L 629-841 vs Everett Eternals Week 2 2005</li>
-                    <li>W 1304-798 vs Stormtroopers Week 3 2005</li>
-                    <li>W 1158-973 vs Dominators Week 4 2005</li>
-                    <li>W 990-834 vs Drunken Squirrels Week 5 2005</li>
-                    <li>W 1022-711 vs Rocky Mountain Oysters Week 6 2005</li>
-                    <li>W 706-648 vs Red Raiders Week 7 2005</li>
-                    <li>W 855-643 vs Bayou Boys Week 8 2005</li>
-                    <li>L 897-977 vs Ultracogs Week 9 2005</li>
-                    <li>W 820-608 vs Team Bean Week 10 2005</li>
-                    <li>L 591-888 vs Fighting Calrissians Week 11 2005</li>
-                    <li>W 1439-795 vs Marauding Nomads Week 12 2005</li>
-                    <li>W 898-579 vs Everett Eternals Week 13 2005</li>
-                    <li>W 649-406 vs Stormtroopers Week 14 2005</li>
-                    <li>L 816-1097 vs Marauding Nomads Wild Card Week 2005</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2004</strong> 7-7 <i>(0.500)</i>
-            <ol>
-                    <li>L 1218-1302 vs Brawlers II Week 1 2004</li>
-                    <li>W 1049-654 vs Spartans Week 2 2004</li>
-                    <li>L 942-1207 vs Overpaid Crybabies Week 3 2004</li>
-                    <li>W 811-566 vs Wolves Week 4 2004</li>
-                    <li>L 869-906 vs Sporky&#39;s Revenge Week 5 2004</li>
-                    <li>L 978-1179 vs Bayou Boys Week 6 2004</li>
-                    <li>W 1024-735 vs Drunken Squirrels Week 7 2004</li>
-                    <li>W 1073-621 vs Team Bean Week 8 2004</li>
-                    <li>L 708-766 vs Ultracogs Week 9 2004</li>
-                    <li>W 906-667 vs Fighting Calrissians Week 10 2004</li>
-                    <li>L 540-807 vs Rocky Mountain Oysters Week 11 2004</li>
-                    <li>W 809-760 vs Brawlers II Week 12 2004</li>
-                    <li>W 1190-282 vs Spartans Week 13 2004</li>
-                    <li>L 571-915 vs Overpaid Crybabies Week 14 2004</li>
-                    <li>W 1078-936 vs Wolves Wild Card Week 2004</li>
-                    <li>L 659-1232 vs Drunken Squirrels Conference Championship 2004</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2003</strong> 12-2 <i>(0.857)</i>
-            <ol>
-                    <li>W 1009-938 vs Bayou Boys Week 1 2003</li>
-                    <li>L 559-926 vs Wolves Week 2 2003</li>
-                    <li>L 914-930 vs Brawlers II Week 3 2003</li>
-                    <li>W 1087-490 vs Sporky&#39;s Revenge Week 4 2003</li>
-                    <li>W 1039-704 vs Phantoms Week 5 2003</li>
-                    <li>W 1094-533 vs Rocky Mountain Oysters Week 6 2003</li>
-                    <li>W 1202-711 vs Phantoms Week 7 2003</li>
-                    <li>W 928-533 vs Wolves Week 8 2003</li>
-                    <li>W 840-445 vs Nuclear181 Week 9 2003</li>
-                    <li>W 657-618 vs Team Bean Week 10 2003</li>
-                    <li>W 887-715 vs Rocky Mountain Oysters Week 11 2003</li>
-                    <li>W 1059-977 vs Bayou Boys Week 12 2003</li>
-                    <li>W 1218-972 vs Marauding Nomads Week 13 2003</li>
-                    <li>W 1059-1045 vs Sporky&#39;s Revenge Week 14 2003</li>
-                    <li>W 1288-676 vs Bayou Boys Conference Championship 2003</li>
-                    <li>L 630-790 vs Sporky&#39;s Revenge Fantasy Bowl VIII 2003</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2002</strong> 6-8 <i>(0.429)</i>
-            <ol>
-                    <li>L 1038-1089 vs Marauding Nomads Week 1 2002</li>
-                    <li>W 951-825 vs Demons Week 2 2002</li>
-                    <li>L 641-1024 vs Sporky&#39;s Revenge Week 3 2002</li>
-                    <li>W 1238-734 vs Brawlers II Week 4 2002</li>
-                    <li>W 1333-916 vs Wolves Week 5 2002</li>
-                    <li>L 559-1027 vs Red Raiders Week 6 2002</li>
-                    <li>L 862-897 vs Buffy&#39;s Bombardiers Week 7 2002</li>
-                    <li>W 787-582 vs Spokanites Week 8 2002</li>
-                    <li>L 634-825 vs Rocky Mountain Oysters Week 9 2002</li>
-                    <li>W 1139-1063 vs Marauding Nomads Week 10 2002</li>
-                    <li>W 867-838 vs Demons Week 11 2002</li>
-                    <li>L 481-619 vs Sporky&#39;s Revenge Week 12 2002</li>
-                    <li>L 770-886 vs Brawlers II Week 13 2002</li>
-                    <li>L 946-954 vs Wolves Week 14 2002</li>
-                    <li>W 911-624 vs Sporky&#39;s Revenge Wild Card 2002</li>
-                    <li>L 683-721 vs Marauding Nomads Conference Championship 2002</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2001</strong> 8-6 <i>(0.571)</i>
-            <ol>
-                    <li>W 1232-672 vs Team Bean Week 1 2001</li>
-                    <li>L 963-1503 vs Wolves Week 2 2001</li>
-                    <li>W 910-722 vs Buffy&#39;s Bombardiers Week 3 2001</li>
-                    <li>W 1269-997 vs Demons Week 4 2001</li>
-                    <li>W 1012-914 vs Red Raiders Week 5 2001</li>
-                    <li>L 572-1049 vs Bayou Boys Week 6 2001</li>
-                    <li>L 822-1084 vs Sporky&#39;s Revenge Week 7 2001</li>
-                    <li>W 1070-756 vs Rocky Mountain Oysters Week 8 2001</li>
-                    <li>L 746-1731 vs Brawlers II Week 9 2001</li>
-                    <li>W 868-626 vs Team Bean Week 10 2001</li>
-                    <li>L 652-945 vs Wolves Week 11 2001</li>
-                    <li>W 1134-869 vs Buffy&#39;s Bombardiers Week 12 2001</li>
-                    <li>W 989-475 vs Demons Week 13 2001</li>
-                    <li>L 947-1068 vs Red Raiders Week 14 2001</li>
-                    <li>W 829-571 vs Red Raiders Conference Championship 2001</li>
-                    <li>W 923-656 vs Brawlers II Fantasy Bowl VI 2001</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2000</strong> 9-5 <i>(0.643)</i>
-            <ol>
-                    <li>W 1139-1026 vs Marauding Nomads Week 1 2000</li>
-                    <li>W 1156-621 vs Anal Cleansing Technicians Week 2 2000</li>
-                    <li>W 738-700 vs Team Bean Week 3 2000</li>
-                    <li>L 861-1324 vs Spokanites Week 4 2000</li>
-                    <li>L 763-968 vs Sporky&#39;s Revenge Week 5 2000</li>
-                    <li>W 1146-657 vs Bayou Boys Week 6 2000</li>
-                    <li>W 922-876 vs Buffy&#39;s Bombardiers Week 7 2000</li>
-                    <li>W 1223-1133 vs Red Raiders Week 8 2000</li>
-                    <li>L 1059-1198 vs Brawlers II Week 9 2000</li>
-                    <li>W 866-770 vs Marauding Nomads Week 10 2000</li>
-                    <li>L 632-774 vs Anal Cleansing Technicians Week 11 2000</li>
-                    <li>L 965-983 vs Team Bean Week 12 2000</li>
-                    <li>W 1174-618 vs Spokanites Week 13 2000</li>
-                    <li>W 957-911 vs Sporky&#39;s Revenge Week 14 2000</li>
-                    <li>W 1081-999 vs Team Bean Conference Championship 2000</li>
-                    <li>L 768-909 vs Bayou Boys Fantasy Bowl V 2000</li>
-            </ol>
-        </li>
-        <li>
-            <strong>1999</strong> 7-7 <i>(0.500)</i>
-            <ol>
-                    <li>L 726-754 vs A-Team Week 1 1999</li>
-                    <li>L 873-1379 vs Nick Baker&#39;s Touchdown Makers Week 2 1999</li>
-                    <li>L 726-960 vs Marauding Nomads Week 3 1999</li>
-                    <li>W 996-711 vs Stanwood Stampede Week 4 1999</li>
-                    <li>W 1058-850 vs M&amp;M Connection Week 5 1999</li>
-                    <li>L 494-551 vs Bayou Boys Week 6 1999</li>
-                    <li>W 803-364 vs Brawlers II Week 7 1999</li>
-                    <li>W 556-550 vs Phantoms Week 8 1999</li>
-                    <li>W 964-824 vs Fourteen Fourteen Week 9 1999</li>
-                    <li>W 1172-899 vs A-Team Week 10 1999</li>
-                    <li>L 597-959 vs Nick Baker&#39;s Touchdown Makers Week 11 1999</li>
-                    <li>L 936-956 vs Marauding Nomads Week 12 1999</li>
-                    <li>W 1000-666 vs Stanwood Stampede Week 13 1999</li>
-                    <li>L 805-1042 vs M&amp;M Connection Week 14 1999</li>
-            </ol>
-        </li>
-</ul>
-
+        <div class="section-title">Seasons:</div>
+        <ul>
+                <li>
+                    <span class="season-title">2009</span>
+                    <span> 6-8 <i>(0.429)</i></span>
+                    <ol>
+                            <li class="game-details">L 368-819 vs Ultracogs Week 1 2009</li>
+                            <li class="game-details">L 728-995 vs Fighting Calrissians Week 2 2009</li>
+                            <li class="game-details">W 891-753 vs Dominators Week 3 2009</li>
+                            <li class="game-details">W 1005-493 vs Sporky&#39;s Revenge Week 4 2009</li>
+                            <li class="game-details">W 949-839 vs Bayou Boys Week 5 2009</li>
+                            <li class="game-details">W 589-497 vs Wishbone Week 6 2009</li>
+                            <li class="game-details">W 1011-665 vs Everett Eternals Week 7 2009</li>
+                            <li class="game-details">L 638-957 vs Blitzkrieg Week 8 2009</li>
+                            <li class="game-details">W 829-618 vs Doom Patrol Week 9 2009</li>
+                            <li class="game-details">L 955-1042 vs Wolves Week 10 2009</li>
+                            <li class="game-details">L 942-1020 vs Rocky Mountain Oysters Week 11 2009</li>
+                            <li class="game-details">L 342-866 vs Ultracogs Week 12 2009</li>
+                            <li class="game-details">L 581-765 vs Fighting Calrissians Week 13 2009</li>
+                            <li class="game-details">L 417-1452 vs Dominators Week 14 2009</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2008</span>
+                    <span> 5-9 <i>(0.357)</i></span>
+                    <ol>
+                            <li class="game-details">L 695-1207 vs Ultracogs Week 1 2008</li>
+                            <li class="game-details">W 970-927 vs Fighting Calrissians Week 2 2008</li>
+                            <li class="game-details">L 799-990 vs Dominators Week 3 2008</li>
+                            <li class="game-details">W 1286-550 vs Rocky Mountain Oysters Week 4 2008</li>
+                            <li class="game-details">L 314-1000 vs Marauding Nomads Week 5 2008</li>
+                            <li class="game-details">W 1183-467 vs Anayalaters Week 6 2008</li>
+                            <li class="game-details">W 1862-476 vs Sporky&#39;s Revenge Week 7 2008</li>
+                            <li class="game-details">L 771-824 vs Phantoms Week 8 2008</li>
+                            <li class="game-details">L 684-803 vs McBoo Week 9 2008</li>
+                            <li class="game-details">L 816-1435 vs Wolves Week 10 2008</li>
+                            <li class="game-details">W 833-588 vs Bayou Boys Week 11 2008</li>
+                            <li class="game-details">L 734-804 vs Ultracogs Week 12 2008</li>
+                            <li class="game-details">L 687-888 vs Fighting Calrissians Week 13 2008</li>
+                            <li class="game-details">L 741-901 vs Dominators Week 14 2008</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2007</span>
+                    <span> 11-3 <i>(0.786)</i></span>
+                    <ol>
+                            <li class="game-details">W 1268-1004 vs Fighting Calrissians Week 1 2007</li>
+                            <li class="game-details">W 892-841 vs Phantoms Week 2 2007</li>
+                            <li class="game-details">W 1029-750 vs Ultracogs Week 3 2007</li>
+                            <li class="game-details">W 1010-313 vs Red Raiders Week 4 2007</li>
+                            <li class="game-details">W 1064-502 vs Everett Eternals Week 5 2007</li>
+                            <li class="game-details">W 1327-306 vs Sporky&#39;s Revenge Week 6 2007</li>
+                            <li class="game-details">W 1512-1288 vs Marauding Nomads Week 7 2007</li>
+                            <li class="game-details">W 736-390 vs Dominators Week 8 2007</li>
+                            <li class="game-details">L 697-1352 vs Bayou Boys Week 9 2007</li>
+                            <li class="game-details">L 228-359 vs Anayalaters Week 10 2007</li>
+                            <li class="game-details">W 854-287 vs Wolfins Week 11 2007</li>
+                            <li class="game-details">W 1172-1148 vs Fighting Calrissians Week 12 2007</li>
+                            <li class="game-details">L 775-988 vs Phantoms Week 13 2007</li>
+                            <li class="game-details">W 1460-920 vs Ultracogs Week 14 2007</li>
+                            <li class="game-details">L 453-615 vs Fighting Calrissians Wild Card Week 2007</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2006</span>
+                    <span> 8-6 <i>(0.571)</i></span>
+                    <ol>
+                            <li class="game-details">W 1058-562 vs Rocky Mountain Oysters Week 1 2006</li>
+                            <li class="game-details">L 936-1235 vs Fighting Calrissians Week 2 2006</li>
+                            <li class="game-details">W 768-688 vs Phantoms Week 3 2006</li>
+                            <li class="game-details">W 731-713 vs Dominators Week 4 2006</li>
+                            <li class="game-details">W 860-356 vs Red Raiders Week 5 2006</li>
+                            <li class="game-details">L 777-808 vs Marauding Nomads Week 6 2006</li>
+                            <li class="game-details">W 628-438 vs Drunken Squirrels Week 7 2006</li>
+                            <li class="game-details">W 739-584 vs Wolves Week 8 2006</li>
+                            <li class="game-details">W 726-637 vs Everett Eternals Week 9 2006</li>
+                            <li class="game-details">L 603-688 vs Bayou Boys Week 10 2006</li>
+                            <li class="game-details">L 500-888 vs Sporky&#39;s Revenge Week 11 2006</li>
+                            <li class="game-details">W 1239-712 vs Rocky Mountain Oysters Week 12 2006</li>
+                            <li class="game-details">L 363-735 vs Fighting Calrissians Week 13 2006</li>
+                            <li class="game-details">L 708-853 vs Phantoms Week 14 2006</li>
+                            <li class="game-details">L 728-822 vs Fighting Calrissians Wild Card Week 2006</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2005</span>
+                    <span> 10-4 <i>(0.714)</i></span>
+                    <ol>
+                            <li class="game-details">L 740-996 vs Marauding Nomads Week 1 2005</li>
+                            <li class="game-details">L 629-841 vs Everett Eternals Week 2 2005</li>
+                            <li class="game-details">W 1304-798 vs Stormtroopers Week 3 2005</li>
+                            <li class="game-details">W 1158-973 vs Dominators Week 4 2005</li>
+                            <li class="game-details">W 990-834 vs Drunken Squirrels Week 5 2005</li>
+                            <li class="game-details">W 1022-711 vs Rocky Mountain Oysters Week 6 2005</li>
+                            <li class="game-details">W 706-648 vs Red Raiders Week 7 2005</li>
+                            <li class="game-details">W 855-643 vs Bayou Boys Week 8 2005</li>
+                            <li class="game-details">L 897-977 vs Ultracogs Week 9 2005</li>
+                            <li class="game-details">W 820-608 vs Team Bean Week 10 2005</li>
+                            <li class="game-details">L 591-888 vs Fighting Calrissians Week 11 2005</li>
+                            <li class="game-details">W 1439-795 vs Marauding Nomads Week 12 2005</li>
+                            <li class="game-details">W 898-579 vs Everett Eternals Week 13 2005</li>
+                            <li class="game-details">W 649-406 vs Stormtroopers Week 14 2005</li>
+                            <li class="game-details">L 816-1097 vs Marauding Nomads Wild Card Week 2005</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2004</span>
+                    <span> 7-7 <i>(0.500)</i></span>
+                    <ol>
+                            <li class="game-details">L 1218-1302 vs Brawlers II Week 1 2004</li>
+                            <li class="game-details">W 1049-654 vs Spartans Week 2 2004</li>
+                            <li class="game-details">L 942-1207 vs Overpaid Crybabies Week 3 2004</li>
+                            <li class="game-details">W 811-566 vs Wolves Week 4 2004</li>
+                            <li class="game-details">L 869-906 vs Sporky&#39;s Revenge Week 5 2004</li>
+                            <li class="game-details">L 978-1179 vs Bayou Boys Week 6 2004</li>
+                            <li class="game-details">W 1024-735 vs Drunken Squirrels Week 7 2004</li>
+                            <li class="game-details">W 1073-621 vs Team Bean Week 8 2004</li>
+                            <li class="game-details">L 708-766 vs Ultracogs Week 9 2004</li>
+                            <li class="game-details">W 906-667 vs Fighting Calrissians Week 10 2004</li>
+                            <li class="game-details">L 540-807 vs Rocky Mountain Oysters Week 11 2004</li>
+                            <li class="game-details">W 809-760 vs Brawlers II Week 12 2004</li>
+                            <li class="game-details">W 1190-282 vs Spartans Week 13 2004</li>
+                            <li class="game-details">L 571-915 vs Overpaid Crybabies Week 14 2004</li>
+                            <li class="game-details">W 1078-936 vs Wolves Wild Card Week 2004</li>
+                            <li class="game-details">L 659-1232 vs Drunken Squirrels Conference Championship 2004</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2003</span>
+                    <span> 12-2 <i>(0.857)</i></span>
+                    <ol>
+                            <li class="game-details">W 1009-938 vs Bayou Boys Week 1 2003</li>
+                            <li class="game-details">L 559-926 vs Wolves Week 2 2003</li>
+                            <li class="game-details">L 914-930 vs Brawlers II Week 3 2003</li>
+                            <li class="game-details">W 1087-490 vs Sporky&#39;s Revenge Week 4 2003</li>
+                            <li class="game-details">W 1039-704 vs Phantoms Week 5 2003</li>
+                            <li class="game-details">W 1094-533 vs Rocky Mountain Oysters Week 6 2003</li>
+                            <li class="game-details">W 1202-711 vs Phantoms Week 7 2003</li>
+                            <li class="game-details">W 928-533 vs Wolves Week 8 2003</li>
+                            <li class="game-details">W 840-445 vs Nuclear181 Week 9 2003</li>
+                            <li class="game-details">W 657-618 vs Team Bean Week 10 2003</li>
+                            <li class="game-details">W 887-715 vs Rocky Mountain Oysters Week 11 2003</li>
+                            <li class="game-details">W 1059-977 vs Bayou Boys Week 12 2003</li>
+                            <li class="game-details">W 1218-972 vs Marauding Nomads Week 13 2003</li>
+                            <li class="game-details">W 1059-1045 vs Sporky&#39;s Revenge Week 14 2003</li>
+                            <li class="game-details">W 1288-676 vs Bayou Boys Conference Championship 2003</li>
+                            <li class="game-details">L 630-790 vs Sporky&#39;s Revenge Fantasy Bowl VIII 2003</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2002</span>
+                    <span> 6-8 <i>(0.429)</i></span>
+                    <ol>
+                            <li class="game-details">L 1038-1089 vs Marauding Nomads Week 1 2002</li>
+                            <li class="game-details">W 951-825 vs Demons Week 2 2002</li>
+                            <li class="game-details">L 641-1024 vs Sporky&#39;s Revenge Week 3 2002</li>
+                            <li class="game-details">W 1238-734 vs Brawlers II Week 4 2002</li>
+                            <li class="game-details">W 1333-916 vs Wolves Week 5 2002</li>
+                            <li class="game-details">L 559-1027 vs Red Raiders Week 6 2002</li>
+                            <li class="game-details">L 862-897 vs Buffy&#39;s Bombardiers Week 7 2002</li>
+                            <li class="game-details">W 787-582 vs Spokanites Week 8 2002</li>
+                            <li class="game-details">L 634-825 vs Rocky Mountain Oysters Week 9 2002</li>
+                            <li class="game-details">W 1139-1063 vs Marauding Nomads Week 10 2002</li>
+                            <li class="game-details">W 867-838 vs Demons Week 11 2002</li>
+                            <li class="game-details">L 481-619 vs Sporky&#39;s Revenge Week 12 2002</li>
+                            <li class="game-details">L 770-886 vs Brawlers II Week 13 2002</li>
+                            <li class="game-details">L 946-954 vs Wolves Week 14 2002</li>
+                            <li class="game-details">W 911-624 vs Sporky&#39;s Revenge Wild Card 2002</li>
+                            <li class="game-details">L 683-721 vs Marauding Nomads Conference Championship 2002</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2001</span>
+                    <span> 8-6 <i>(0.571)</i></span>
+                    <ol>
+                            <li class="game-details">W 1232-672 vs Team Bean Week 1 2001</li>
+                            <li class="game-details">L 963-1503 vs Wolves Week 2 2001</li>
+                            <li class="game-details">W 910-722 vs Buffy&#39;s Bombardiers Week 3 2001</li>
+                            <li class="game-details">W 1269-997 vs Demons Week 4 2001</li>
+                            <li class="game-details">W 1012-914 vs Red Raiders Week 5 2001</li>
+                            <li class="game-details">L 572-1049 vs Bayou Boys Week 6 2001</li>
+                            <li class="game-details">L 822-1084 vs Sporky&#39;s Revenge Week 7 2001</li>
+                            <li class="game-details">W 1070-756 vs Rocky Mountain Oysters Week 8 2001</li>
+                            <li class="game-details">L 746-1731 vs Brawlers II Week 9 2001</li>
+                            <li class="game-details">W 868-626 vs Team Bean Week 10 2001</li>
+                            <li class="game-details">L 652-945 vs Wolves Week 11 2001</li>
+                            <li class="game-details">W 1134-869 vs Buffy&#39;s Bombardiers Week 12 2001</li>
+                            <li class="game-details">W 989-475 vs Demons Week 13 2001</li>
+                            <li class="game-details">L 947-1068 vs Red Raiders Week 14 2001</li>
+                            <li class="game-details">W 829-571 vs Red Raiders Conference Championship 2001</li>
+                            <li class="game-details">W 923-656 vs Brawlers II Fantasy Bowl VI 2001</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2000</span>
+                    <span> 9-5 <i>(0.643)</i></span>
+                    <ol>
+                            <li class="game-details">W 1139-1026 vs Marauding Nomads Week 1 2000</li>
+                            <li class="game-details">W 1156-621 vs Anal Cleansing Technicians Week 2 2000</li>
+                            <li class="game-details">W 738-700 vs Team Bean Week 3 2000</li>
+                            <li class="game-details">L 861-1324 vs Spokanites Week 4 2000</li>
+                            <li class="game-details">L 763-968 vs Sporky&#39;s Revenge Week 5 2000</li>
+                            <li class="game-details">W 1146-657 vs Bayou Boys Week 6 2000</li>
+                            <li class="game-details">W 922-876 vs Buffy&#39;s Bombardiers Week 7 2000</li>
+                            <li class="game-details">W 1223-1133 vs Red Raiders Week 8 2000</li>
+                            <li class="game-details">L 1059-1198 vs Brawlers II Week 9 2000</li>
+                            <li class="game-details">W 866-770 vs Marauding Nomads Week 10 2000</li>
+                            <li class="game-details">L 632-774 vs Anal Cleansing Technicians Week 11 2000</li>
+                            <li class="game-details">L 965-983 vs Team Bean Week 12 2000</li>
+                            <li class="game-details">W 1174-618 vs Spokanites Week 13 2000</li>
+                            <li class="game-details">W 957-911 vs Sporky&#39;s Revenge Week 14 2000</li>
+                            <li class="game-details">W 1081-999 vs Team Bean Conference Championship 2000</li>
+                            <li class="game-details">L 768-909 vs Bayou Boys Fantasy Bowl V 2000</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">1999</span>
+                    <span> 7-7 <i>(0.500)</i></span>
+                    <ol>
+                            <li class="game-details">L 726-754 vs A-Team Week 1 1999</li>
+                            <li class="game-details">L 873-1379 vs Nick Baker&#39;s Touchdown Makers Week 2 1999</li>
+                            <li class="game-details">L 726-960 vs Marauding Nomads Week 3 1999</li>
+                            <li class="game-details">W 996-711 vs Stanwood Stampede Week 4 1999</li>
+                            <li class="game-details">W 1058-850 vs M&amp;M Connection Week 5 1999</li>
+                            <li class="game-details">L 494-551 vs Bayou Boys Week 6 1999</li>
+                            <li class="game-details">W 803-364 vs Brawlers II Week 7 1999</li>
+                            <li class="game-details">W 556-550 vs Phantoms Week 8 1999</li>
+                            <li class="game-details">W 964-824 vs Fourteen Fourteen Week 9 1999</li>
+                            <li class="game-details">W 1172-899 vs A-Team Week 10 1999</li>
+                            <li class="game-details">L 597-959 vs Nick Baker&#39;s Touchdown Makers Week 11 1999</li>
+                            <li class="game-details">L 936-956 vs Marauding Nomads Week 12 1999</li>
+                            <li class="game-details">W 1000-666 vs Stanwood Stampede Week 13 1999</li>
+                            <li class="game-details">L 805-1042 vs M&amp;M Connection Week 14 1999</li>
+                    </ol>
+                </li>
+        </ul>
+    </div>
 </body>
 </html>

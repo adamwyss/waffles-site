@@ -1,146 +1,291 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .main-container {
+            width: 60%;
+            background: #fff;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .team-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .team-meta {
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .other-names {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 1em;
+        }
+
+        .record-section {
+            margin-bottom: 1em;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .headtohead-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f9f9f9;
+            margin-bottom: 1.5em;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+            .headtohead-table th, .headtohead-table td {
+                padding: 0.5em 1em;
+                border-bottom: 1px solid #e0e0e0;
+                text-align: left;
+            }
+
+            .headtohead-table th {
+                background: #f1f3f4;
+                font-weight: bold;
+            }
+
+            .headtohead-table tr:last-child td {
+                border-bottom: none;
+            }
+
+        .season-title {
+            font-weight: bold;
+        }
+
+        .game-details {
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
+</head>
 <body>
-    <p>Cindy Harris</p>
+    <div class="main-container">
+        <div class="team-header">Fish On</div>
+        <div class="team-meta">
+            Coach: Cindy Harris<br />
+                <span>(2020 - 2022)</span>
+        </div>
+        <div class="record-section">
+            <div>Record: <strong>19 - 23</strong> (0.452)</div>
+            <div>Playoffs: <strong>0 - 1</strong> (0.000)</div>
+        </div>
 
-<p>Fish On 
-    (2020 - 2022)
-<br/>
-</p>
+        <div class="section-title">Head to Head:</div>
+        <table class="headtohead-table">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Head-to-head Record</th>
+                    <th>Percentage</th>
+                    <th>Playoff Head-to-head</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Speed Demons</td>
+                        <td>1-5</td>
+                        <td>0.167</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phantoms</td>
+                        <td>2-4</td>
+                        <td>0.333</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>The TecmoBowlers</td>
+                        <td>0-3</td>
+                        <td>0.000</td>
+                        <td>
+                                <span>0-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Low Expectations</td>
+                        <td>2-2</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marauding Nomads</td>
+                        <td>3-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Team Bean</td>
+                        <td>2-1</td>
+                        <td>0.667</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Truffle Shuffle</td>
+                        <td>3-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Krypteia</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wolves</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dominators</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bayou Boys</td>
+                        <td>0-2</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ultracogs</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sporky&#39;s Revenge</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Just Too Lucky</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Koothrapaulli Browns</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rocky Mountain Oysters</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
 
-    <p>Record: 19 - 23 (0.452)</p>
-    <p>Playoffs: 0 - 1 (0.000)</p>
-
-<p>Head to Head:</p>
-<ul>
-        <li>Speed Demons
-            1-5 0.167
-
-        </li>
-        <li>Phantoms
-            2-4 0.333
-
-        </li>
-        <li>The TecmoBowlers
-            0-3 0.000
-
-                (0 - 1)
-        </li>
-        <li>Low Expectations
-            2-2 0.500
-
-        </li>
-        <li>Marauding Nomads
-            3-0 1.000
-
-        </li>
-        <li>Team Bean
-            2-1 0.667
-
-        </li>
-        <li>Truffle Shuffle
-            3-0 1.000
-
-        </li>
-        <li>Krypteia
-            1-1 0.500
-
-        </li>
-        <li>Wolves
-            1-1 0.500
-
-        </li>
-        <li>Dominators
-            1-1 0.500
-
-        </li>
-        <li>Bayou Boys
-            0-2 0.000
-
-        </li>
-        <li>Ultracogs
-            1-1 0.500
-
-        </li>
-        <li>Sporky&#39;s Revenge
-            0-1 0.000
-
-        </li>
-        <li>Just Too Lucky
-            1-0 1.000
-
-        </li>
-        <li>Koothrapaulli Browns
-            1-0 1.000
-
-        </li>
-        <li>Rocky Mountain Oysters
-            0-1 0.000
-
-        </li>
-</ul>
-
-<p>Seasons:</p>
-<ul>
-        <li>
-            <strong>2022</strong> 4-10 <i>(0.286)</i>
-            <ol>
-                    <li>W 717-590 vs Low Expectations Week 1 2022</li>
-                    <li>L 842-992 vs Speed Demons Week 2 2022</li>
-                    <li>L 764-1060 vs Phantoms Week 3 2022</li>
-                    <li>W 857-806 vs Truffle Shuffle Week 4 2022</li>
-                    <li>W 967-830 vs Marauding Nomads Week 5 2022</li>
-                    <li>L 817-1075 vs Dominators Week 6 2022</li>
-                    <li>L 657-1035 vs Bayou Boys Week 7 2022</li>
-                    <li>L 638-681 vs Ultracogs Week 8 2022</li>
-                    <li>L 588-604 vs Wolves Week 9 2022</li>
-                    <li>W 802-673 vs Team Bean Week 10 2022</li>
-                    <li>L 826-889 vs The TecmoBowlers Week 11 2022</li>
-                    <li>L 891-1382 vs Phantoms Week 12 2022</li>
-                    <li>L 610-680 vs Speed Demons Week 13 2022</li>
-                    <li>L 662-708 vs Low Expectations Week 14 2022</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2021</strong> 5-9 <i>(0.357)</i>
-            <ol>
-                    <li>L 849-1005 vs Speed Demons Week 1 2021</li>
-                    <li>W 1157-928 vs Low Expectations Week 2 2021</li>
-                    <li>L 733-897 vs Phantoms Week 3 2021</li>
-                    <li>W 1329-653 vs Marauding Nomads Week 4 2021</li>
-                    <li>L 742-850 vs Team Bean Week 5 2021</li>
-                    <li>L 629-1236 vs Sporky&#39;s Revenge Week 6 2021</li>
-                    <li>W 1157-673 vs Just Too Lucky Week 7 2021</li>
-                    <li>W 905-809 vs Koothrapaulli Browns Week 8 2021</li>
-                    <li>L 622-1257 vs Rocky Mountain Oysters Week 9 2021</li>
-                    <li>W 1119-868 vs Truffle Shuffle Week 10 2021</li>
-                    <li>L 783-1182 vs The TecmoBowlers Week 11 2021</li>
-                    <li>L 284-663 vs Phantoms Week 12 2021</li>
-                    <li>L 822-863 vs Low Expectations Week 13 2021</li>
-                    <li>L 823-1100 vs Speed Demons Week 14 2021</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2020</strong> 10-4 <i>(0.714)</i>
-            <ol>
-                    <li>L 855-1182 vs Speed Demons Week 1 2020</li>
-                    <li>W 1190-820 vs Phantoms Week 2 2020</li>
-                    <li>W 1275-1131 vs Krypteia Week 3 2020</li>
-                    <li>L 855-899 vs The TecmoBowlers Week 4 2020</li>
-                    <li>W 1187-825 vs Marauding Nomads Week 5 2020</li>
-                    <li>W 788-630 vs Wolves Week 6 2020</li>
-                    <li>W 1110-998 vs Dominators Week 7 2020</li>
-                    <li>L 732-964 vs Bayou Boys Week 8 2020</li>
-                    <li>W 1087-953 vs Ultracogs Week 9 2020</li>
-                    <li>W 1235-696 vs Team Bean Week 10 2020</li>
-                    <li>W 1003-407 vs Truffle Shuffle Week 11 2020</li>
-                    <li>L 999-1010 vs Krypteia Week 12 2020</li>
-                    <li>W 1063-988 vs Phantoms Week 13 2020</li>
-                    <li>W 1176-1114 vs Speed Demons Week 14 2020</li>
-                    <li>L 885-1024 vs The TecmoBowlers Wild Card Week 2020</li>
-            </ol>
-        </li>
-</ul>
-
+        <div class="section-title">Seasons:</div>
+        <ul>
+                <li>
+                    <span class="season-title">2022</span>
+                    <span> 4-10 <i>(0.286)</i></span>
+                    <ol>
+                            <li class="game-details">W 717-590 vs Low Expectations Week 1 2022</li>
+                            <li class="game-details">L 842-992 vs Speed Demons Week 2 2022</li>
+                            <li class="game-details">L 764-1060 vs Phantoms Week 3 2022</li>
+                            <li class="game-details">W 857-806 vs Truffle Shuffle Week 4 2022</li>
+                            <li class="game-details">W 967-830 vs Marauding Nomads Week 5 2022</li>
+                            <li class="game-details">L 817-1075 vs Dominators Week 6 2022</li>
+                            <li class="game-details">L 657-1035 vs Bayou Boys Week 7 2022</li>
+                            <li class="game-details">L 638-681 vs Ultracogs Week 8 2022</li>
+                            <li class="game-details">L 588-604 vs Wolves Week 9 2022</li>
+                            <li class="game-details">W 802-673 vs Team Bean Week 10 2022</li>
+                            <li class="game-details">L 826-889 vs The TecmoBowlers Week 11 2022</li>
+                            <li class="game-details">L 891-1382 vs Phantoms Week 12 2022</li>
+                            <li class="game-details">L 610-680 vs Speed Demons Week 13 2022</li>
+                            <li class="game-details">L 662-708 vs Low Expectations Week 14 2022</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2021</span>
+                    <span> 5-9 <i>(0.357)</i></span>
+                    <ol>
+                            <li class="game-details">L 849-1005 vs Speed Demons Week 1 2021</li>
+                            <li class="game-details">W 1157-928 vs Low Expectations Week 2 2021</li>
+                            <li class="game-details">L 733-897 vs Phantoms Week 3 2021</li>
+                            <li class="game-details">W 1329-653 vs Marauding Nomads Week 4 2021</li>
+                            <li class="game-details">L 742-850 vs Team Bean Week 5 2021</li>
+                            <li class="game-details">L 629-1236 vs Sporky&#39;s Revenge Week 6 2021</li>
+                            <li class="game-details">W 1157-673 vs Just Too Lucky Week 7 2021</li>
+                            <li class="game-details">W 905-809 vs Koothrapaulli Browns Week 8 2021</li>
+                            <li class="game-details">L 622-1257 vs Rocky Mountain Oysters Week 9 2021</li>
+                            <li class="game-details">W 1119-868 vs Truffle Shuffle Week 10 2021</li>
+                            <li class="game-details">L 783-1182 vs The TecmoBowlers Week 11 2021</li>
+                            <li class="game-details">L 284-663 vs Phantoms Week 12 2021</li>
+                            <li class="game-details">L 822-863 vs Low Expectations Week 13 2021</li>
+                            <li class="game-details">L 823-1100 vs Speed Demons Week 14 2021</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2020</span>
+                    <span> 10-4 <i>(0.714)</i></span>
+                    <ol>
+                            <li class="game-details">L 855-1182 vs Speed Demons Week 1 2020</li>
+                            <li class="game-details">W 1190-820 vs Phantoms Week 2 2020</li>
+                            <li class="game-details">W 1275-1131 vs Krypteia Week 3 2020</li>
+                            <li class="game-details">L 855-899 vs The TecmoBowlers Week 4 2020</li>
+                            <li class="game-details">W 1187-825 vs Marauding Nomads Week 5 2020</li>
+                            <li class="game-details">W 788-630 vs Wolves Week 6 2020</li>
+                            <li class="game-details">W 1110-998 vs Dominators Week 7 2020</li>
+                            <li class="game-details">L 732-964 vs Bayou Boys Week 8 2020</li>
+                            <li class="game-details">W 1087-953 vs Ultracogs Week 9 2020</li>
+                            <li class="game-details">W 1235-696 vs Team Bean Week 10 2020</li>
+                            <li class="game-details">W 1003-407 vs Truffle Shuffle Week 11 2020</li>
+                            <li class="game-details">L 999-1010 vs Krypteia Week 12 2020</li>
+                            <li class="game-details">W 1063-988 vs Phantoms Week 13 2020</li>
+                            <li class="game-details">W 1176-1114 vs Speed Demons Week 14 2020</li>
+                            <li class="game-details">L 885-1024 vs The TecmoBowlers Wild Card Week 2020</li>
+                    </ol>
+                </li>
+        </ul>
+    </div>
 </body>
 </html>

@@ -1,112 +1,244 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .main-container {
+            width: 60%;
+            background: #fff;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .team-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .team-meta {
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .other-names {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 1em;
+        }
+
+        .record-section {
+            margin-bottom: 1em;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .headtohead-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f9f9f9;
+            margin-bottom: 1.5em;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+            .headtohead-table th, .headtohead-table td {
+                padding: 0.5em 1em;
+                border-bottom: 1px solid #e0e0e0;
+                text-align: left;
+            }
+
+            .headtohead-table th {
+                background: #f1f3f4;
+                font-weight: bold;
+            }
+
+            .headtohead-table tr:last-child td {
+                border-bottom: none;
+            }
+
+        .season-title {
+            font-weight: bold;
+        }
+
+        .game-details {
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
+</head>
 <body>
-    <p>David Tyner</p>
+    <div class="main-container">
+        <div class="team-header">Nonoxynol Nightmares</div>
+        <div class="team-meta">
+            Coach: David Tyner<br />
+                <span>(1996 - 1997)</span>
+        </div>
+        <div class="record-section">
+            <div>Record: <strong>15 - 14</strong> (0.517)</div>
+            <div>Playoffs: <strong>0 - 1</strong> (0.000)</div>
+        </div>
 
-<p>Nonoxynol Nightmares 
-    (1996 - 1997)
-<br/>
-</p>
+        <div class="section-title">Head to Head:</div>
+        <table class="headtohead-table">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Head-to-head Record</th>
+                    <th>Percentage</th>
+                    <th>Playoff Head-to-head</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Anal Cleansing Technicians</td>
+                        <td>1-3</td>
+                        <td>0.250</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Eskimoes</td>
+                        <td>0-4</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rocky Mountain Oysters</td>
+                        <td>3-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-Team</td>
+                        <td>2-1</td>
+                        <td>0.667</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Erasers</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                                <span>0-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marauding Nomads</td>
+                        <td>1-2</td>
+                        <td>0.333</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Craig&#39;s Broncos</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Procrastinators</td>
+                        <td>0-2</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nick Baker&#39;s Touchdown Makers</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Big Daddy Spanks</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Oklahoma City Bombers</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>M&amp;M Connection</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
 
-    <p>Record: 15 - 14 (0.517)</p>
-    <p>Playoffs: 0 - 1 (0.000)</p>
-
-<p>Head to Head:</p>
-<ul>
-        <li>Anal Cleansing Technicians
-            1-3 0.250
-
-        </li>
-        <li>Eskimoes
-            0-4 0.000
-
-        </li>
-        <li>Rocky Mountain Oysters
-            3-0 1.000
-
-        </li>
-        <li>A-Team
-            2-1 0.667
-
-        </li>
-        <li>Erasers
-            2-0 1.000
-
-                (0 - 1)
-        </li>
-        <li>Marauding Nomads
-            1-2 0.333
-
-        </li>
-        <li>Craig&#39;s Broncos
-            2-0 1.000
-
-        </li>
-        <li>Procrastinators
-            0-2 0.000
-
-        </li>
-        <li>Nick Baker&#39;s Touchdown Makers
-            2-0 1.000
-
-        </li>
-        <li>Big Daddy Spanks
-            1-1 0.500
-
-        </li>
-        <li>Oklahoma City Bombers
-            0-1 0.000
-
-        </li>
-        <li>M&amp;M Connection
-            1-0 1.000
-
-        </li>
-</ul>
-
-<p>Seasons:</p>
-<ul>
-        <li>
-            <strong>1997</strong> 6-8 <i>(0.429)</i>
-            <ol>
-                    <li>L 681-1013 vs Eskimoes Week 1 1997</li>
-                    <li>L 723-762 vs Anal Cleansing Technicians Week 2 1997</li>
-                    <li>L 819-1066 vs Procrastinators Week 3 1997</li>
-                    <li>W 1049-975 vs Nick Baker&#39;s Touchdown Makers Week 4 1997</li>
-                    <li>L 629-782 vs Big Daddy Spanks Week 5 1997</li>
-                    <li>W 942-722 vs Marauding Nomads Week 6 1997</li>
-                    <li>L 732-866 vs Oklahoma City Bombers Week 7 1997</li>
-                    <li>W 1053-867 vs Rocky Mountain Oysters Week 8 1997</li>
-                    <li>W 957-637 vs M&amp;M Connection Week 9 1997</li>
-                    <li>L 648-850 vs Eskimoes Week 10 1997</li>
-                    <li>L 1022-1039 vs Anal Cleansing Technicians Week 11 1997</li>
-                    <li>L 433-743 vs Procrastinators Week 12 1997</li>
-                    <li>W 1066-813 vs Nick Baker&#39;s Touchdown Makers Week 13 1997</li>
-                    <li>W 735-709 vs Big Daddy Spanks Week 14 1997</li>
-            </ol>
-        </li>
-        <li>
-            <strong>1996</strong> 9-6 <i>(0.600)</i>
-            <ol>
-                    <li>W 754-633 vs Rocky Mountain Oysters Week 1 1996</li>
-                    <li>W 721-600 vs Anal Cleansing Technicians Week 2 1996</li>
-                    <li>L 844-916 vs Eskimoes Week 3 1996</li>
-                    <li>W 1318-782 vs A-Team Week 4 1996</li>
-                    <li>W 900-744 vs Erasers Week 5 1996</li>
-                    <li>W 768-753 vs Craig&#39;s Broncos Week 6 1996</li>
-                    <li>L 1048-1633 vs Marauding Nomads Week 7 1996</li>
-                    <li>W 1146-570 vs Rocky Mountain Oysters Week 8 1996</li>
-                    <li>L 870-1207 vs Anal Cleansing Technicians Week 9 1996</li>
-                    <li>L 1017-1043 vs Eskimoes Week 10 1996</li>
-                    <li>L 733-1164 vs A-Team Week 11 1996</li>
-                    <li>W 989-580 vs Erasers Week 12 1996</li>
-                    <li>L 878-934 vs Marauding Nomads Week 13 1996</li>
-                    <li>W 1216-894 vs Craig&#39;s Broncos Week 14 1996</li>
-                    <li>W 755-739 vs A-Team Week 15 1996</li>
-                    <li>L 713-1052 vs Erasers Semi-Finals 1996</li>
-            </ol>
-        </li>
-</ul>
-
+        <div class="section-title">Seasons:</div>
+        <ul>
+                <li>
+                    <span class="season-title">1997</span>
+                    <span> 6-8 <i>(0.429)</i></span>
+                    <ol>
+                            <li class="game-details">L 681-1013 vs Eskimoes Week 1 1997</li>
+                            <li class="game-details">L 723-762 vs Anal Cleansing Technicians Week 2 1997</li>
+                            <li class="game-details">L 819-1066 vs Procrastinators Week 3 1997</li>
+                            <li class="game-details">W 1049-975 vs Nick Baker&#39;s Touchdown Makers Week 4 1997</li>
+                            <li class="game-details">L 629-782 vs Big Daddy Spanks Week 5 1997</li>
+                            <li class="game-details">W 942-722 vs Marauding Nomads Week 6 1997</li>
+                            <li class="game-details">L 732-866 vs Oklahoma City Bombers Week 7 1997</li>
+                            <li class="game-details">W 1053-867 vs Rocky Mountain Oysters Week 8 1997</li>
+                            <li class="game-details">W 957-637 vs M&amp;M Connection Week 9 1997</li>
+                            <li class="game-details">L 648-850 vs Eskimoes Week 10 1997</li>
+                            <li class="game-details">L 1022-1039 vs Anal Cleansing Technicians Week 11 1997</li>
+                            <li class="game-details">L 433-743 vs Procrastinators Week 12 1997</li>
+                            <li class="game-details">W 1066-813 vs Nick Baker&#39;s Touchdown Makers Week 13 1997</li>
+                            <li class="game-details">W 735-709 vs Big Daddy Spanks Week 14 1997</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">1996</span>
+                    <span> 9-6 <i>(0.600)</i></span>
+                    <ol>
+                            <li class="game-details">W 754-633 vs Rocky Mountain Oysters Week 1 1996</li>
+                            <li class="game-details">W 721-600 vs Anal Cleansing Technicians Week 2 1996</li>
+                            <li class="game-details">L 844-916 vs Eskimoes Week 3 1996</li>
+                            <li class="game-details">W 1318-782 vs A-Team Week 4 1996</li>
+                            <li class="game-details">W 900-744 vs Erasers Week 5 1996</li>
+                            <li class="game-details">W 768-753 vs Craig&#39;s Broncos Week 6 1996</li>
+                            <li class="game-details">L 1048-1633 vs Marauding Nomads Week 7 1996</li>
+                            <li class="game-details">W 1146-570 vs Rocky Mountain Oysters Week 8 1996</li>
+                            <li class="game-details">L 870-1207 vs Anal Cleansing Technicians Week 9 1996</li>
+                            <li class="game-details">L 1017-1043 vs Eskimoes Week 10 1996</li>
+                            <li class="game-details">L 733-1164 vs A-Team Week 11 1996</li>
+                            <li class="game-details">W 989-580 vs Erasers Week 12 1996</li>
+                            <li class="game-details">L 878-934 vs Marauding Nomads Week 13 1996</li>
+                            <li class="game-details">W 1216-894 vs Craig&#39;s Broncos Week 14 1996</li>
+                            <li class="game-details">W 755-739 vs A-Team Week 15 1996</li>
+                            <li class="game-details">L 713-1052 vs Erasers Semi-Finals 1996</li>
+                    </ol>
+                </li>
+        </ul>
+    </div>
 </body>
 </html>

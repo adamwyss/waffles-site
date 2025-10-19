@@ -1,112 +1,205 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .summary-container {
+            width: 60%;
+            margin: 0 auto 0.5em auto;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .centered-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+            width: 100%;
+        }
+
+        ol {
+            width: 60%;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        li {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 0.5em 0;
+        }
+
+            li:last-child {
+                border-bottom: none;
+            }
+
+        .li-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .li-name {
+            text-align: left;
+            flex: 1 1 auto;
+        }
+
+        .li-value {
+            text-align: right;
+            min-width: 80px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        small {
+            color: #888;
+        }
+
+        h2, i {
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
-
-<h2>Most Playoff Wins for a Team</h2>
-<i>Playoff wins.</i>
-
-<ol>
-        <li>
-            20
-            Rocky Mountain Oysters
-        </li>
-        <li>
-            17
-            Bayou Boys
-        </li>
-        <li>
-            16
-            Team Bean
-        </li>
-        <li>
-            13
-            Sporky&#39;s Revenge
-        </li>
-        <li>
-            13
-            Ultracogs
-        </li>
-        <li>
-            10
-            Marauding Nomads
-        </li>
-        <li>
-            10
-            Dominators
-        </li>
-        <li>
-            9
-            Truffle Shuffle
-        </li>
-        <li>
-            8
-            Wolves
-        </li>
-        <li>
-            8
-            Don&#39;t Tase Me Bro
-        </li>
-        <li>
-            7
-            Fighting Calrissians
-        </li>
-        <li>
-            6
-            TD Matrix
-        </li>
-        <li>
-            6
-            Just Too Lucky
-        </li>
-        <li>
-            4
-            A-Team
-        </li>
-        <li>
-            3
-            Procrastinators
-        </li>
-        <li>
-            3
-            Phantoms
-        </li>
-        <li>
-            3
-            Doom Patrol
-        </li>
-        <li>
-            3
-            Greatest Show on Paper
-        </li>
-        <li>
-            3
-            The TecmoBowlers
-        </li>
-        <li>
-            3
-            Koothrapaulli Browns
-        </li>
-        <li>
-            3
-            Fantasy Cognoscenti
-        </li>
-        <li>
-            2
-            Eskimoes
-        </li>
-        <li>
-            2
-            M&amp;M Connection
-        </li>
-        <li>
-            2
-            Marshal Law
-        </li>
-        <li>
-            2
-            Brawlers II
-        </li>
-</ol>
-
+    <h2>Career Playoff Wins</h2>
+    <div class="summary-container">
+        <i>Playoff pressure? These teams thrive on it. See who has dominated the postseason and built a legacy of clutch performances!</i>
+    </div>
+    <div class="centered-list">
+        <ol>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Rocky Mountain Oysters
+                        </span>
+                        <span class="li-value">20</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                        </span>
+                        <span class="li-value">18</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Team Bean
+                        </span>
+                        <span class="li-value">16</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Sporky&#39;s Revenge
+                        </span>
+                        <span class="li-value">16</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Ultracogs
+                        </span>
+                        <span class="li-value">14</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Truffle Shuffle
+                        </span>
+                        <span class="li-value">12</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Marauding Nomads
+                        </span>
+                        <span class="li-value">10</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Dominators
+                        </span>
+                        <span class="li-value">10</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Wolves
+                        </span>
+                        <span class="li-value">8</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Don&#39;t Tase Me Bro
+                        </span>
+                        <span class="li-value">8</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Fighting Calrissians
+                        </span>
+                        <span class="li-value">7</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            TD Matrix
+                        </span>
+                        <span class="li-value">6</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Just Too Lucky
+                        </span>
+                        <span class="li-value">6</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            A-Team
+                        </span>
+                        <span class="li-value">4</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Phantoms
+                        </span>
+                        <span class="li-value">4</span>
+                    </span>
+                </li>
+        </ol>
+    </div>
 </body>
 </html>

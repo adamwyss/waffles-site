@@ -1,88 +1,216 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .main-container {
+            width: 60%;
+            background: #fff;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .team-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .team-meta {
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .other-names {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 1em;
+        }
+
+        .record-section {
+            margin-bottom: 1em;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .headtohead-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f9f9f9;
+            margin-bottom: 1.5em;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+            .headtohead-table th, .headtohead-table td {
+                padding: 0.5em 1em;
+                border-bottom: 1px solid #e0e0e0;
+                text-align: left;
+            }
+
+            .headtohead-table th {
+                background: #f1f3f4;
+                font-weight: bold;
+            }
+
+            .headtohead-table tr:last-child td {
+                border-bottom: none;
+            }
+
+        .season-title {
+            font-weight: bold;
+        }
+
+        .game-details {
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
+</head>
 <body>
-    <p>Jake Frauenholtz</p>
+    <div class="main-container">
+        <div class="team-header">Baldwin on a Budget</div>
+        <div class="team-meta">
+            Coach: Jake Frauenholtz<br />
+                <span>(2019)</span>
+        </div>
+        <div class="record-section">
+            <div>Record: <strong>8 - 6</strong> (0.571)</div>
+            <div>Playoffs: <strong>0 - 1</strong> (0.000)</div>
+        </div>
 
-<p>Baldwin on a Budget 
-    (2019)
-<br/>
-</p>
+        <div class="section-title">Head to Head:</div>
+        <table class="headtohead-table">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Head-to-head Record</th>
+                    <th>Percentage</th>
+                    <th>Playoff Head-to-head</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Phantoms</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>X-Factor</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Speed Demons</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Team Bean</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                                <span>0-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marauding Nomads</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>The TecmoBowlers</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Just Too Lucky</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sporky&#39;s Revenge</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Koothrapaulli Browns</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rocky Mountain Oysters</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Truffle Shuffle</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
 
-    <p>Record: 8 - 6 (0.571)</p>
-    <p>Playoffs: 0 - 1 (0.000)</p>
-
-<p>Head to Head:</p>
-<ul>
-        <li>Phantoms
-            2-0 1.000
-
-        </li>
-        <li>X-Factor
-            2-0 1.000
-
-        </li>
-        <li>Speed Demons
-            1-1 0.500
-
-        </li>
-        <li>Team Bean
-            0-1 0.000
-
-                (0 - 1)
-        </li>
-        <li>Marauding Nomads
-            0-1 0.000
-
-        </li>
-        <li>The TecmoBowlers
-            1-0 1.000
-
-        </li>
-        <li>Just Too Lucky
-            0-1 0.000
-
-        </li>
-        <li>Sporky&#39;s Revenge
-            1-0 1.000
-
-        </li>
-        <li>Koothrapaulli Browns
-            0-1 0.000
-
-        </li>
-        <li>Rocky Mountain Oysters
-            1-0 1.000
-
-        </li>
-        <li>Truffle Shuffle
-            0-1 0.000
-
-        </li>
-</ul>
-
-<p>Seasons:</p>
-<ul>
-        <li>
-            <strong>2019</strong> 8-6 <i>(0.571)</i>
-            <ol>
-                    <li>W 971-743 vs Phantoms Week 1 2019</li>
-                    <li>W 842-588 vs X-Factor Week 2 2019</li>
-                    <li>L 802-862 vs Speed Demons Week 3 2019</li>
-                    <li>L 1168-1460 vs Marauding Nomads Week 4 2019</li>
-                    <li>W 1714-1088 vs The TecmoBowlers Week 5 2019</li>
-                    <li>L 738-773 vs Just Too Lucky Week 6 2019</li>
-                    <li>W 915-743 vs Sporky&#39;s Revenge Week 7 2019</li>
-                    <li>L 691-906 vs Koothrapaulli Browns Week 8 2019</li>
-                    <li>W 834-781 vs Rocky Mountain Oysters Week 9 2019</li>
-                    <li>L 321-1395 vs Truffle Shuffle Week 10 2019</li>
-                    <li>L 458-973 vs Team Bean Week 11 2019</li>
-                    <li>W 638-599 vs Phantoms Week 12 2019</li>
-                    <li>W 1005-995 vs X-Factor Week 13 2019</li>
-                    <li>W 497-208 vs Speed Demons Week 14 2019</li>
-                    <li>L 886-1064 vs Team Bean Wild Card Week 2019</li>
-            </ol>
-        </li>
-</ul>
-
+        <div class="section-title">Seasons:</div>
+        <ul>
+                <li>
+                    <span class="season-title">2019</span>
+                    <span> 8-6 <i>(0.571)</i></span>
+                    <ol>
+                            <li class="game-details">W 971-743 vs Phantoms Week 1 2019</li>
+                            <li class="game-details">W 842-588 vs X-Factor Week 2 2019</li>
+                            <li class="game-details">L 802-862 vs Speed Demons Week 3 2019</li>
+                            <li class="game-details">L 1168-1460 vs Marauding Nomads Week 4 2019</li>
+                            <li class="game-details">W 1714-1088 vs The TecmoBowlers Week 5 2019</li>
+                            <li class="game-details">L 738-773 vs Just Too Lucky Week 6 2019</li>
+                            <li class="game-details">W 915-743 vs Sporky&#39;s Revenge Week 7 2019</li>
+                            <li class="game-details">L 691-906 vs Koothrapaulli Browns Week 8 2019</li>
+                            <li class="game-details">W 834-781 vs Rocky Mountain Oysters Week 9 2019</li>
+                            <li class="game-details">L 321-1395 vs Truffle Shuffle Week 10 2019</li>
+                            <li class="game-details">L 458-973 vs Team Bean Week 11 2019</li>
+                            <li class="game-details">W 638-599 vs Phantoms Week 12 2019</li>
+                            <li class="game-details">W 1005-995 vs X-Factor Week 13 2019</li>
+                            <li class="game-details">W 497-208 vs Speed Demons Week 14 2019</li>
+                            <li class="game-details">L 886-1064 vs Team Bean Wild Card Week 2019</li>
+                    </ol>
+                </li>
+        </ul>
+    </div>
 </body>
 </html>

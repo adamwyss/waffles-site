@@ -1,37 +1,226 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .summary-container {
+            width: 60%;
+            margin: 0 auto 0.5em auto;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .centered-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+            width: 100%;
+        }
+
+        ol {
+            width: 60%;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        li {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 0.5em 0;
+        }
+
+            li:last-child {
+                border-bottom: none;
+            }
+
+        .li-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .li-name {
+            text-align: left;
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .li-week {
+            margin-left: 1.5em;
+            font-size: 0.95em;
+            color: #888;
+            font-weight: normal;
+            opacity: 0.85;
+        }
+
+        .li-value {
+            text-align: right;
+            min-width: 80px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        h2, i {
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
-
-<h2>WorstSingleGameScores</h2>
-<i></i>
-
-<ol>
-        <li>69 Monica Loves Clinton Dix Week 9 2017</li>
-        <li>96 Spokanites Week 9 2002</li>
-        <li>99 Wishbone Week 8 2007</li>
-        <li>175 Spartans Week 4 2004</li>
-        <li>177 Wolfins Week 6 2007</li>
-        <li>198 Drunken Squirrels Week 9 2005</li>
-        <li>198 McBoo Week 10 2008</li>
-        <li>201 Rocky Mountain Oysters Week 11 1997</li>
-        <li>208 Speed Demons Week 14 2019</li>
-        <li>214 Brawlers II Week 8 2003</li>
-        <li>215 Team Bean Week 10 2002</li>
-        <li>220 Red Raiders Week 14 2000</li>
-        <li>221 Fighting Calrissians Week 5 2015</li>
-        <li>223 Fighting Calrissians Week 11 2004</li>
-        <li>224 Sporky&#39;s Revenge Wild Card Week 2014</li>
-        <li>226 Phantoms Week 11 2021</li>
-        <li>228 TD Matrix Week 10 2007</li>
-        <li>228 Truffle Shuffle Week 11 2022</li>
-        <li>230 Demons Week 7 2002</li>
-        <li>235 Anayalaters Week 7 2007</li>
-        <li>251 Team Bean Week 9 2013</li>
-        <li>252 Stormtroopers Week 13 2005</li>
-        <li>252 Phantoms Week 4 2007</li>
-        <li>254 Ultracogs Week 10 2018</li>
-        <li>256 Monica Loves Clinton Dix Week 5 2017</li>
-</ol>
-
+    <h2>Single Game Low Scores</h2>
+    <div class="summary-container">
+        <i>Not every game is a shootout. These are the lowest scoring performances, where defenses reigned and points were hard to come by!</i>
+    </div>
+    <div class="centered-list">
+        <ol>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Monica Loves Clinton Dix
+                            <span class="li-week">Week 9 2017</span>
+                        </span>
+                        <span class="li-value">69</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Spokanites
+                            <span class="li-week">Week 9 2002</span>
+                        </span>
+                        <span class="li-value">96</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Wishbone
+                            <span class="li-week">Week 8 2007</span>
+                        </span>
+                        <span class="li-value">99</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Spartans
+                            <span class="li-week">Week 4 2004</span>
+                        </span>
+                        <span class="li-value">175</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Wolfins
+                            <span class="li-week">Week 6 2007</span>
+                        </span>
+                        <span class="li-value">177</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Drunken Squirrels
+                            <span class="li-week">Week 9 2005</span>
+                        </span>
+                        <span class="li-value">198</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            McBoo
+                            <span class="li-week">Week 10 2008</span>
+                        </span>
+                        <span class="li-value">198</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Rocky Mountain Oysters
+                            <span class="li-week">Week 11 1997</span>
+                        </span>
+                        <span class="li-value">201</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Speed Demons
+                            <span class="li-week">Week 14 2019</span>
+                        </span>
+                        <span class="li-value">208</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Brawlers II
+                            <span class="li-week">Week 8 2003</span>
+                        </span>
+                        <span class="li-value">214</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Team Bean
+                            <span class="li-week">Week 10 2002</span>
+                        </span>
+                        <span class="li-value">215</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Red Raiders
+                            <span class="li-week">Week 14 2000</span>
+                        </span>
+                        <span class="li-value">220</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Fighting Calrissians
+                            <span class="li-week">Week 5 2015</span>
+                        </span>
+                        <span class="li-value">221</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Fighting Calrissians
+                            <span class="li-week">Week 11 2004</span>
+                        </span>
+                        <span class="li-value">223</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Sporky&#39;s Revenge
+                            <span class="li-week">Wild Card Week 2014</span>
+                        </span>
+                        <span class="li-value">224</span>
+                    </span>
+                </li>
+        </ol>
+    </div>
 </body>
 </html>

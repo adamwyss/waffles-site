@@ -1,86 +1,214 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .main-container {
+            width: 60%;
+            background: #fff;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .team-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .team-meta {
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .other-names {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 1em;
+        }
+
+        .record-section {
+            margin-bottom: 1em;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .headtohead-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f9f9f9;
+            margin-bottom: 1.5em;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+            .headtohead-table th, .headtohead-table td {
+                padding: 0.5em 1em;
+                border-bottom: 1px solid #e0e0e0;
+                text-align: left;
+            }
+
+            .headtohead-table th {
+                background: #f1f3f4;
+                font-weight: bold;
+            }
+
+            .headtohead-table tr:last-child td {
+                border-bottom: none;
+            }
+
+        .season-title {
+            font-weight: bold;
+        }
+
+        .game-details {
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
+</head>
 <body>
-    <p>Patrick Simmons</p>
+    <div class="main-container">
+        <div class="team-header">Krypteia</div>
+        <div class="team-meta">
+            Coach: Patrick Simmons<br />
+                <span>(2020)</span>
+        </div>
+        <div class="record-section">
+            <div>Record: <strong>8 - 6</strong> (0.571)</div>
+            <div>Playoffs: <strong>0 - 0</strong> (NaN)</div>
+        </div>
 
-<p>Krypteia 
-    (2020)
-<br/>
-</p>
+        <div class="section-title">Head to Head:</div>
+        <table class="headtohead-table">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Head-to-head Record</th>
+                    <th>Percentage</th>
+                    <th>Playoff Head-to-head</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Phantoms</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Speed Demons</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fish On</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Truffle Shuffle</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>The TecmoBowlers</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dominators</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bayou Boys</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ultracogs</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wolves</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marauding Nomads</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Team Bean</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
 
-    <p>Record: 8 - 6 (0.571)</p>
-    <p>Playoffs: 0 - 0 (NaN)</p>
-
-<p>Head to Head:</p>
-<ul>
-        <li>Phantoms
-            2-0 1.000
-
-        </li>
-        <li>Speed Demons
-            1-1 0.500
-
-        </li>
-        <li>Fish On
-            1-1 0.500
-
-        </li>
-        <li>Truffle Shuffle
-            0-1 0.000
-
-        </li>
-        <li>The TecmoBowlers
-            0-1 0.000
-
-        </li>
-        <li>Dominators
-            1-0 1.000
-
-        </li>
-        <li>Bayou Boys
-            0-1 0.000
-
-        </li>
-        <li>Ultracogs
-            1-0 1.000
-
-        </li>
-        <li>Wolves
-            1-0 1.000
-
-        </li>
-        <li>Marauding Nomads
-            0-1 0.000
-
-        </li>
-        <li>Team Bean
-            1-0 1.000
-
-        </li>
-</ul>
-
-<p>Seasons:</p>
-<ul>
-        <li>
-            <strong>2020</strong> 8-6 <i>(0.571)</i>
-            <ol>
-                    <li>W 1356-696 vs Phantoms Week 1 2020</li>
-                    <li>L 915-1044 vs Speed Demons Week 2 2020</li>
-                    <li>L 1131-1275 vs Fish On Week 3 2020</li>
-                    <li>L 1048-1055 vs Truffle Shuffle Week 4 2020</li>
-                    <li>L 620-943 vs The TecmoBowlers Week 5 2020</li>
-                    <li>W 1260-489 vs Dominators Week 6 2020</li>
-                    <li>L 796-898 vs Bayou Boys Week 7 2020</li>
-                    <li>W 807-675 vs Ultracogs Week 8 2020</li>
-                    <li>W 697-583 vs Wolves Week 9 2020</li>
-                    <li>L 716-852 vs Marauding Nomads Week 10 2020</li>
-                    <li>W 711-640 vs Team Bean Week 11 2020</li>
-                    <li>W 1010-999 vs Fish On Week 12 2020</li>
-                    <li>W 1051-779 vs Speed Demons Week 13 2020</li>
-                    <li>W 1078-691 vs Phantoms Week 14 2020</li>
-            </ol>
-        </li>
-</ul>
-
+        <div class="section-title">Seasons:</div>
+        <ul>
+                <li>
+                    <span class="season-title">2020</span>
+                    <span> 8-6 <i>(0.571)</i></span>
+                    <ol>
+                            <li class="game-details">W 1356-696 vs Phantoms Week 1 2020</li>
+                            <li class="game-details">L 915-1044 vs Speed Demons Week 2 2020</li>
+                            <li class="game-details">L 1131-1275 vs Fish On Week 3 2020</li>
+                            <li class="game-details">L 1048-1055 vs Truffle Shuffle Week 4 2020</li>
+                            <li class="game-details">L 620-943 vs The TecmoBowlers Week 5 2020</li>
+                            <li class="game-details">W 1260-489 vs Dominators Week 6 2020</li>
+                            <li class="game-details">L 796-898 vs Bayou Boys Week 7 2020</li>
+                            <li class="game-details">W 807-675 vs Ultracogs Week 8 2020</li>
+                            <li class="game-details">W 697-583 vs Wolves Week 9 2020</li>
+                            <li class="game-details">L 716-852 vs Marauding Nomads Week 10 2020</li>
+                            <li class="game-details">W 711-640 vs Team Bean Week 11 2020</li>
+                            <li class="game-details">W 1010-999 vs Fish On Week 12 2020</li>
+                            <li class="game-details">W 1051-779 vs Speed Demons Week 13 2020</li>
+                            <li class="game-details">W 1078-691 vs Phantoms Week 14 2020</li>
+                    </ol>
+                </li>
+        </ul>
+    </div>
 </body>
 </html>

@@ -1,92 +1,271 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .main-container {
+            width: 60%;
+            background: #fff;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .team-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .team-meta {
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .other-names {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 1em;
+        }
+
+        .record-section {
+            margin-bottom: 1em;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .headtohead-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f9f9f9;
+            margin-bottom: 1.5em;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+            .headtohead-table th, .headtohead-table td {
+                padding: 0.5em 1em;
+                border-bottom: 1px solid #e0e0e0;
+                text-align: left;
+            }
+
+            .headtohead-table th {
+                background: #f1f3f4;
+                font-weight: bold;
+            }
+
+            .headtohead-table tr:last-child td {
+                border-bottom: none;
+            }
+
+        .season-title {
+            font-weight: bold;
+        }
+
+        .game-details {
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
+</head>
 <body>
-    <p>David Machado</p>
+    <div class="main-container">
+        <div class="team-header">Fantasy Cognoscenti</div>
+        <div class="team-meta">
+            Coach: David Machado<br />
+                <span>(2023 - 2024)</span>
+        </div>
+        <div class="record-section">
+            <div>Record: <strong>16 - 12</strong> (0.571)</div>
+            <div>Playoffs: <strong>4 - 1</strong> (0.800)</div>
+        </div>
 
-<p>Fantasy Cognoscenti 
-    (2023)
-<br/>
-</p>
+        <div class="section-title">Head to Head:</div>
+        <table class="headtohead-table">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Head-to-head Record</th>
+                    <th>Percentage</th>
+                    <th>Playoff Head-to-head</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Speed Demons</td>
+                        <td>1-3</td>
+                        <td>0.250</td>
+                        <td>
+                                <span>1-0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phantoms</td>
+                        <td>1-3</td>
+                        <td>0.250</td>
+                        <td>
+                                <span>1-0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Low Expectations</td>
+                        <td>3-1</td>
+                        <td>0.750</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Truffle Shuffle</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                                <span>1-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marauding Nomads</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Team Bean</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rocky Mountain Oysters</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                                <span>1-0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>The TecmoBowlers</td>
+                        <td>0-2</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Just Too Lucky</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sporky&#39;s Revenge</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Koothrapaulli Browns</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ultracogs</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wolves</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dominators</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bayou Boys</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
 
-    <p>Record: 8 - 6 (0.571)</p>
-    <p>Playoffs: 3 - 0 (1.000)</p>
-
-<p>Head to Head:</p>
-<ul>
-        <li>Speed Demons
-            1-1 0.500
-
-                (1 - 0)
-        </li>
-        <li>Phantoms
-            1-1 0.500
-
-                (1 - 0)
-        </li>
-        <li>Low Expectations
-            2-0 1.000
-
-        </li>
-        <li>Truffle Shuffle
-            1-0 1.000
-
-                (1 - 0)
-        </li>
-        <li>Marauding Nomads
-            1-0 1.000
-
-        </li>
-        <li>Team Bean
-            0-1 0.000
-
-        </li>
-        <li>Just Too Lucky
-            0-1 0.000
-
-        </li>
-        <li>Rocky Mountain Oysters
-            1-0 1.000
-
-        </li>
-        <li>Sporky&#39;s Revenge
-            0-1 0.000
-
-        </li>
-        <li>Koothrapaulli Browns
-            1-0 1.000
-
-        </li>
-        <li>The TecmoBowlers
-            0-1 0.000
-
-        </li>
-</ul>
-
-<p>Seasons:</p>
-<ul>
-        <li>
-            <strong>2023</strong> 8-6 <i>(0.571)</i>
-            <ol>
-                    <li>W 568-548 vs Low Expectations Week 1 2023</li>
-                    <li>L 1006-1045 vs Speed Demons Week 2 2023</li>
-                    <li>L 1053-1111 vs Phantoms Week 3 2023</li>
-                    <li>W 1112-615 vs Marauding Nomads Week 4 2023</li>
-                    <li>L 627-711 vs Team Bean Week 5 2023</li>
-                    <li>L 663-706 vs Just Too Lucky Week 6 2023</li>
-                    <li>W 826-680 vs Rocky Mountain Oysters Week 7 2023</li>
-                    <li>L 1070-1122 vs Sporky&#39;s Revenge Week 8 2023</li>
-                    <li>W 606-522 vs Koothrapaulli Browns Week 9 2023</li>
-                    <li>W 904-872 vs Truffle Shuffle Week 10 2023</li>
-                    <li>L 702-1167 vs The TecmoBowlers Week 11 2023</li>
-                    <li>W 936-659 vs Phantoms Week 12 2023</li>
-                    <li>W 968-909 vs Speed Demons Week 13 2023</li>
-                    <li>W 1187-383 vs Low Expectations Week 14 2023</li>
-                    <li>W 973-594 vs Phantoms Wild Card Week 2023</li>
-                    <li>W 1273-766 vs Truffle Shuffle Divisional Week 2023</li>
-                    <li>W 866-652 vs Speed Demons Conference Championship 2023</li>
-            </ol>
-        </li>
-</ul>
-
+        <div class="section-title">Seasons:</div>
+        <ul>
+                <li>
+                    <span class="season-title">2024</span>
+                    <span> 8-6 <i>(0.571)</i></span>
+                    <ol>
+                            <li class="game-details">L 851-939 vs Speed Demons Week 1 2024</li>
+                            <li class="game-details">W 1087-1041 vs Low Expectations Week 2 2024</li>
+                            <li class="game-details">L 637-664 vs Phantoms Week 3 2024</li>
+                            <li class="game-details">L 580-703 vs The TecmoBowlers Week 4 2024</li>
+                            <li class="game-details">W 982-858 vs Truffle Shuffle Week 5 2024</li>
+                            <li class="game-details">W 840-791 vs Ultracogs Week 6 2024</li>
+                            <li class="game-details">W 1024-876 vs Wolves Week 7 2024</li>
+                            <li class="game-details">W 903-722 vs Dominators Week 8 2024</li>
+                            <li class="game-details">W 1307-762 vs Bayou Boys Week 9 2024</li>
+                            <li class="game-details">W 876-692 vs Marauding Nomads Week 10 2024</li>
+                            <li class="game-details">W 853-814 vs Team Bean Week 11 2024</li>
+                            <li class="game-details">L 976-990 vs Phantoms Week 12 2024</li>
+                            <li class="game-details">L 979-1002 vs Low Expectations Week 13 2024</li>
+                            <li class="game-details">L 904-1029 vs Speed Demons Week 14 2024</li>
+                            <li class="game-details">L 895-1372 vs Truffle Shuffle Wild Card Week 2024</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2023</span>
+                    <span> 8-6 <i>(0.571)</i></span>
+                    <ol>
+                            <li class="game-details">W 568-548 vs Low Expectations Week 1 2023</li>
+                            <li class="game-details">L 1006-1045 vs Speed Demons Week 2 2023</li>
+                            <li class="game-details">L 1053-1111 vs Phantoms Week 3 2023</li>
+                            <li class="game-details">W 1112-615 vs Marauding Nomads Week 4 2023</li>
+                            <li class="game-details">L 627-711 vs Team Bean Week 5 2023</li>
+                            <li class="game-details">L 663-706 vs Just Too Lucky Week 6 2023</li>
+                            <li class="game-details">W 826-680 vs Rocky Mountain Oysters Week 7 2023</li>
+                            <li class="game-details">L 1070-1122 vs Sporky&#39;s Revenge Week 8 2023</li>
+                            <li class="game-details">W 606-522 vs Koothrapaulli Browns Week 9 2023</li>
+                            <li class="game-details">W 904-872 vs Truffle Shuffle Week 10 2023</li>
+                            <li class="game-details">L 702-1167 vs The TecmoBowlers Week 11 2023</li>
+                            <li class="game-details">W 936-659 vs Phantoms Week 12 2023</li>
+                            <li class="game-details">W 968-909 vs Speed Demons Week 13 2023</li>
+                            <li class="game-details">W 1187-383 vs Low Expectations Week 14 2023</li>
+                            <li class="game-details">W 973-594 vs Phantoms Wild Card Week 2023</li>
+                            <li class="game-details">W 1273-766 vs Truffle Shuffle Divisional Week 2023</li>
+                            <li class="game-details">W 866-652 vs Speed Demons Conference Championship 2023</li>
+                            <li class="game-details">W 1422-958 vs Rocky Mountain Oysters Fantasy Bowl XXVIII 2023</li>
+                    </ol>
+                </li>
+        </ul>
+    </div>
 </body>
 </html>

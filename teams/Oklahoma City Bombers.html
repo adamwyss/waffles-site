@@ -1,78 +1,200 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .main-container {
+            width: 60%;
+            background: #fff;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .team-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .team-meta {
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .other-names {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 1em;
+        }
+
+        .record-section {
+            margin-bottom: 1em;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .headtohead-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f9f9f9;
+            margin-bottom: 1.5em;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+            .headtohead-table th, .headtohead-table td {
+                padding: 0.5em 1em;
+                border-bottom: 1px solid #e0e0e0;
+                text-align: left;
+            }
+
+            .headtohead-table th {
+                background: #f1f3f4;
+                font-weight: bold;
+            }
+
+            .headtohead-table tr:last-child td {
+                border-bottom: none;
+            }
+
+        .season-title {
+            font-weight: bold;
+        }
+
+        .game-details {
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
+</head>
 <body>
-    <p>Chris Pilon</p>
+    <div class="main-container">
+        <div class="team-header">Oklahoma City Bombers</div>
+        <div class="team-meta">
+            Coach: Chris Pilon<br />
+                <span>(1997)</span>
+        </div>
+        <div class="record-section">
+            <div>Record: <strong>7 - 7</strong> (0.500)</div>
+            <div>Playoffs: <strong>0 - 0</strong> (NaN)</div>
+        </div>
 
-<p>Oklahoma City Bombers 
-    (1997)
-<br/>
-</p>
+        <div class="section-title">Head to Head:</div>
+        <table class="headtohead-table">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Head-to-head Record</th>
+                    <th>Percentage</th>
+                    <th>Playoff Head-to-head</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>M&amp;M Connection</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rocky Mountain Oysters</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marauding Nomads</td>
+                        <td>0-2</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-Team</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Erasers</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Procrastinators</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nonoxynol Nightmares</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nick Baker&#39;s Touchdown Makers</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Big Daddy Spanks</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
 
-    <p>Record: 7 - 7 (0.500)</p>
-    <p>Playoffs: 0 - 0 (NaN)</p>
-
-<p>Head to Head:</p>
-<ul>
-        <li>M&amp;M Connection
-            1-1 0.500
-
-        </li>
-        <li>Rocky Mountain Oysters
-            2-0 1.000
-
-        </li>
-        <li>Marauding Nomads
-            0-2 0.000
-
-        </li>
-        <li>A-Team
-            1-1 0.500
-
-        </li>
-        <li>Erasers
-            1-1 0.500
-
-        </li>
-        <li>Procrastinators
-            0-1 0.000
-
-        </li>
-        <li>Nonoxynol Nightmares
-            1-0 1.000
-
-        </li>
-        <li>Nick Baker&#39;s Touchdown Makers
-            1-0 1.000
-
-        </li>
-        <li>Big Daddy Spanks
-            0-1 0.000
-
-        </li>
-</ul>
-
-<p>Seasons:</p>
-<ul>
-        <li>
-            <strong>1997</strong> 7-7 <i>(0.500)</i>
-            <ol>
-                    <li>W 748-680 vs M&amp;M Connection Week 1 1997</li>
-                    <li>W 770-674 vs Rocky Mountain Oysters Week 2 1997</li>
-                    <li>L 751-752 vs Marauding Nomads Week 3 1997</li>
-                    <li>W 1211-648 vs A-Team Week 4 1997</li>
-                    <li>L 714-885 vs Erasers Week 5 1997</li>
-                    <li>L 687-890 vs Procrastinators Week 6 1997</li>
-                    <li>W 866-732 vs Nonoxynol Nightmares Week 7 1997</li>
-                    <li>W 789-700 vs Nick Baker&#39;s Touchdown Makers Week 8 1997</li>
-                    <li>L 515-889 vs Big Daddy Spanks Week 9 1997</li>
-                    <li>L 847-1020 vs M&amp;M Connection Week 10 1997</li>
-                    <li>W 726-201 vs Rocky Mountain Oysters Week 11 1997</li>
-                    <li>L 747-778 vs Marauding Nomads Week 12 1997</li>
-                    <li>L 775-1284 vs A-Team Week 13 1997</li>
-                    <li>W 893-485 vs Erasers Week 14 1997</li>
-            </ol>
-        </li>
-</ul>
-
+        <div class="section-title">Seasons:</div>
+        <ul>
+                <li>
+                    <span class="season-title">1997</span>
+                    <span> 7-7 <i>(0.500)</i></span>
+                    <ol>
+                            <li class="game-details">W 748-680 vs M&amp;M Connection Week 1 1997</li>
+                            <li class="game-details">W 770-674 vs Rocky Mountain Oysters Week 2 1997</li>
+                            <li class="game-details">L 751-752 vs Marauding Nomads Week 3 1997</li>
+                            <li class="game-details">W 1211-648 vs A-Team Week 4 1997</li>
+                            <li class="game-details">L 714-885 vs Erasers Week 5 1997</li>
+                            <li class="game-details">L 687-890 vs Procrastinators Week 6 1997</li>
+                            <li class="game-details">W 866-732 vs Nonoxynol Nightmares Week 7 1997</li>
+                            <li class="game-details">W 789-700 vs Nick Baker&#39;s Touchdown Makers Week 8 1997</li>
+                            <li class="game-details">L 515-889 vs Big Daddy Spanks Week 9 1997</li>
+                            <li class="game-details">L 847-1020 vs M&amp;M Connection Week 10 1997</li>
+                            <li class="game-details">W 726-201 vs Rocky Mountain Oysters Week 11 1997</li>
+                            <li class="game-details">L 747-778 vs Marauding Nomads Week 12 1997</li>
+                            <li class="game-details">L 775-1284 vs A-Team Week 13 1997</li>
+                            <li class="game-details">W 893-485 vs Erasers Week 14 1997</li>
+                    </ol>
+                </li>
+        </ul>
+    </div>
 </body>
 </html>

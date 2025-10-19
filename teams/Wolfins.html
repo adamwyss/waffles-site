@@ -1,131 +1,278 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .main-container {
+            width: 60%;
+            background: #fff;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .team-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .team-meta {
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .other-names {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 1em;
+        }
+
+        .record-section {
+            margin-bottom: 1em;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .headtohead-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f9f9f9;
+            margin-bottom: 1.5em;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+            .headtohead-table th, .headtohead-table td {
+                padding: 0.5em 1em;
+                border-bottom: 1px solid #e0e0e0;
+                text-align: left;
+            }
+
+            .headtohead-table th {
+                background: #f1f3f4;
+                font-weight: bold;
+            }
+
+            .headtohead-table tr:last-child td {
+                border-bottom: none;
+            }
+
+        .season-title {
+            font-weight: bold;
+        }
+
+        .game-details {
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
+</head>
 <body>
-    <p>Chris Crockett &amp; Tom Allanson</p>
+    <div class="main-container">
+        <div class="team-header">Wolfins</div>
+        <div class="team-meta">
+            Coach: Chris Crockett &amp; Tom Allanson<br />
+                <span>(2006 - 2007)</span>
+        </div>
+        <div class="record-section">
+            <div>Record: <strong>13 - 15</strong> (0.464)</div>
+            <div>Playoffs: <strong>0 - 1</strong> (0.000)</div>
+        </div>
 
-<p>Wolfins 
-    (2006 - 2007)
-<br/>
-</p>
+        <div class="section-title">Head to Head:</div>
+        <table class="headtohead-table">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Head-to-head Record</th>
+                    <th>Percentage</th>
+                    <th>Playoff Head-to-head</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Team Bean</td>
+                        <td>2-1</td>
+                        <td>0.667</td>
+                        <td>
+                                <span>0-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ultracogs</td>
+                        <td>2-1</td>
+                        <td>0.667</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marauding Nomads</td>
+                        <td>1-2</td>
+                        <td>0.333</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Red Raiders</td>
+                        <td>1-2</td>
+                        <td>0.333</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Overpaid Crybabies</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wolves</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Anayalaters</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Drunken Squirrels</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dominators</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sporky&#39;s Revenge</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bayou Boys</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Everett Eternals</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fighting Calrissians</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phantoms</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rocky Mountain Oysters</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wishbone</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>TD Matrix</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
 
-    <p>Record: 13 - 15 (0.464)</p>
-    <p>Playoffs: 0 - 1 (0.000)</p>
-
-<p>Head to Head:</p>
-<ul>
-        <li>Team Bean
-            2-1 0.667
-
-                (0 - 1)
-        </li>
-        <li>Ultracogs
-            2-1 0.667
-
-        </li>
-        <li>Marauding Nomads
-            1-2 0.333
-
-        </li>
-        <li>Red Raiders
-            1-2 0.333
-
-        </li>
-        <li>Overpaid Crybabies
-            1-1 0.500
-
-        </li>
-        <li>Bayou Boys
-            0-2 0.000
-
-        </li>
-        <li>Anayalaters
-            1-1 0.500
-
-        </li>
-        <li>Drunken Squirrels
-            0-1 0.000
-
-        </li>
-        <li>Dominators
-            1-0 1.000
-
-        </li>
-        <li>Sporky&#39;s Revenge
-            1-0 1.000
-
-        </li>
-        <li>Wolves
-            1-0 1.000
-
-        </li>
-        <li>Everett Eternals
-            1-0 1.000
-
-        </li>
-        <li>Fighting Calrissians
-            0-1 0.000
-
-        </li>
-        <li>Phantoms
-            1-0 1.000
-
-        </li>
-        <li>Rocky Mountain Oysters
-            0-1 0.000
-
-        </li>
-        <li>Wishbone
-            0-1 0.000
-
-        </li>
-        <li>TD Matrix
-            0-1 0.000
-
-        </li>
-</ul>
-
-<p>Seasons:</p>
-<ul>
-        <li>
-            <strong>2007</strong> 2-12 <i>(0.143)</i>
-            <ol>
-                    <li>L 496-502 vs Red Raiders Week 1 2007</li>
-                    <li>L 784-941 vs Marauding Nomads Week 2 2007</li>
-                    <li>L 437-676 vs Anayalaters Week 3 2007</li>
-                    <li>L 673-955 vs Fighting Calrissians Week 4 2007</li>
-                    <li>L 342-416 vs Team Bean Week 5 2007</li>
-                    <li>L 177-443 vs Bayou Boys Week 6 2007</li>
-                    <li>W 1045-405 vs Phantoms Week 7 2007</li>
-                    <li>L 829-1091 vs Rocky Mountain Oysters Week 8 2007</li>
-                    <li>L 859-1057 vs Wishbone Week 9 2007</li>
-                    <li>L 517-755 vs Ultracogs Week 10 2007</li>
-                    <li>L 287-854 vs TD Matrix Week 11 2007</li>
-                    <li>L 538-677 vs Red Raiders Week 12 2007</li>
-                    <li>L 652-802 vs Marauding Nomads Week 13 2007</li>
-                    <li>W 1216-504 vs Anayalaters Week 14 2007</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2006</strong> 11-3 <i>(0.786)</i>
-            <ol>
-                    <li>W 1088-675 vs Team Bean Week 1 2006</li>
-                    <li>W 1046-955 vs Overpaid Crybabies Week 2 2006</li>
-                    <li>W 1200-703 vs Ultracogs Week 3 2006</li>
-                    <li>L 1003-1143 vs Drunken Squirrels Week 4 2006</li>
-                    <li>W 1016-876 vs Marauding Nomads Week 5 2006</li>
-                    <li>W 1167-691 vs Red Raiders Week 6 2006</li>
-                    <li>W 723-590 vs Dominators Week 7 2006</li>
-                    <li>W 412-391 vs Sporky&#39;s Revenge Week 8 2006</li>
-                    <li>L 391-761 vs Bayou Boys Week 9 2006</li>
-                    <li>W 937-375 vs Wolves Week 10 2006</li>
-                    <li>W 752-421 vs Everett Eternals Week 11 2006</li>
-                    <li>W 1070-737 vs Team Bean Week 12 2006</li>
-                    <li>L 782-1338 vs Overpaid Crybabies Week 13 2006</li>
-                    <li>W 725-281 vs Ultracogs Week 14 2006</li>
-                    <li>L 1022-1174 vs Team Bean Wild Card Week 2006</li>
-            </ol>
-        </li>
-</ul>
-
+        <div class="section-title">Seasons:</div>
+        <ul>
+                <li>
+                    <span class="season-title">2007</span>
+                    <span> 2-12 <i>(0.143)</i></span>
+                    <ol>
+                            <li class="game-details">L 496-502 vs Red Raiders Week 1 2007</li>
+                            <li class="game-details">L 784-941 vs Marauding Nomads Week 2 2007</li>
+                            <li class="game-details">L 437-676 vs Anayalaters Week 3 2007</li>
+                            <li class="game-details">L 673-955 vs Fighting Calrissians Week 4 2007</li>
+                            <li class="game-details">L 342-416 vs Team Bean Week 5 2007</li>
+                            <li class="game-details">L 177-443 vs Wolves Week 6 2007</li>
+                            <li class="game-details">W 1045-405 vs Phantoms Week 7 2007</li>
+                            <li class="game-details">L 829-1091 vs Rocky Mountain Oysters Week 8 2007</li>
+                            <li class="game-details">L 859-1057 vs Wishbone Week 9 2007</li>
+                            <li class="game-details">L 517-755 vs Ultracogs Week 10 2007</li>
+                            <li class="game-details">L 287-854 vs TD Matrix Week 11 2007</li>
+                            <li class="game-details">L 538-677 vs Red Raiders Week 12 2007</li>
+                            <li class="game-details">L 652-802 vs Marauding Nomads Week 13 2007</li>
+                            <li class="game-details">W 1216-504 vs Anayalaters Week 14 2007</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2006</span>
+                    <span> 11-3 <i>(0.786)</i></span>
+                    <ol>
+                            <li class="game-details">W 1088-675 vs Team Bean Week 1 2006</li>
+                            <li class="game-details">W 1046-955 vs Overpaid Crybabies Week 2 2006</li>
+                            <li class="game-details">W 1200-703 vs Ultracogs Week 3 2006</li>
+                            <li class="game-details">L 1003-1143 vs Drunken Squirrels Week 4 2006</li>
+                            <li class="game-details">W 1016-876 vs Marauding Nomads Week 5 2006</li>
+                            <li class="game-details">W 1167-691 vs Red Raiders Week 6 2006</li>
+                            <li class="game-details">W 723-590 vs Dominators Week 7 2006</li>
+                            <li class="game-details">W 412-391 vs Sporky&#39;s Revenge Week 8 2006</li>
+                            <li class="game-details">L 391-761 vs Bayou Boys Week 9 2006</li>
+                            <li class="game-details">W 937-375 vs Wolves Week 10 2006</li>
+                            <li class="game-details">W 752-421 vs Everett Eternals Week 11 2006</li>
+                            <li class="game-details">W 1070-737 vs Team Bean Week 12 2006</li>
+                            <li class="game-details">L 782-1338 vs Overpaid Crybabies Week 13 2006</li>
+                            <li class="game-details">W 725-281 vs Ultracogs Week 14 2006</li>
+                            <li class="game-details">L 1022-1174 vs Team Bean Wild Card Week 2006</li>
+                    </ol>
+                </li>
+        </ul>
+    </div>
 </body>
 </html>

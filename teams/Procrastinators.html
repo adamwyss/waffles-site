@@ -1,124 +1,262 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .main-container {
+            width: 60%;
+            background: #fff;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .team-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .team-meta {
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .other-names {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 1em;
+        }
+
+        .record-section {
+            margin-bottom: 1em;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .headtohead-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f9f9f9;
+            margin-bottom: 1.5em;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+            .headtohead-table th, .headtohead-table td {
+                padding: 0.5em 1em;
+                border-bottom: 1px solid #e0e0e0;
+                text-align: left;
+            }
+
+            .headtohead-table th {
+                background: #f1f3f4;
+                font-weight: bold;
+            }
+
+            .headtohead-table tr:last-child td {
+                border-bottom: none;
+            }
+
+        .season-title {
+            font-weight: bold;
+        }
+
+        .game-details {
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
+</head>
 <body>
-    <p>Richard Scaniffe</p>
+    <div class="main-container">
+        <div class="team-header">Procrastinators</div>
+        <div class="team-meta">
+            Coach: Richard Scaniffe<br />
+                <span>(1997 - 1998)</span>
+        </div>
+        <div class="record-section">
+            <div>Record: <strong>21 - 7</strong> (0.750)</div>
+            <div>Playoffs: <strong>3 - 1</strong> (0.750)</div>
+        </div>
 
-<p>Procrastinators 
-    (1997 - 1998)
-<br/>
-</p>
+        <div class="section-title">Head to Head:</div>
+        <table class="headtohead-table">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Head-to-head Record</th>
+                    <th>Percentage</th>
+                    <th>Playoff Head-to-head</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Anal Cleansing Technicians</td>
+                        <td>2-2</td>
+                        <td>0.500</td>
+                        <td>
+                                <span>1-0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-Team</td>
+                        <td>0-2</td>
+                        <td>0.000</td>
+                        <td>
+                                <span>1-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Big Daddy Spanks</td>
+                        <td>2-1</td>
+                        <td>0.667</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rocky Mountain Oysters</td>
+                        <td>3-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Twin Bombers</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                                <span>1-0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nick Baker&#39;s Touchdown Makers</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nonoxynol Nightmares</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Eskimoes</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Magic City Rams</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Erasers</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Oklahoma City Bombers</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marauding Nomads</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>M&amp;M Connection</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bayou Boys</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
 
-    <p>Record: 21 - 7 (0.750)</p>
-    <p>Playoffs: 3 - 1 (0.750)</p>
-
-<p>Head to Head:</p>
-<ul>
-        <li>Anal Cleansing Technicians
-            2-2 0.500
-
-                (1 - 0)
-        </li>
-        <li>A-Team
-            0-2 0.000
-
-                (1 - 1)
-        </li>
-        <li>Big Daddy Spanks
-            2-1 0.667
-
-        </li>
-        <li>Rocky Mountain Oysters
-            3-0 1.000
-
-        </li>
-        <li>Twin Bombers
-            2-0 1.000
-
-                (1 - 0)
-        </li>
-        <li>Nick Baker&#39;s Touchdown Makers
-            2-0 1.000
-
-        </li>
-        <li>Nonoxynol Nightmares
-            2-0 1.000
-
-        </li>
-        <li>Eskimoes
-            2-0 1.000
-
-        </li>
-        <li>Magic City Rams
-            2-0 1.000
-
-        </li>
-        <li>Erasers
-            2-0 1.000
-
-        </li>
-        <li>Oklahoma City Bombers
-            1-0 1.000
-
-        </li>
-        <li>Marauding Nomads
-            0-1 0.000
-
-        </li>
-        <li>M&amp;M Connection
-            0-1 0.000
-
-        </li>
-        <li>Bayou Boys
-            1-0 1.000
-
-        </li>
-</ul>
-
-<p>Seasons:</p>
-<ul>
-        <li>
-            <strong>1998</strong> 10-4 <i>(0.714)</i>
-            <ol>
-                    <li>L 624-861 vs Anal Cleansing Technicians Week 1 1998</li>
-                    <li>W 822-761 vs Magic City Rams Week 2 1998</li>
-                    <li>W 845-686 vs Rocky Mountain Oysters Week 3 1998</li>
-                    <li>W 1147-353 vs Erasers Week 4 1998</li>
-                    <li>W 1774-1001 vs Twin Bombers Week 5 1998</li>
-                    <li>L 774-793 vs M&amp;M Connection Week 6 1998</li>
-                    <li>W 850-504 vs Bayou Boys Week 7 1998</li>
-                    <li>L 510-752 vs Big Daddy Spanks Week 8 1998</li>
-                    <li>L 993-998 vs A-Team Week 9 1998</li>
-                    <li>W 931-624 vs Anal Cleansing Technicians Week 10 1998</li>
-                    <li>W 864-649 vs Magic City Rams Week 11 1998</li>
-                    <li>W 961-593 vs Rocky Mountain Oysters Week 12 1998</li>
-                    <li>W 2239-822 vs Erasers Week 13 1998</li>
-                    <li>W 930-674 vs Twin Bombers Week 14 1998</li>
-                    <li>W 910-710 vs Twin Bombers Conference Championship 1998</li>
-                    <li>L 819-993 vs A-Team Fantasy Bowl III 1998</li>
-            </ol>
-        </li>
-        <li>
-            <strong>1997</strong> 11-3 <i>(0.786)</i>
-            <ol>
-                    <li>W 1278-863 vs Nick Baker&#39;s Touchdown Makers Week 1 1997</li>
-                    <li>W 1253-514 vs Big Daddy Spanks Week 2 1997</li>
-                    <li>W 1066-819 vs Nonoxynol Nightmares Week 3 1997</li>
-                    <li>W 1715-607 vs Anal Cleansing Technicians Week 4 1997</li>
-                    <li>W 1088-882 vs Eskimoes Week 5 1997</li>
-                    <li>W 890-687 vs Oklahoma City Bombers Week 6 1997</li>
-                    <li>L 683-1170 vs Marauding Nomads Week 7 1997</li>
-                    <li>L 472-487 vs A-Team Week 8 1997</li>
-                    <li>W 1190-774 vs Rocky Mountain Oysters Week 9 1997</li>
-                    <li>W 1074-486 vs Nick Baker&#39;s Touchdown Makers Week 10 1997</li>
-                    <li>W 1061-658 vs Big Daddy Spanks Week 11 1997</li>
-                    <li>W 743-433 vs Nonoxynol Nightmares Week 12 1997</li>
-                    <li>L 813-870 vs Anal Cleansing Technicians Week 13 1997</li>
-                    <li>W 1184-661 vs Eskimoes Week 14 1997</li>
-                    <li>W 1092-980 vs Anal Cleansing Technicians Conference Championship 1997</li>
-                    <li>W 841-538 vs A-Team Fantasy Bowl II 1997</li>
-            </ol>
-        </li>
-</ul>
-
+        <div class="section-title">Seasons:</div>
+        <ul>
+                <li>
+                    <span class="season-title">1998</span>
+                    <span> 10-4 <i>(0.714)</i></span>
+                    <ol>
+                            <li class="game-details">L 624-861 vs Anal Cleansing Technicians Week 1 1998</li>
+                            <li class="game-details">W 822-761 vs Magic City Rams Week 2 1998</li>
+                            <li class="game-details">W 845-686 vs Rocky Mountain Oysters Week 3 1998</li>
+                            <li class="game-details">W 1147-353 vs Erasers Week 4 1998</li>
+                            <li class="game-details">W 1774-1001 vs Twin Bombers Week 5 1998</li>
+                            <li class="game-details">L 774-793 vs M&amp;M Connection Week 6 1998</li>
+                            <li class="game-details">W 850-504 vs Bayou Boys Week 7 1998</li>
+                            <li class="game-details">L 510-752 vs Big Daddy Spanks Week 8 1998</li>
+                            <li class="game-details">L 993-998 vs A-Team Week 9 1998</li>
+                            <li class="game-details">W 931-624 vs Anal Cleansing Technicians Week 10 1998</li>
+                            <li class="game-details">W 864-649 vs Magic City Rams Week 11 1998</li>
+                            <li class="game-details">W 961-593 vs Rocky Mountain Oysters Week 12 1998</li>
+                            <li class="game-details">W 2239-822 vs Erasers Week 13 1998</li>
+                            <li class="game-details">W 930-674 vs Twin Bombers Week 14 1998</li>
+                            <li class="game-details">W 910-710 vs Twin Bombers Conference Championship 1998</li>
+                            <li class="game-details">L 819-993 vs A-Team Fantasy Bowl III 1998</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">1997</span>
+                    <span> 11-3 <i>(0.786)</i></span>
+                    <ol>
+                            <li class="game-details">W 1278-863 vs Nick Baker&#39;s Touchdown Makers Week 1 1997</li>
+                            <li class="game-details">W 1253-514 vs Big Daddy Spanks Week 2 1997</li>
+                            <li class="game-details">W 1066-819 vs Nonoxynol Nightmares Week 3 1997</li>
+                            <li class="game-details">W 1715-607 vs Anal Cleansing Technicians Week 4 1997</li>
+                            <li class="game-details">W 1088-882 vs Eskimoes Week 5 1997</li>
+                            <li class="game-details">W 890-687 vs Oklahoma City Bombers Week 6 1997</li>
+                            <li class="game-details">L 683-1170 vs Marauding Nomads Week 7 1997</li>
+                            <li class="game-details">L 472-487 vs A-Team Week 8 1997</li>
+                            <li class="game-details">W 1190-774 vs Rocky Mountain Oysters Week 9 1997</li>
+                            <li class="game-details">W 1074-486 vs Nick Baker&#39;s Touchdown Makers Week 10 1997</li>
+                            <li class="game-details">W 1061-658 vs Big Daddy Spanks Week 11 1997</li>
+                            <li class="game-details">W 743-433 vs Nonoxynol Nightmares Week 12 1997</li>
+                            <li class="game-details">L 813-870 vs Anal Cleansing Technicians Week 13 1997</li>
+                            <li class="game-details">W 1184-661 vs Eskimoes Week 14 1997</li>
+                            <li class="game-details">W 1092-980 vs Anal Cleansing Technicians Conference Championship 1997</li>
+                            <li class="game-details">W 841-538 vs A-Team Fantasy Bowl II 1997</li>
+                    </ol>
+                </li>
+        </ul>
+    </div>
 </body>
 </html>

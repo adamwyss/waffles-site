@@ -1,105 +1,234 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .main-container {
+            width: 60%;
+            background: #fff;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .team-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .team-meta {
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .other-names {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 1em;
+        }
+
+        .record-section {
+            margin-bottom: 1em;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .headtohead-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f9f9f9;
+            margin-bottom: 1.5em;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+            .headtohead-table th, .headtohead-table td {
+                padding: 0.5em 1em;
+                border-bottom: 1px solid #e0e0e0;
+                text-align: left;
+            }
+
+            .headtohead-table th {
+                background: #f1f3f4;
+                font-weight: bold;
+            }
+
+            .headtohead-table tr:last-child td {
+                border-bottom: none;
+            }
+
+        .season-title {
+            font-weight: bold;
+        }
+
+        .game-details {
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
+</head>
 <body>
-    <p>Jon Joubert</p>
+    <div class="main-container">
+        <div class="team-header">Demons</div>
+        <div class="team-meta">
+            Coach: Jon Joubert<br />
+                <span>(2001 - 2002)</span>
+        </div>
+        <div class="record-section">
+            <div>Record: <strong>11 - 17</strong> (0.393)</div>
+            <div>Playoffs: <strong>0 - 0</strong> (NaN)</div>
+        </div>
 
-<p>Demons 
-    (2001 - 2002)
-<br/>
-</p>
+        <div class="section-title">Head to Head:</div>
+        <table class="headtohead-table">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Head-to-head Record</th>
+                    <th>Percentage</th>
+                    <th>Playoff Head-to-head</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>TD Matrix</td>
+                        <td>0-4</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wolves</td>
+                        <td>3-1</td>
+                        <td>0.750</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Red Raiders</td>
+                        <td>0-3</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Team Bean</td>
+                        <td>2-1</td>
+                        <td>0.667</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marauding Nomads</td>
+                        <td>1-2</td>
+                        <td>0.333</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sporky&#39;s Revenge</td>
+                        <td>1-2</td>
+                        <td>0.333</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Buffy&#39;s Bombardiers</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bayou Boys</td>
+                        <td>0-2</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Brawlers II</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Spokanites</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rocky Mountain Oysters</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
 
-    <p>Record: 11 - 17 (0.393)</p>
-    <p>Playoffs: 0 - 0 (NaN)</p>
-
-<p>Head to Head:</p>
-<ul>
-        <li>TD Matrix
-            0-4 0.000
-
-        </li>
-        <li>Wolves
-            3-1 0.750
-
-        </li>
-        <li>Red Raiders
-            0-3 0.000
-
-        </li>
-        <li>Team Bean
-            2-1 0.667
-
-        </li>
-        <li>Marauding Nomads
-            1-2 0.333
-
-        </li>
-        <li>Sporky&#39;s Revenge
-            1-2 0.333
-
-        </li>
-        <li>Buffy&#39;s Bombardiers
-            1-1 0.500
-
-        </li>
-        <li>Bayou Boys
-            0-2 0.000
-
-        </li>
-        <li>Brawlers II
-            1-1 0.500
-
-        </li>
-        <li>Spokanites
-            1-0 1.000
-
-        </li>
-        <li>Rocky Mountain Oysters
-            1-0 1.000
-
-        </li>
-</ul>
-
-<p>Seasons:</p>
-<ul>
-        <li>
-            <strong>2002</strong> 6-8 <i>(0.429)</i>
-            <ol>
-                    <li>W 965-462 vs Wolves Week 1 2002</li>
-                    <li>L 825-951 vs TD Matrix Week 2 2002</li>
-                    <li>W 799-736 vs Brawlers II Week 3 2002</li>
-                    <li>L 625-1310 vs Marauding Nomads Week 4 2002</li>
-                    <li>W 748-745 vs Sporky&#39;s Revenge Week 5 2002</li>
-                    <li>W 1276-831 vs Rocky Mountain Oysters Week 6 2002</li>
-                    <li>L 230-911 vs Bayou Boys Week 7 2002</li>
-                    <li>W 1129-736 vs Team Bean Week 8 2002</li>
-                    <li>L 676-1058 vs Red Raiders Week 9 2002</li>
-                    <li>W 765-759 vs Wolves Week 10 2002</li>
-                    <li>L 838-867 vs TD Matrix Week 11 2002</li>
-                    <li>L 807-983 vs Brawlers II Week 12 2002</li>
-                    <li>L 691-1317 vs Marauding Nomads Week 13 2002</li>
-                    <li>L 461-915 vs Sporky&#39;s Revenge Week 14 2002</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2001</strong> 5-9 <i>(0.357)</i>
-            <ol>
-                    <li>L 799-1124 vs Red Raiders Week 1 2001</li>
-                    <li>L 583-1067 vs Buffy&#39;s Bombardiers Week 2 2001</li>
-                    <li>W 508-420 vs Team Bean Week 3 2001</li>
-                    <li>L 997-1269 vs TD Matrix Week 4 2001</li>
-                    <li>W 922-505 vs Wolves Week 5 2001</li>
-                    <li>W 1268-972 vs Marauding Nomads Week 6 2001</li>
-                    <li>W 1004-648 vs Spokanites Week 7 2001</li>
-                    <li>L 657-774 vs Bayou Boys Week 8 2001</li>
-                    <li>L 1043-1184 vs Sporky&#39;s Revenge Week 9 2001</li>
-                    <li>L 484-1556 vs Red Raiders Week 10 2001</li>
-                    <li>W 989-911 vs Buffy&#39;s Bombardiers Week 11 2001</li>
-                    <li>L 496-943 vs Team Bean Week 12 2001</li>
-                    <li>L 475-989 vs TD Matrix Week 13 2001</li>
-                    <li>L 502-944 vs Wolves Week 14 2001</li>
-            </ol>
-        </li>
-</ul>
-
+        <div class="section-title">Seasons:</div>
+        <ul>
+                <li>
+                    <span class="season-title">2002</span>
+                    <span> 6-8 <i>(0.429)</i></span>
+                    <ol>
+                            <li class="game-details">W 965-462 vs Wolves Week 1 2002</li>
+                            <li class="game-details">L 825-951 vs TD Matrix Week 2 2002</li>
+                            <li class="game-details">W 799-736 vs Brawlers II Week 3 2002</li>
+                            <li class="game-details">L 625-1310 vs Marauding Nomads Week 4 2002</li>
+                            <li class="game-details">W 748-745 vs Sporky&#39;s Revenge Week 5 2002</li>
+                            <li class="game-details">W 1276-831 vs Rocky Mountain Oysters Week 6 2002</li>
+                            <li class="game-details">L 230-911 vs Bayou Boys Week 7 2002</li>
+                            <li class="game-details">W 1129-736 vs Team Bean Week 8 2002</li>
+                            <li class="game-details">L 676-1058 vs Red Raiders Week 9 2002</li>
+                            <li class="game-details">W 765-759 vs Wolves Week 10 2002</li>
+                            <li class="game-details">L 838-867 vs TD Matrix Week 11 2002</li>
+                            <li class="game-details">L 807-983 vs Brawlers II Week 12 2002</li>
+                            <li class="game-details">L 691-1317 vs Marauding Nomads Week 13 2002</li>
+                            <li class="game-details">L 461-915 vs Sporky&#39;s Revenge Week 14 2002</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2001</span>
+                    <span> 5-9 <i>(0.357)</i></span>
+                    <ol>
+                            <li class="game-details">L 799-1124 vs Red Raiders Week 1 2001</li>
+                            <li class="game-details">L 583-1067 vs Buffy&#39;s Bombardiers Week 2 2001</li>
+                            <li class="game-details">W 508-420 vs Team Bean Week 3 2001</li>
+                            <li class="game-details">L 997-1269 vs TD Matrix Week 4 2001</li>
+                            <li class="game-details">W 922-505 vs Wolves Week 5 2001</li>
+                            <li class="game-details">W 1268-972 vs Marauding Nomads Week 6 2001</li>
+                            <li class="game-details">W 1004-648 vs Spokanites Week 7 2001</li>
+                            <li class="game-details">L 657-774 vs Bayou Boys Week 8 2001</li>
+                            <li class="game-details">L 1043-1184 vs Sporky&#39;s Revenge Week 9 2001</li>
+                            <li class="game-details">L 484-1556 vs Red Raiders Week 10 2001</li>
+                            <li class="game-details">W 989-911 vs Buffy&#39;s Bombardiers Week 11 2001</li>
+                            <li class="game-details">L 496-943 vs Team Bean Week 12 2001</li>
+                            <li class="game-details">L 475-989 vs TD Matrix Week 13 2001</li>
+                            <li class="game-details">L 502-944 vs Wolves Week 14 2001</li>
+                    </ol>
+                </li>
+        </ul>
+    </div>
 </body>
 </html>

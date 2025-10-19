@@ -1,37 +1,226 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .summary-container {
+            width: 60%;
+            margin: 0 auto 0.5em auto;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .centered-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+            width: 100%;
+        }
+
+        ol {
+            width: 60%;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        li {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 0.5em 0;
+        }
+
+            li:last-child {
+                border-bottom: none;
+            }
+
+        .li-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .li-name {
+            text-align: left;
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .li-year {
+            margin-left: 1.5em;
+            font-size: 0.95em;
+            color: #888;
+            font-weight: normal;
+            opacity: 0.85;
+        }
+
+        .li-value {
+            text-align: right;
+            min-width: 80px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        h2, i {
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
-
-<h2>Most1000PointGamesInASeason</h2>
-<i></i>
-
-<ol>
-        <li>12 2019 Truffle Shuffle</li>
-        <li>11 2011 Bayou Boys</li>
-        <li>11 2017 Just Too Lucky</li>
-        <li>10 2016 Bayou Boys</li>
-        <li>9 1996 Marauding Nomads</li>
-        <li>9 1997 Procrastinators</li>
-        <li>9 1998 Bayou Boys</li>
-        <li>9 2000 Bayou Boys</li>
-        <li>9 2004 Bayou Boys</li>
-        <li>9 2014 Speed Demons</li>
-        <li>9 2018 Truffle Shuffle</li>
-        <li>9 2018 Phantoms</li>
-        <li>9 2020 Fish On</li>
-        <li>8 2002 Marauding Nomads</li>
-        <li>8 2003 TD Matrix</li>
-        <li>8 2006 Overpaid Crybabies</li>
-        <li>8 2012 Dominators</li>
-        <li>8 2015 Don&#39;t Tase Me Bro</li>
-        <li>8 2015 Truffle Shuffle</li>
-        <li>8 2018 Speed Demons</li>
-        <li>8 2018 Monica Loves Clinton Dix</li>
-        <li>8 2020 Koothrapaulli Browns</li>
-        <li>8 2020 Just Too Lucky</li>
-        <li>8 2021 Ultracogs</li>
-        <li>7 1996 Eskimoes</li>
-</ol>
-
+    <h2>1000 Point Games - Season</h2>
+    <div class="summary-container">
+        <i>Regular season fireworks! Discover the teams that have stacked up 1000-point games in a single campaign and electrified fans week after week!</i>
+    </div>
+    <div class="centered-list">
+        <ol>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Truffle Shuffle
+                            <span class="li-year">2019</span>
+                        </span>
+                        <span class="li-value">12</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                            <span class="li-year">2011</span>
+                        </span>
+                        <span class="li-value">11</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Just Too Lucky
+                            <span class="li-year">2017</span>
+                        </span>
+                        <span class="li-value">11</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                            <span class="li-year">2016</span>
+                        </span>
+                        <span class="li-value">10</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Marauding Nomads
+                            <span class="li-year">1996</span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Procrastinators
+                            <span class="li-year">1997</span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                            <span class="li-year">1998</span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                            <span class="li-year">2000</span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Bayou Boys
+                            <span class="li-year">2004</span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Speed Demons
+                            <span class="li-year">2014</span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Truffle Shuffle
+                            <span class="li-year">2018</span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Phantoms
+                            <span class="li-year">2018</span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Fish On
+                            <span class="li-year">2020</span>
+                        </span>
+                        <span class="li-value">9</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            Marauding Nomads
+                            <span class="li-year">2002</span>
+                        </span>
+                        <span class="li-value">8</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="li-content">
+                        <span class="li-name">
+                            TD Matrix
+                            <span class="li-year">2003</span>
+                        </span>
+                        <span class="li-value">8</span>
+                    </span>
+                </li>
+        </ol>
+    </div>
 </body>
 </html>

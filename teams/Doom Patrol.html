@@ -1,252 +1,419 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .main-container {
+            width: 60%;
+            background: #fff;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .team-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .team-meta {
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .other-names {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 1em;
+        }
+
+        .record-section {
+            margin-bottom: 1em;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .headtohead-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f9f9f9;
+            margin-bottom: 1.5em;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+            .headtohead-table th, .headtohead-table td {
+                padding: 0.5em 1em;
+                border-bottom: 1px solid #e0e0e0;
+                text-align: left;
+            }
+
+            .headtohead-table th {
+                background: #f1f3f4;
+                font-weight: bold;
+            }
+
+            .headtohead-table tr:last-child td {
+                border-bottom: none;
+            }
+
+        .season-title {
+            font-weight: bold;
+        }
+
+        .game-details {
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
+</head>
 <body>
-    <p>Michael Byers</p>
+    <div class="main-container">
+        <div class="team-header">Doom Patrol</div>
+        <div class="team-meta">
+            Coach: Michael Byers<br />
+                <span>(2009 - 2015)</span>
+        </div>
+        <div class="record-section">
+            <div>Record: <strong>44 - 54</strong> (0.449)</div>
+            <div>Playoffs: <strong>3 - 1</strong> (0.750)</div>
+        </div>
 
-<p>Doom Patrol 
-    (2009 - 2015)
-<br/>
-</p>
+        <div class="section-title">Head to Head:</div>
+        <table class="headtohead-table">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Head-to-head Record</th>
+                    <th>Percentage</th>
+                    <th>Playoff Head-to-head</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Dominators</td>
+                        <td>8-5</td>
+                        <td>0.615</td>
+                        <td>
+                                <span>1-0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fighting Calrissians</td>
+                        <td>7-6</td>
+                        <td>0.538</td>
+                        <td>
+                                <span>1-0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ultracogs</td>
+                        <td>7-6</td>
+                        <td>0.538</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wolves</td>
+                        <td>2-4</td>
+                        <td>0.333</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bayou Boys</td>
+                        <td>1-5</td>
+                        <td>0.167</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Team Bean</td>
+                        <td>1-3</td>
+                        <td>0.250</td>
+                        <td>
+                                <span>0-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>X-Factor</td>
+                        <td>1-4</td>
+                        <td>0.200</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phantoms</td>
+                        <td>3-1</td>
+                        <td>0.750</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Truffle Shuffle</td>
+                        <td>3-1</td>
+                        <td>0.750</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marauding Nomads</td>
+                        <td>1-3</td>
+                        <td>0.250</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rocky Mountain Oysters</td>
+                        <td>1-2</td>
+                        <td>0.333</td>
+                        <td>
+                                <span>1-0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Everett Eternals</td>
+                        <td>1-2</td>
+                        <td>0.333</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Don&#39;t Tase Me Bro</td>
+                        <td>0-3</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Just Too Lucky</td>
+                        <td>3-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sporky&#39;s Revenge</td>
+                        <td>1-2</td>
+                        <td>0.333</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Speed Demons</td>
+                        <td>0-3</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Blitzkrieg</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wishbone</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>TD Matrix</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Greatest Show on Paper</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>No Luck Needed</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Monica Loves Clinton Dix</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
 
-    <p>Record: 44 - 54 (0.449)</p>
-    <p>Playoffs: 3 - 1 (0.750)</p>
-
-<p>Head to Head:</p>
-<ul>
-        <li>Dominators
-            8-5 0.615
-
-                (1 - 0)
-        </li>
-        <li>Fighting Calrissians
-            7-6 0.538
-
-                (1 - 0)
-        </li>
-        <li>Ultracogs
-            7-6 0.538
-
-        </li>
-        <li>Wolves
-            2-4 0.333
-
-        </li>
-        <li>Bayou Boys
-            1-5 0.167
-
-        </li>
-        <li>Team Bean
-            1-3 0.250
-
-                (0 - 1)
-        </li>
-        <li>X-Factor
-            1-4 0.200
-
-        </li>
-        <li>Phantoms
-            3-1 0.750
-
-        </li>
-        <li>Truffle Shuffle
-            3-1 0.750
-
-        </li>
-        <li>Marauding Nomads
-            1-3 0.250
-
-        </li>
-        <li>Rocky Mountain Oysters
-            1-2 0.333
-
-                (1 - 0)
-        </li>
-        <li>Everett Eternals
-            1-2 0.333
-
-        </li>
-        <li>Don&#39;t Tase Me Bro
-            0-3 0.000
-
-        </li>
-        <li>Just Too Lucky
-            3-0 1.000
-
-        </li>
-        <li>Sporky&#39;s Revenge
-            1-2 0.333
-
-        </li>
-        <li>Speed Demons
-            0-3 0.000
-
-        </li>
-        <li>Blitzkrieg
-            1-1 0.500
-
-        </li>
-        <li>Wishbone
-            2-0 1.000
-
-        </li>
-        <li>TD Matrix
-            0-1 0.000
-
-        </li>
-        <li>Greatest Show on Paper
-            0-1 0.000
-
-        </li>
-        <li>No Luck Needed
-            1-0 1.000
-
-        </li>
-        <li>Monica Loves Clinton Dix
-            0-1 0.000
-
-        </li>
-</ul>
-
-<p>Seasons:</p>
-<ul>
-        <li>
-            <strong>2015</strong> 5-9 <i>(0.357)</i>
-            <ol>
-                    <li>W 865-736 vs Dominators Week 1 2015</li>
-                    <li>W 1240-913 vs Fighting Calrissians Week 2 2015</li>
-                    <li>L 420-1090 vs Ultracogs Week 3 2015</li>
-                    <li>L 592-785 vs Speed Demons Week 4 2015</li>
-                    <li>L 855-924 vs Monica Loves Clinton Dix Week 5 2015</li>
-                    <li>W 630-534 vs Just Too Lucky Week 6 2015</li>
-                    <li>L 924-947 vs Phantoms Week 7 2015</li>
-                    <li>L 1093-1103 vs Sporky&#39;s Revenge Week 8 2015</li>
-                    <li>L 526-773 vs Rocky Mountain Oysters Week 9 2015</li>
-                    <li>L 1208-1272 vs Bayou Boys Week 10 2015</li>
-                    <li>L 680-698 vs Wolves Week 11 2015</li>
-                    <li>W 740-540 vs Fighting Calrissians Week 12 2015</li>
-                    <li>L 1098-1112 vs Dominators Week 13 2015</li>
-                    <li>W 989-883 vs Ultracogs Week 14 2015</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2014</strong> 8-6 <i>(0.571)</i>
-            <ol>
-                    <li>W 1231-689 vs Ultracogs Week 1 2014</li>
-                    <li>W 798-610 vs Dominators Week 2 2014</li>
-                    <li>W 1293-1048 vs Fighting Calrissians Week 3 2014</li>
-                    <li>L 921-1025 vs Speed Demons Week 4 2014</li>
-                    <li>W 852-688 vs X-Factor Week 5 2014</li>
-                    <li>L 823-1264 vs Team Bean Week 6 2014</li>
-                    <li>L 761-871 vs Don&#39;t Tase Me Bro Week 7 2014</li>
-                    <li>W 1403-1003 vs Truffle Shuffle Week 8 2014</li>
-                    <li>W 1425-988 vs Marauding Nomads Week 9 2014</li>
-                    <li>L 379-882 vs Bayou Boys Week 10 2014</li>
-                    <li>L 466-880 vs Wolves Week 11 2014</li>
-                    <li>L 570-1017 vs Fighting Calrissians Week 12 2014</li>
-                    <li>W 1150-748 vs Dominators Week 13 2014</li>
-                    <li>W 784-701 vs Ultracogs Week 14 2014</li>
-                    <li>W 724-687 vs Fighting Calrissians Wild Card Week 2014</li>
-                    <li>W 751-391 vs Dominators Conference Championship 2014</li>
-                    <li>W 999-906 vs Rocky Mountain Oysters Fantasy Bowl XIX 2014</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2013</strong> 7-7 <i>(0.500)</i>
-            <ol>
-                    <li>W 927-669 vs Ultracogs Week 1 2013</li>
-                    <li>W 1160-1056 vs Dominators Week 2 2013</li>
-                    <li>W 976-625 vs Fighting Calrissians Week 3 2013</li>
-                    <li>L 967-1180 vs X-Factor Week 4 2013</li>
-                    <li>L 628-917 vs Wolves Week 5 2013</li>
-                    <li>W 1025-870 vs Rocky Mountain Oysters Week 6 2013</li>
-                    <li>W 1454-1283 vs Just Too Lucky Week 7 2013</li>
-                    <li>W 1442-900 vs Sporky&#39;s Revenge Week 8 2013</li>
-                    <li>W 1034-582 vs Phantoms Week 9 2013</li>
-                    <li>L 584-809 vs Speed Demons Week 10 2013</li>
-                    <li>L 979-1408 vs Bayou Boys Week 11 2013</li>
-                    <li>L 738-880 vs Fighting Calrissians Week 12 2013</li>
-                    <li>L 849-1003 vs Dominators Week 13 2013</li>
-                    <li>L 777-1103 vs Ultracogs Week 14 2013</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2012</strong> 4-10 <i>(0.286)</i>
-            <ol>
-                    <li>L 885-1148 vs Ultracogs Week 1 2012</li>
-                    <li>L 631-756 vs Dominators Week 2 2012</li>
-                    <li>L 663-1120 vs Fighting Calrissians Week 3 2012</li>
-                    <li>L 1227-1400 vs X-Factor Week 4 2012</li>
-                    <li>W 1046-676 vs Wolves Week 5 2012</li>
-                    <li>L 994-1047 vs Don&#39;t Tase Me Bro Week 6 2012</li>
-                    <li>L 419-767 vs Team Bean Week 7 2012</li>
-                    <li>L 707-718 vs Truffle Shuffle Week 8 2012</li>
-                    <li>L 740-1103 vs Marauding Nomads Week 9 2012</li>
-                    <li>W 890-615 vs No Luck Needed Week 10 2012</li>
-                    <li>W 1078-573 vs Bayou Boys Week 11 2012</li>
-                    <li>L 842-1255 vs Fighting Calrissians Week 12 2012</li>
-                    <li>W 1445-1082 vs Dominators Week 13 2012</li>
-                    <li>L 728-809 vs Ultracogs Week 14 2012</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2011</strong> 6-8 <i>(0.429)</i>
-            <ol>
-                    <li>W 893-494 vs Fighting Calrissians Week 1 2011</li>
-                    <li>L 804-995 vs Dominators Week 2 2011</li>
-                    <li>L 709-1083 vs Ultracogs Week 3 2011</li>
-                    <li>L 633-1227 vs X-Factor Week 4 2011</li>
-                    <li>L 734-963 vs Bayou Boys Week 5 2011</li>
-                    <li>W 885-707 vs Just Too Lucky Week 6 2011</li>
-                    <li>L 975-1027 vs Sporky&#39;s Revenge Week 7 2011</li>
-                    <li>W 872-505 vs Phantoms Week 8 2011</li>
-                    <li>L 805-1238 vs Rocky Mountain Oysters Week 9 2011</li>
-                    <li>W 973-870 vs Wolves Week 10 2011</li>
-                    <li>L 859-922 vs Greatest Show on Paper Week 11 2011</li>
-                    <li>W 559-504 vs Ultracogs Week 12 2011</li>
-                    <li>L 859-1370 vs Dominators Week 13 2011</li>
-                    <li>W 1035-965 vs Fighting Calrissians Week 14 2011</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2010</strong> 5-9 <i>(0.357)</i>
-            <ol>
-                    <li>W 629-594 vs Ultracogs Week 1 2010</li>
-                    <li>W 935-704 vs Dominators Week 2 2010</li>
-                    <li>W 878-873 vs Fighting Calrissians Week 3 2010</li>
-                    <li>L 606-1000 vs X-Factor Week 4 2010</li>
-                    <li>L 1193-1211 vs Wolves Week 5 2010</li>
-                    <li>L 965-1084 vs Don&#39;t Tase Me Bro Week 6 2010</li>
-                    <li>L 1064-1188 vs Team Bean Week 7 2010</li>
-                    <li>W 797-718 vs Truffle Shuffle Week 8 2010</li>
-                    <li>L 428-731 vs Marauding Nomads Week 9 2010</li>
-                    <li>L 781-787 vs Everett Eternals Week 10 2010</li>
-                    <li>L 934-940 vs Bayou Boys Week 11 2010</li>
-                    <li>L 670-696 vs Fighting Calrissians Week 12 2010</li>
-                    <li>W 897-834 vs Dominators Week 13 2010</li>
-                    <li>L 739-943 vs Ultracogs Week 14 2010</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2009</strong> 9-5 <i>(0.643)</i>
-            <ol>
-                    <li>L 732-758 vs Blitzkrieg Week 1 2009</li>
-                    <li>L 651-1100 vs Everett Eternals Week 2 2009</li>
-                    <li>W 1279-578 vs Wishbone Week 3 2009</li>
-                    <li>W 1004-780 vs Phantoms Week 4 2009</li>
-                    <li>W 1117-961 vs Team Bean Week 5 2009</li>
-                    <li>W 1027-963 vs Dominators Week 6 2009</li>
-                    <li>L 678-873 vs Fighting Calrissians Week 7 2009</li>
-                    <li>W 1117-569 vs Ultracogs Week 8 2009</li>
-                    <li>L 618-829 vs TD Matrix Week 9 2009</li>
-                    <li>W 1107-433 vs Truffle Shuffle Week 10 2009</li>
-                    <li>L 1014-1086 vs Marauding Nomads Week 11 2009</li>
-                    <li>W 955-542 vs Blitzkrieg Week 12 2009</li>
-                    <li>W 916-903 vs Everett Eternals Week 13 2009</li>
-                    <li>W 910-722 vs Wishbone Week 14 2009</li>
-                    <li>L 1248-1466 vs Team Bean Wild Card Week 2009</li>
-            </ol>
-        </li>
-</ul>
-
+        <div class="section-title">Seasons:</div>
+        <ul>
+                <li>
+                    <span class="season-title">2015</span>
+                    <span> 5-9 <i>(0.357)</i></span>
+                    <ol>
+                            <li class="game-details">W 865-736 vs Dominators Week 1 2015</li>
+                            <li class="game-details">W 1240-913 vs Fighting Calrissians Week 2 2015</li>
+                            <li class="game-details">L 420-1090 vs Ultracogs Week 3 2015</li>
+                            <li class="game-details">L 592-785 vs Speed Demons Week 4 2015</li>
+                            <li class="game-details">L 855-924 vs Monica Loves Clinton Dix Week 5 2015</li>
+                            <li class="game-details">W 630-534 vs Just Too Lucky Week 6 2015</li>
+                            <li class="game-details">L 924-947 vs Phantoms Week 7 2015</li>
+                            <li class="game-details">L 1093-1103 vs Sporky&#39;s Revenge Week 8 2015</li>
+                            <li class="game-details">L 526-773 vs Rocky Mountain Oysters Week 9 2015</li>
+                            <li class="game-details">L 1208-1272 vs Bayou Boys Week 10 2015</li>
+                            <li class="game-details">L 680-698 vs Wolves Week 11 2015</li>
+                            <li class="game-details">W 740-540 vs Fighting Calrissians Week 12 2015</li>
+                            <li class="game-details">L 1098-1112 vs Dominators Week 13 2015</li>
+                            <li class="game-details">W 989-883 vs Ultracogs Week 14 2015</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2014</span>
+                    <span> 8-6 <i>(0.571)</i></span>
+                    <ol>
+                            <li class="game-details">W 1231-689 vs Ultracogs Week 1 2014</li>
+                            <li class="game-details">W 798-610 vs Dominators Week 2 2014</li>
+                            <li class="game-details">W 1293-1048 vs Fighting Calrissians Week 3 2014</li>
+                            <li class="game-details">L 921-1025 vs Speed Demons Week 4 2014</li>
+                            <li class="game-details">W 852-688 vs X-Factor Week 5 2014</li>
+                            <li class="game-details">L 823-1264 vs Team Bean Week 6 2014</li>
+                            <li class="game-details">L 761-871 vs Don&#39;t Tase Me Bro Week 7 2014</li>
+                            <li class="game-details">W 1403-1003 vs Truffle Shuffle Week 8 2014</li>
+                            <li class="game-details">W 1425-988 vs Marauding Nomads Week 9 2014</li>
+                            <li class="game-details">L 379-882 vs Bayou Boys Week 10 2014</li>
+                            <li class="game-details">L 466-880 vs Wolves Week 11 2014</li>
+                            <li class="game-details">L 570-1017 vs Fighting Calrissians Week 12 2014</li>
+                            <li class="game-details">W 1150-748 vs Dominators Week 13 2014</li>
+                            <li class="game-details">W 784-701 vs Ultracogs Week 14 2014</li>
+                            <li class="game-details">W 724-687 vs Fighting Calrissians Wild Card Week 2014</li>
+                            <li class="game-details">W 751-391 vs Dominators Conference Championship 2014</li>
+                            <li class="game-details">W 999-906 vs Rocky Mountain Oysters Fantasy Bowl XIX 2014</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2013</span>
+                    <span> 7-7 <i>(0.500)</i></span>
+                    <ol>
+                            <li class="game-details">W 927-669 vs Ultracogs Week 1 2013</li>
+                            <li class="game-details">W 1160-1056 vs Dominators Week 2 2013</li>
+                            <li class="game-details">W 976-625 vs Fighting Calrissians Week 3 2013</li>
+                            <li class="game-details">L 967-1180 vs X-Factor Week 4 2013</li>
+                            <li class="game-details">L 628-917 vs Wolves Week 5 2013</li>
+                            <li class="game-details">W 1025-870 vs Rocky Mountain Oysters Week 6 2013</li>
+                            <li class="game-details">W 1454-1283 vs Just Too Lucky Week 7 2013</li>
+                            <li class="game-details">W 1442-900 vs Sporky&#39;s Revenge Week 8 2013</li>
+                            <li class="game-details">W 1034-582 vs Phantoms Week 9 2013</li>
+                            <li class="game-details">L 584-809 vs Speed Demons Week 10 2013</li>
+                            <li class="game-details">L 979-1408 vs Bayou Boys Week 11 2013</li>
+                            <li class="game-details">L 738-880 vs Fighting Calrissians Week 12 2013</li>
+                            <li class="game-details">L 849-1003 vs Dominators Week 13 2013</li>
+                            <li class="game-details">L 777-1103 vs Ultracogs Week 14 2013</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2012</span>
+                    <span> 4-10 <i>(0.286)</i></span>
+                    <ol>
+                            <li class="game-details">L 885-1148 vs Ultracogs Week 1 2012</li>
+                            <li class="game-details">L 631-756 vs Dominators Week 2 2012</li>
+                            <li class="game-details">L 663-1120 vs Fighting Calrissians Week 3 2012</li>
+                            <li class="game-details">L 1227-1400 vs X-Factor Week 4 2012</li>
+                            <li class="game-details">W 1046-676 vs Wolves Week 5 2012</li>
+                            <li class="game-details">L 994-1047 vs Don&#39;t Tase Me Bro Week 6 2012</li>
+                            <li class="game-details">L 419-767 vs Team Bean Week 7 2012</li>
+                            <li class="game-details">L 707-718 vs Truffle Shuffle Week 8 2012</li>
+                            <li class="game-details">L 740-1103 vs Marauding Nomads Week 9 2012</li>
+                            <li class="game-details">W 890-615 vs No Luck Needed Week 10 2012</li>
+                            <li class="game-details">W 1078-573 vs Bayou Boys Week 11 2012</li>
+                            <li class="game-details">L 842-1255 vs Fighting Calrissians Week 12 2012</li>
+                            <li class="game-details">W 1445-1082 vs Dominators Week 13 2012</li>
+                            <li class="game-details">L 728-809 vs Ultracogs Week 14 2012</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2011</span>
+                    <span> 6-8 <i>(0.429)</i></span>
+                    <ol>
+                            <li class="game-details">W 893-494 vs Fighting Calrissians Week 1 2011</li>
+                            <li class="game-details">L 804-995 vs Dominators Week 2 2011</li>
+                            <li class="game-details">L 709-1083 vs Ultracogs Week 3 2011</li>
+                            <li class="game-details">L 633-1227 vs X-Factor Week 4 2011</li>
+                            <li class="game-details">L 734-963 vs Bayou Boys Week 5 2011</li>
+                            <li class="game-details">W 885-707 vs Just Too Lucky Week 6 2011</li>
+                            <li class="game-details">L 975-1027 vs Sporky&#39;s Revenge Week 7 2011</li>
+                            <li class="game-details">W 872-505 vs Phantoms Week 8 2011</li>
+                            <li class="game-details">L 805-1238 vs Rocky Mountain Oysters Week 9 2011</li>
+                            <li class="game-details">W 973-870 vs Wolves Week 10 2011</li>
+                            <li class="game-details">L 859-922 vs Greatest Show on Paper Week 11 2011</li>
+                            <li class="game-details">W 559-504 vs Ultracogs Week 12 2011</li>
+                            <li class="game-details">L 859-1370 vs Dominators Week 13 2011</li>
+                            <li class="game-details">W 1035-965 vs Fighting Calrissians Week 14 2011</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2010</span>
+                    <span> 5-9 <i>(0.357)</i></span>
+                    <ol>
+                            <li class="game-details">W 629-594 vs Ultracogs Week 1 2010</li>
+                            <li class="game-details">W 935-704 vs Dominators Week 2 2010</li>
+                            <li class="game-details">W 878-873 vs Fighting Calrissians Week 3 2010</li>
+                            <li class="game-details">L 606-1000 vs X-Factor Week 4 2010</li>
+                            <li class="game-details">L 1193-1211 vs Wolves Week 5 2010</li>
+                            <li class="game-details">L 965-1084 vs Don&#39;t Tase Me Bro Week 6 2010</li>
+                            <li class="game-details">L 1064-1188 vs Team Bean Week 7 2010</li>
+                            <li class="game-details">W 797-718 vs Truffle Shuffle Week 8 2010</li>
+                            <li class="game-details">L 428-731 vs Marauding Nomads Week 9 2010</li>
+                            <li class="game-details">L 781-787 vs Everett Eternals Week 10 2010</li>
+                            <li class="game-details">L 934-940 vs Bayou Boys Week 11 2010</li>
+                            <li class="game-details">L 670-696 vs Fighting Calrissians Week 12 2010</li>
+                            <li class="game-details">W 897-834 vs Dominators Week 13 2010</li>
+                            <li class="game-details">L 739-943 vs Ultracogs Week 14 2010</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2009</span>
+                    <span> 9-5 <i>(0.643)</i></span>
+                    <ol>
+                            <li class="game-details">L 732-758 vs Blitzkrieg Week 1 2009</li>
+                            <li class="game-details">L 651-1100 vs Everett Eternals Week 2 2009</li>
+                            <li class="game-details">W 1279-578 vs Wishbone Week 3 2009</li>
+                            <li class="game-details">W 1004-780 vs Phantoms Week 4 2009</li>
+                            <li class="game-details">W 1117-961 vs Team Bean Week 5 2009</li>
+                            <li class="game-details">W 1027-963 vs Dominators Week 6 2009</li>
+                            <li class="game-details">L 678-873 vs Fighting Calrissians Week 7 2009</li>
+                            <li class="game-details">W 1117-569 vs Ultracogs Week 8 2009</li>
+                            <li class="game-details">L 618-829 vs TD Matrix Week 9 2009</li>
+                            <li class="game-details">W 1107-433 vs Truffle Shuffle Week 10 2009</li>
+                            <li class="game-details">L 1014-1086 vs Marauding Nomads Week 11 2009</li>
+                            <li class="game-details">W 955-542 vs Blitzkrieg Week 12 2009</li>
+                            <li class="game-details">W 916-903 vs Everett Eternals Week 13 2009</li>
+                            <li class="game-details">W 910-722 vs Wishbone Week 14 2009</li>
+                            <li class="game-details">L 1248-1466 vs Team Bean Wild Card Week 2009</li>
+                    </ol>
+                </li>
+        </ul>
+    </div>
 </body>
 </html>

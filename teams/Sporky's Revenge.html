@@ -1,673 +1,934 @@
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .main-container {
+            width: 60%;
+            background: #fff;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .team-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .team-meta {
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .other-names {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 1em;
+        }
+
+        .record-section {
+            margin-bottom: 1em;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .headtohead-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f9f9f9;
+            margin-bottom: 1.5em;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+            .headtohead-table th, .headtohead-table td {
+                padding: 0.5em 1em;
+                border-bottom: 1px solid #e0e0e0;
+                text-align: left;
+            }
+
+            .headtohead-table th {
+                background: #f1f3f4;
+                font-weight: bold;
+            }
+
+            .headtohead-table tr:last-child td {
+                border-bottom: none;
+            }
+
+        .season-title {
+            font-weight: bold;
+        }
+
+        .game-details {
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
+</head>
 <body>
-    <p>Tad Carlson</p>
+    <div class="main-container">
+        <div class="team-header">Sporky&#39;s Revenge</div>
+        <div class="team-meta">
+            Coach: Tad Carlson<br />
+                <span>(2000 - 2024)</span>
+        </div>
+            <div class="other-names">
+                Also known as:
+                    <span>Bellevue Renegades</span><br />
+            </div>
+        <div class="record-section">
+            <div>Record: <strong>183 - 167</strong> (0.523)</div>
+            <div>Playoffs: <strong>16 - 10</strong> (0.615)</div>
+        </div>
 
-<p>Sporky&#39;s Revenge 
-    (2000 - 2023)
-<br/>
-    <small>Bellevue Renegades</small><br/>
-</p>
+        <div class="section-title">Head to Head:</div>
+        <table class="headtohead-table">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Head-to-head Record</th>
+                    <th>Percentage</th>
+                    <th>Playoff Head-to-head</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Rocky Mountain Oysters</td>
+                        <td>29-12</td>
+                        <td>0.707</td>
+                        <td>
+                                <span>0-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Just Too Lucky</td>
+                        <td>12-18</td>
+                        <td>0.400</td>
+                        <td>
+                                <span>0-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phantoms</td>
+                        <td>9-18</td>
+                        <td>0.333</td>
+                        <td>
+                                <span>1-0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bayou Boys</td>
+                        <td>14-12</td>
+                        <td>0.538</td>
+                        <td>
+                                <span>1-0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Team Bean</td>
+                        <td>13-11</td>
+                        <td>0.542</td>
+                        <td>
+                                <span>1-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wolves</td>
+                        <td>11-12</td>
+                        <td>0.478</td>
+                        <td>
+                                <span>2-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marauding Nomads</td>
+                        <td>12-10</td>
+                        <td>0.545</td>
+                        <td>
+                                <span>1-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dominators</td>
+                        <td>10-10</td>
+                        <td>0.500</td>
+                        <td>
+                                <span>2-0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ultracogs</td>
+                        <td>10-7</td>
+                        <td>0.588</td>
+                        <td>
+                                <span>3-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Koothrapaulli Browns</td>
+                        <td>5-9</td>
+                        <td>0.357</td>
+                        <td>
+                                <span>2-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Truffle Shuffle</td>
+                        <td>4-9</td>
+                        <td>0.308</td>
+                        <td>
+                                <span>1-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>TD Matrix</td>
+                        <td>6-6</td>
+                        <td>0.500</td>
+                        <td>
+                                <span>1-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Brawlers II</td>
+                        <td>6-2</td>
+                        <td>0.750</td>
+                        <td>
+                                <span>0-1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fighting Calrissians</td>
+                        <td>6-2</td>
+                        <td>0.750</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Don&#39;t Tase Me Bro</td>
+                        <td>1-6</td>
+                        <td>0.143</td>
+                        <td>
+                                <span>1-0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Red Raiders</td>
+                        <td>3-3</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Speed Demons</td>
+                        <td>4-1</td>
+                        <td>0.800</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>The TecmoBowlers</td>
+                        <td>3-2</td>
+                        <td>0.600</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Spokanites</td>
+                        <td>2-2</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Everett Eternals</td>
+                        <td>3-1</td>
+                        <td>0.750</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>X-Factor</td>
+                        <td>2-2</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Buffy&#39;s Bombardiers</td>
+                        <td>2-1</td>
+                        <td>0.667</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Demons</td>
+                        <td>2-1</td>
+                        <td>0.667</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Overpaid Crybabies</td>
+                        <td>0-3</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Doom Patrol</td>
+                        <td>2-1</td>
+                        <td>0.667</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Anal Cleansing Technicians</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nuclear181</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wishbone</td>
+                        <td>1-1</td>
+                        <td>0.500</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Low Expectations</td>
+                        <td>2-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Drunken Squirrels</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wolfins</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Blitzkrieg</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>No Luck Needed</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Monica Loves Clinton Dix</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Suck My Hawks</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kumar&#39;s Klan</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Baldwin on a Budget</td>
+                        <td>0-1</td>
+                        <td>0.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fish On</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fantasy Cognoscenti</td>
+                        <td>1-0</td>
+                        <td>1.000</td>
+                        <td>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
 
-    <p>Record: 172 - 164 (0.512)</p>
-    <p>Playoffs: 13 - 10 (0.565)</p>
-
-<p>Head to Head:</p>
-<ul>
-        <li>Rocky Mountain Oysters
-            27-12 0.692
-
-                (0 - 1)
-        </li>
-        <li>Just Too Lucky
-            10-18 0.357
-
-                (0 - 1)
-        </li>
-        <li>Phantoms
-            9-18 0.333
-
-                (1 - 0)
-        </li>
-        <li>Team Bean
-            12-12 0.500
-
-                (1 - 1)
-        </li>
-        <li>Bayou Boys
-            13-12 0.520
-
-                (1 - 0)
-        </li>
-        <li>Wolves
-            11-11 0.500
-
-                (2 - 1)
-        </li>
-        <li>Marauding Nomads
-            11-10 0.524
-
-                (1 - 1)
-        </li>
-        <li>Dominators
-            9-10 0.474
-
-                (2 - 0)
-        </li>
-        <li>Ultracogs
-            10-6 0.625
-
-                (2 - 1)
-        </li>
-        <li>Koothrapaulli Browns
-            4-8 0.333
-
-                (1 - 1)
-        </li>
-        <li>TD Matrix
-            6-5 0.545
-
-                (1 - 1)
-        </li>
-        <li>Truffle Shuffle
-            3-9 0.250
-
-                (0 - 1)
-        </li>
-        <li>Brawlers II
-            6-2 0.750
-
-                (0 - 1)
-        </li>
-        <li>Fighting Calrissians
-            6-2 0.750
-
-        </li>
-        <li>Don&#39;t Tase Me Bro
-            1-6 0.143
-
-                (1 - 0)
-        </li>
-        <li>Red Raiders
-            3-3 0.500
-
-        </li>
-        <li>Speed Demons
-            4-1 0.800
-
-        </li>
-        <li>Spokanites
-            2-2 0.500
-
-        </li>
-        <li>Everett Eternals
-            3-1 0.750
-
-        </li>
-        <li>X-Factor
-            2-2 0.500
-
-        </li>
-        <li>The TecmoBowlers
-            2-2 0.500
-
-        </li>
-        <li>Buffy&#39;s Bombardiers
-            2-1 0.667
-
-        </li>
-        <li>Demons
-            2-1 0.667
-
-        </li>
-        <li>Overpaid Crybabies
-            0-3 0.000
-
-        </li>
-        <li>Doom Patrol
-            2-1 0.667
-
-        </li>
-        <li>Anal Cleansing Technicians
-            2-0 1.000
-
-        </li>
-        <li>Nuclear181
-            2-0 1.000
-
-        </li>
-        <li>Wishbone
-            1-1 0.500
-
-        </li>
-        <li>Low Expectations
-            2-0 1.000
-
-        </li>
-        <li>Drunken Squirrels
-            1-0 1.000
-
-        </li>
-        <li>Wolfins
-            0-1 0.000
-
-        </li>
-        <li>Blitzkrieg
-            0-1 0.000
-
-        </li>
-        <li>No Luck Needed
-            1-0 1.000
-
-        </li>
-        <li>Monica Loves Clinton Dix
-            0-1 0.000
-
-        </li>
-        <li>Suck My Hawks
-            0-1 0.000
-
-        </li>
-        <li>Kumar&#39;s Klan
-            1-0 1.000
-
-        </li>
-        <li>Baldwin on a Budget
-            0-1 0.000
-
-        </li>
-        <li>Fish On
-            1-0 1.000
-
-        </li>
-        <li>Fantasy Cognoscenti
-            1-0 1.000
-
-        </li>
-</ul>
-
-<p>Seasons:</p>
-<ul>
-        <li>
-            <strong>2023</strong> 7-7 <i>(0.500)</i>
-            <ol>
-                    <li>W 858-545 vs Rocky Mountain Oysters Week 1 2023</li>
-                    <li>L 765-985 vs Just Too Lucky Week 2 2023</li>
-                    <li>L 1025-1277 vs Koothrapaulli Browns Week 3 2023</li>
-                    <li>W 1441-474 vs Ultracogs Week 4 2023</li>
-                    <li>W 1054-560 vs Wolves Week 5 2023</li>
-                    <li>W 654-593 vs Speed Demons Week 6 2023</li>
-                    <li>L 858-992 vs Phantoms Week 7 2023</li>
-                    <li>W 1122-1070 vs Fantasy Cognoscenti Week 8 2023</li>
-                    <li>W 826-550 vs Low Expectations Week 9 2023</li>
-                    <li>L 491-1362 vs Bayou Boys Week 10 2023</li>
-                    <li>L 480-518 vs Dominators Week 11 2023</li>
-                    <li>L 832-1108 vs Koothrapaulli Browns Week 12 2023</li>
-                    <li>W 1027-656 vs Just Too Lucky Week 13 2023</li>
-                    <li>L 727-958 vs Rocky Mountain Oysters Week 14 2023</li>
-                    <li>L 697-1058 vs Ultracogs Wild Card Week 2023</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2022</strong> 7-7 <i>(0.500)</i>
-            <ol>
-                    <li>L 770-1210 vs Koothrapaulli Browns Week 1 2022</li>
-                    <li>L 988-1146 vs Rocky Mountain Oysters Week 2 2022</li>
-                    <li>W 728-703 vs Just Too Lucky Week 3 2022</li>
-                    <li>L 956-1076 vs Bayou Boys Week 4 2022</li>
-                    <li>W 923-818 vs Ultracogs Week 5 2022</li>
-                    <li>L 653-859 vs The TecmoBowlers Week 6 2022</li>
-                    <li>W 583-401 vs Truffle Shuffle Week 7 2022</li>
-                    <li>W 1047-792 vs Marauding Nomads Week 8 2022</li>
-                    <li>L 659-801 vs Team Bean Week 9 2022</li>
-                    <li>W 979-836 vs Wolves Week 10 2022</li>
-                    <li>W 1020-647 vs Dominators Week 11 2022</li>
-                    <li>L 567-643 vs Just Too Lucky Week 12 2022</li>
-                    <li>L 582-772 vs Rocky Mountain Oysters Week 13 2022</li>
-                    <li>W 888-763 vs Koothrapaulli Browns Week 14 2022</li>
-                    <li>L 843-974 vs Koothrapaulli Browns Wild Card Week 2022</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2021</strong> 10-4 <i>(0.714)</i>
-            <ol>
-                    <li>W 792-734 vs Just Too Lucky Week 1 2021</li>
-                    <li>W 1050-877 vs Koothrapaulli Browns Week 2 2021</li>
-                    <li>W 1395-598 vs Rocky Mountain Oysters Week 3 2021</li>
-                    <li>W 1053-872 vs Wolves Week 4 2021</li>
-                    <li>L 958-1215 vs Ultracogs Week 5 2021</li>
-                    <li>W 1236-629 vs Fish On Week 6 2021</li>
-                    <li>W 1082-1078 vs Phantoms Week 7 2021</li>
-                    <li>W 1044-707 vs Low Expectations Week 8 2021</li>
-                    <li>L 496-668 vs Speed Demons Week 9 2021</li>
-                    <li>W 694-626 vs Bayou Boys Week 10 2021</li>
-                    <li>L 592-608 vs Dominators Week 11 2021</li>
-                    <li>W 1043-369 vs Rocky Mountain Oysters Week 12 2021</li>
-                    <li>L 798-1226 vs Koothrapaulli Browns Week 13 2021</li>
-                    <li>W 880-457 vs Just Too Lucky Week 14 2021</li>
-                    <li>W 1335-565 vs Ultracogs Divisional Week 2021</li>
-                    <li>W 1532-999 vs Bayou Boys Conference Championship 2021</li>
-                    <li>L 713-1306 vs Marauding Nomads Fantasy Bowl XXVI 2021</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2020</strong> 9-5 <i>(0.643)</i>
-            <ol>
-                    <li>W 614-358 vs Rocky Mountain Oysters Week 1 2020</li>
-                    <li>W 951-856 vs Koothrapaulli Browns Week 2 2020</li>
-                    <li>L 877-922 vs Just Too Lucky Week 3 2020</li>
-                    <li>W 957-954 vs Ultracogs Week 4 2020</li>
-                    <li>W 961-867 vs Wolves Week 5 2020</li>
-                    <li>W 1035-501 vs Marauding Nomads Week 6 2020</li>
-                    <li>W 1056-607 vs Team Bean Week 7 2020</li>
-                    <li>L 711-836 vs Truffle Shuffle Week 8 2020</li>
-                    <li>L 876-1808 vs The TecmoBowlers Week 9 2020</li>
-                    <li>W 813-739 vs Dominators Week 10 2020</li>
-                    <li>W 1158-922 vs Bayou Boys Week 11 2020</li>
-                    <li>L 1155-1212 vs Just Too Lucky Week 12 2020</li>
-                    <li>L 742-987 vs Koothrapaulli Browns Week 13 2020</li>
-                    <li>W 905-645 vs Rocky Mountain Oysters Week 14 2020</li>
-                    <li>W 676-547 vs Koothrapaulli Browns Wild Card Week 2020</li>
-                    <li>W 984-806 vs Wolves Conference Championship 2020</li>
-                    <li>W 1214-1110 vs Marauding Nomads Fantasy Bowl XXV 2020</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2019</strong> 7-7 <i>(0.500)</i>
-            <ol>
-                    <li>W 1272-786 vs Rocky Mountain Oysters Week 1 2019</li>
-                    <li>L 755-780 vs Koothrapaulli Browns Week 2 2019</li>
-                    <li>L 830-1591 vs Just Too Lucky Week 3 2019</li>
-                    <li>W 932-818 vs Ultracogs Week 4 2019</li>
-                    <li>L 718-860 vs Bayou Boys Week 5 2019</li>
-                    <li>W 916-539 vs Speed Demons Week 6 2019</li>
-                    <li>L 743-915 vs Baldwin on a Budget Week 7 2019</li>
-                    <li>W 858-736 vs X-Factor Week 8 2019</li>
-                    <li>W 1532-769 vs Phantoms Week 9 2019</li>
-                    <li>L 540-935 vs Wolves Week 10 2019</li>
-                    <li>W 812-601 vs Dominators Week 11 2019</li>
-                    <li>L 553-848 vs Rocky Mountain Oysters Week 12 2019</li>
-                    <li>L 427-850 vs Koothrapaulli Browns Week 13 2019</li>
-                    <li>W 1221-722 vs Just Too Lucky Week 14 2019</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2018</strong> 6-8 <i>(0.429)</i>
-            <ol>
-                    <li>W 987-622 vs Koothrapaulli Browns Week 1 2018</li>
-                    <li>L 750-1388 vs Just Too Lucky Week 2 2018</li>
-                    <li>W 584-445 vs Rocky Mountain Oysters Week 3 2018</li>
-                    <li>W 902-896 vs Wolves Week 4 2018</li>
-                    <li>W 947-711 vs Bayou Boys Week 5 2018</li>
-                    <li>W 1248-981 vs The TecmoBowlers Week 6 2018</li>
-                    <li>L 545-596 vs Team Bean Week 7 2018</li>
-                    <li>L 851-1379 vs Truffle Shuffle Week 8 2018</li>
-                    <li>L 641-1319 vs Marauding Nomads Week 9 2018</li>
-                    <li>W 456-254 vs Ultracogs Week 10 2018</li>
-                    <li>L 569-954 vs Dominators Week 11 2018</li>
-                    <li>L 583-808 vs Koothrapaulli Browns Week 12 2018</li>
-                    <li>L 906-1135 vs Just Too Lucky Week 13 2018</li>
-                    <li>L 755-1159 vs Rocky Mountain Oysters Week 14 2018</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2017</strong> 8-6 <i>(0.571)</i>
-            <ol>
-                    <li>W 940-642 vs Rocky Mountain Oysters Week 1 2017</li>
-                    <li>W 913-551 vs Phantoms Week 2 2017</li>
-                    <li>L 1175-1325 vs Just Too Lucky Week 3 2017</li>
-                    <li>L 902-1059 vs Suck My Hawks Week 4 2017</li>
-                    <li>W 1400-421 vs Team Bean Week 5 2017</li>
-                    <li>W 844-777 vs Kumar&#39;s Klan Week 6 2017</li>
-                    <li>W 666-597 vs Ultracogs Week 7 2017</li>
-                    <li>L 628-667 vs Dominators Week 8 2017</li>
-                    <li>W 850-575 vs The TecmoBowlers Week 9 2017</li>
-                    <li>L 577-1102 vs Truffle Shuffle Week 10 2017</li>
-                    <li>W 1049-864 vs Marauding Nomads Week 11 2017</li>
-                    <li>L 639-1106 vs Just Too Lucky Week 12 2017</li>
-                    <li>W 780-529 vs Rocky Mountain Oysters Week 13 2017</li>
-                    <li>L 549-1141 vs Phantoms Week 14 2017</li>
-                    <li>L 933-1010 vs Just Too Lucky Wild Card Week 2017</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2016</strong> 4-10 <i>(0.286)</i>
-            <ol>
-                    <li>L 561-942 vs Just Too Lucky Week 1 2016</li>
-                    <li>W 1499-1411 vs Rocky Mountain Oysters Week 2 2016</li>
-                    <li>L 1121-1498 vs Phantoms Week 3 2016</li>
-                    <li>L 621-773 vs Don&#39;t Tase Me Bro Week 4 2016</li>
-                    <li>L 795-905 vs Truffle Shuffle Week 5 2016</li>
-                    <li>W 1541-616 vs Wolves Week 6 2016</li>
-                    <li>L 492-879 vs Monica Loves Clinton Dix Week 7 2016</li>
-                    <li>L 523-1248 vs Bayou Boys Week 8 2016</li>
-                    <li>W 592-478 vs Speed Demons Week 9 2016</li>
-                    <li>W 581-567 vs Marauding Nomads Week 10 2016</li>
-                    <li>L 277-753 vs Team Bean Week 11 2016</li>
-                    <li>L 916-990 vs Just Too Lucky Week 12 2016</li>
-                    <li>L 700-1365 vs Rocky Mountain Oysters Week 13 2016</li>
-                    <li>L 692-1003 vs Phantoms Week 14 2016</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2015</strong> 4-10 <i>(0.286)</i>
-            <ol>
-                    <li>L 1000-1117 vs Just Too Lucky Week 1 2015</li>
-                    <li>L 689-1245 vs Rocky Mountain Oysters Week 2 2015</li>
-                    <li>L 1205-1734 vs Phantoms Week 3 2015</li>
-                    <li>L 899-1058 vs Don&#39;t Tase Me Bro Week 4 2015</li>
-                    <li>L 817-1203 vs Truffle Shuffle Week 5 2015</li>
-                    <li>W 981-868 vs Dominators Week 6 2015</li>
-                    <li>W 1232-860 vs Ultracogs Week 7 2015</li>
-                    <li>W 1103-1093 vs Doom Patrol Week 8 2015</li>
-                    <li>L 787-1135 vs Fighting Calrissians Week 9 2015</li>
-                    <li>L 571-816 vs Marauding Nomads Week 10 2015</li>
-                    <li>L 850-857 vs Team Bean Week 11 2015</li>
-                    <li>L 583-853 vs Just Too Lucky Week 12 2015</li>
-                    <li>L 693-759 vs Phantoms Week 13 2015</li>
-                    <li>W 671-606 vs Rocky Mountain Oysters Week 14 2015</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2014</strong> 8-6 <i>(0.571)</i>
-            <ol>
-                    <li>W 1073-766 vs Rocky Mountain Oysters Week 1 2014</li>
-                    <li>W 855-751 vs Phantoms Week 2 2014</li>
-                    <li>L 660-931 vs Just Too Lucky Week 3 2014</li>
-                    <li>L 629-758 vs Don&#39;t Tase Me Bro Week 4 2014</li>
-                    <li>W 1141-685 vs Truffle Shuffle Week 5 2014</li>
-                    <li>W 1187-877 vs Bayou Boys Week 6 2014</li>
-                    <li>W 672-670 vs Wolves Week 7 2014</li>
-                    <li>L 773-1274 vs X-Factor Week 8 2014</li>
-                    <li>W 1016-991 vs Speed Demons Week 9 2014</li>
-                    <li>L 774-1189 vs Marauding Nomads Week 10 2014</li>
-                    <li>W 1222-850 vs Team Bean Week 11 2014</li>
-                    <li>L 498-728 vs Just Too Lucky Week 12 2014</li>
-                    <li>L 618-1374 vs Phantoms Week 13 2014</li>
-                    <li>W 1260-1247 vs Rocky Mountain Oysters Week 14 2014</li>
-                    <li>L 224-813 vs Rocky Mountain Oysters Wild Card Week 2014</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2013</strong> 8-6 <i>(0.571)</i>
-            <ol>
-                    <li>W 1574-1081 vs Rocky Mountain Oysters Week 1 2013</li>
-                    <li>W 1404-1308 vs Just Too Lucky Week 2 2013</li>
-                    <li>L 605-849 vs Phantoms Week 3 2013</li>
-                    <li>L 694-1022 vs Truffle Shuffle Week 4 2013</li>
-                    <li>W 867-762 vs Marauding Nomads Week 5 2013</li>
-                    <li>W 938-693 vs Dominators Week 6 2013</li>
-                    <li>W 841-742 vs Fighting Calrissians Week 7 2013</li>
-                    <li>L 900-1442 vs Doom Patrol Week 8 2013</li>
-                    <li>L 851-1197 vs Ultracogs Week 9 2013</li>
-                    <li>W 981-540 vs Don&#39;t Tase Me Bro Week 10 2013</li>
-                    <li>W 1259-580 vs Team Bean Week 11 2013</li>
-                    <li>L 705-759 vs Phantoms Week 12 2013</li>
-                    <li>W 1034-888 vs Just Too Lucky Week 13 2013</li>
-                    <li>L 850-927 vs Rocky Mountain Oysters Week 14 2013</li>
-                    <li>L 1078-1201 vs Team Bean Wild Card Week 2013</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2012</strong> 8-6 <i>(0.571)</i>
-            <ol>
-                    <li>W 848-814 vs Rocky Mountain Oysters Week 1 2012</li>
-                    <li>L 522-839 vs Just Too Lucky Week 2 2012</li>
-                    <li>L 1084-1405 vs Phantoms Week 3 2012</li>
-                    <li>L 812-1038 vs Truffle Shuffle Week 4 2012</li>
-                    <li>W 1366-1100 vs Marauding Nomads Week 5 2012</li>
-                    <li>W 1115-631 vs No Luck Needed Week 6 2012</li>
-                    <li>W 1221-876 vs Bayou Boys Week 7 2012</li>
-                    <li>W 1319-701 vs X-Factor Week 8 2012</li>
-                    <li>W 968-967 vs Wolves Week 9 2012</li>
-                    <li>L 775-910 vs Don&#39;t Tase Me Bro Week 10 2012</li>
-                    <li>W 509-481 vs Team Bean Week 11 2012</li>
-                    <li>L 862-1075 vs Phantoms Week 12 2012</li>
-                    <li>L 731-893 vs Just Too Lucky Week 13 2012</li>
-                    <li>W 1075-527 vs Rocky Mountain Oysters Week 14 2012</li>
-                    <li>W 877-457 vs Phantoms Wild Card Week 2012</li>
-                    <li>W 800-755 vs Don&#39;t Tase Me Bro Conference Championship 2012</li>
-                    <li>W 1136-867 vs Dominators Fantasy Bowl XVII 2012</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2011</strong> 11-3 <i>(0.786)</i>
-            <ol>
-                    <li>L 555-666 vs Just Too Lucky Week 1 2011</li>
-                    <li>W 954-845 vs Phantoms Week 2 2011</li>
-                    <li>L 1099-1205 vs Rocky Mountain Oysters Week 3 2011</li>
-                    <li>L 712-977 vs Don&#39;t Tase Me Bro Week 4 2011</li>
-                    <li>W 1151-1121 vs Truffle Shuffle Week 5 2011</li>
-                    <li>W 845-708 vs Fighting Calrissians Week 6 2011</li>
-                    <li>W 1027-975 vs Doom Patrol Week 7 2011</li>
-                    <li>W 848-782 vs Dominators Week 8 2011</li>
-                    <li>W 903-671 vs Ultracogs Week 9 2011</li>
-                    <li>W 1050-576 vs Marauding Nomads Week 10 2011</li>
-                    <li>W 900-626 vs Team Bean Week 11 2011</li>
-                    <li>W 1160-615 vs Rocky Mountain Oysters Week 12 2011</li>
-                    <li>W 933-843 vs Phantoms Week 13 2011</li>
-                    <li>W 1120-1068 vs Just Too Lucky Week 14 2011</li>
-                    <li>L 699-772 vs Truffle Shuffle Wild Card Week 2011</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2010</strong> 6-8 <i>(0.429)</i>
-            <ol>
-                    <li>L 613-1290 vs Rocky Mountain Oysters Week 1 2010</li>
-                    <li>W 914-741 vs Just Too Lucky Week 2 2010</li>
-                    <li>W 1196-690 vs Phantoms Week 3 2010</li>
-                    <li>L 575-688 vs Truffle Shuffle Week 4 2010</li>
-                    <li>L 541-898 vs Marauding Nomads Week 5 2010</li>
-                    <li>W 928-893 vs Everett Eternals Week 6 2010</li>
-                    <li>W 1077-893 vs Bayou Boys Week 7 2010</li>
-                    <li>L 935-990 vs X-Factor Week 8 2010</li>
-                    <li>L 665-727 vs Wolves Week 9 2010</li>
-                    <li>L 1205-1479 vs Don&#39;t Tase Me Bro Week 10 2010</li>
-                    <li>L 666-815 vs Team Bean Week 11 2010</li>
-                    <li>L 1037-1062 vs Phantoms Week 12 2010</li>
-                    <li>W 924-915 vs Just Too Lucky Week 13 2010</li>
-                    <li>W 646-523 vs Rocky Mountain Oysters Week 14 2010</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2009</strong> 5-9 <i>(0.357)</i>
-            <ol>
-                    <li>W 1091-720 vs Rocky Mountain Oysters Week 1 2009</li>
-                    <li>L 887-1331 vs Bayou Boys Week 2 2009</li>
-                    <li>L 783-848 vs Wolves Week 3 2009</li>
-                    <li>L 493-1005 vs TD Matrix Week 4 2009</li>
-                    <li>W 1157-756 vs Fighting Calrissians Week 5 2009</li>
-                    <li>L 771-843 vs Truffle Shuffle Week 6 2009</li>
-                    <li>W 947-621 vs Team Bean Week 7 2009</li>
-                    <li>W 982-913 vs Marauding Nomads Week 8 2009</li>
-                    <li>L 375-980 vs Phantoms Week 9 2009</li>
-                    <li>L 589-711 vs Dominators Week 10 2009</li>
-                    <li>L 787-846 vs Ultracogs Week 11 2009</li>
-                    <li>W 1038-730 vs Rocky Mountain Oysters Week 12 2009</li>
-                    <li>L 960-1094 vs Bayou Boys Week 13 2009</li>
-                    <li>L 671-793 vs Wolves Week 14 2009</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2008</strong> 8-6 <i>(0.571)</i>
-            <ol>
-                    <li>W 953-751 vs Wolves Week 1 2008</li>
-                    <li>W 1084-932 vs Rocky Mountain Oysters Week 2 2008</li>
-                    <li>L 494-848 vs Bayou Boys Week 3 2008</li>
-                    <li>L 841-951 vs Ultracogs Week 4 2008</li>
-                    <li>W 979-684 vs Team Bean Week 5 2008</li>
-                    <li>L 549-715 vs Wishbone Week 6 2008</li>
-                    <li>L 476-1862 vs TD Matrix Week 7 2008</li>
-                    <li>W 1049-441 vs Everett Eternals Week 8 2008</li>
-                    <li>L 557-679 vs Blitzkrieg Week 9 2008</li>
-                    <li>W 1155-907 vs Fighting Calrissians Week 10 2008</li>
-                    <li>W 881-805 vs Dominators Week 11 2008</li>
-                    <li>L 614-821 vs Wolves Week 12 2008</li>
-                    <li>W 918-408 vs Rocky Mountain Oysters Week 13 2008</li>
-                    <li>W 758-739 vs Bayou Boys Week 14 2008</li>
-                    <li>L 551-962 vs Wolves Wild Card Week 2008</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2007</strong> 7-7 <i>(0.500)</i>
-            <ol>
-                    <li>L 997-1160 vs Dominators Week 1 2007</li>
-                    <li>L 587-1289 vs Everett Eternals Week 2 2007</li>
-                    <li>L 891-995 vs Bayou Boys Week 3 2007</li>
-                    <li>W 521-433 vs Rocky Mountain Oysters Week 4 2007</li>
-                    <li>L 640-689 vs Phantoms Week 5 2007</li>
-                    <li>L 1035-1095 vs Team Bean Week 6 2007</li>
-                    <li>W 975-638 vs Team Bean Week 7 2007</li>
-                    <li>L 1035-1095 vs Fighting Calrissians Week 8 2007</li>
-                    <li>L 456-886 vs Ultracogs Week 9 2007</li>
-                    <li>W 638-533 vs Wolves Week 10 2007</li>
-                    <li>W 843-654 vs Wishbone Week 11 2007</li>
-                    <li>W 1255-809 vs Dominators Week 12 2007</li>
-                    <li>W 780-462 vs Everett Eternals Week 13 2007</li>
-                    <li>W 726-598 vs Bayou Boys Week 14 2007</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2006</strong> 3-11 <i>(0.214)</i>
-            <ol>
-                    <li>L 781-894 vs Dominators Week 1 2006</li>
-                    <li>L 866-958 vs Red Raiders Week 2 2006</li>
-                    <li>L 461-757 vs Bayou Boys Week 3 2006</li>
-                    <li>L 367-612 vs Rocky Mountain Oysters Week 4 2006</li>
-                    <li>W 842-780 vs Fighting Calrissians Week 5 2006</li>
-                    <li>L 702-1082 vs Overpaid Crybabies Week 6 2006</li>
-                    <li>L 590-676 vs Team Bean Week 7 2006</li>
-                    <li>L 391-412 vs Wolfins Week 8 2006</li>
-                    <li>W 806-760 vs Ultracogs Week 9 2006</li>
-                    <li>L 702-966 vs Phantoms Week 10 2006</li>
-                    <li>W 888-500 vs TD Matrix Week 11 2006</li>
-                    <li>L 565-833 vs Dominators Week 12 2006</li>
-                    <li>L 809-1177 vs Red Raiders Week 13 2006</li>
-                    <li>L 820-1016 vs Bayou Boys Week 14 2006</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2005</strong> 8-6 <i>(0.571)</i>
-            <ol>
-                    <li>L 511-985 vs Overpaid Crybabies Week 1 2005</li>
-                    <li>W 762-343 vs Wolves Week 2 2005</li>
-                    <li>L 902-919 vs Phantoms Week 3 2005</li>
-                    <li>W 960-892 vs Red Raiders Week 4 2005</li>
-                    <li>L 766-1137 vs Rocky Mountain Oysters Week 5 2005</li>
-                    <li>W 850-777 vs Drunken Squirrels Week 6 2005</li>
-                    <li>W 834-816 vs Dominators Week 7 2005</li>
-                    <li>W 808-568 vs Fighting Calrissians Week 8 2005</li>
-                    <li>L 613-1058 vs Team Bean Week 9 2005</li>
-                    <li>W 774-578 vs Ultracogs Week 10 2005</li>
-                    <li>W 1224-781 vs Bayou Boys Week 11 2005</li>
-                    <li>L 730-957 vs Overpaid Crybabies Week 12 2005</li>
-                    <li>L 820-1306 vs Wolves Week 13 2005</li>
-                    <li>W 871-482 vs Phantoms Week 14 2005</li>
-                    <li>W 1034-894 vs Ultracogs Wild Card Week 2005</li>
-                    <li>W 986-537 vs Wolves Conference Championship 2005</li>
-                    <li>W 823-427 vs Dominators Fantasy Bowl X 2005</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2004</strong> 5-9 <i>(0.357)</i>
-            <ol>
-                    <li>L 811-972 vs Team Bean Week 1 2004</li>
-                    <li>L 754-938 vs Phantoms Week 2 2004</li>
-                    <li>L 664-1113 vs Dominators Week 3 2004</li>
-                    <li>L 772-953 vs Marauding Nomads Week 4 2004</li>
-                    <li>W 906-869 vs TD Matrix Week 5 2004</li>
-                    <li>L 697-900 vs Wolves Week 6 2004</li>
-                    <li>L 461-626 vs Ultracogs Week 7 2004</li>
-                    <li>W 1876-1001 vs Brawlers II Week 8 2004</li>
-                    <li>W 983-741 vs Rocky Mountain Oysters Week 9 2004</li>
-                    <li>W 629-449 vs Red Raiders Week 10 2004</li>
-                    <li>L 873-1665 vs Bayou Boys Week 11 2004</li>
-                    <li>W 1084-824 vs Team Bean Week 12 2004</li>
-                    <li>L 692-1212 vs Phantoms Week 13 2004</li>
-                    <li>L 703-966 vs Dominators Week 14 2004</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2003</strong> 9-5 <i>(0.643)</i>
-            <ol>
-                    <li>W 907-706 vs Marauding Nomads Week 1 2003</li>
-                    <li>W 828-592 vs Team Bean Week 2 2003</li>
-                    <li>W 882-638 vs Rocky Mountain Oysters Week 3 2003</li>
-                    <li>L 490-1087 vs TD Matrix Week 4 2003</li>
-                    <li>W 747-733 vs Brawlers II Week 5 2003</li>
-                    <li>W 949-723 vs Nuclear181 Week 6 2003</li>
-                    <li>L 846-1117 vs Wolves Week 7 2003</li>
-                    <li>L 801-846 vs Marauding Nomads Week 8 2003</li>
-                    <li>L 642-773 vs Brawlers II Week 9 2003</li>
-                    <li>W 1328-758 vs Phantoms Week 10 2003</li>
-                    <li>W 830-479 vs Nuclear181 Week 11 2003</li>
-                    <li>W 893-627 vs Team Bean Week 12 2003</li>
-                    <li>W 1214-533 vs Bayou Boys Week 13 2003</li>
-                    <li>L 1045-1059 vs TD Matrix Week 14 2003</li>
-                    <li>W 1057-844 vs Team Bean Conference Championship 2003</li>
-                    <li>W 790-630 vs TD Matrix Fantasy Bowl VIII 2003</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2002</strong> 7-7 <i>(0.500)</i>
-            <ol>
-                    <li>W 1118-750 vs Brawlers II Week 1 2002</li>
-                    <li>L 872-900 vs Marauding Nomads Week 2 2002</li>
-                    <li>W 1024-641 vs TD Matrix Week 3 2002</li>
-                    <li>L 558-1036 vs Wolves Week 4 2002</li>
-                    <li>L 745-748 vs Demons Week 5 2002</li>
-                    <li>W 797-600 vs Bayou Boys Week 6 2002</li>
-                    <li>L 670-1136 vs Team Bean Week 7 2002</li>
-                    <li>L 618-758 vs Red Raiders Week 8 2002</li>
-                    <li>W 913-421 vs Buffy&#39;s Bombardiers Week 9 2002</li>
-                    <li>W 1538-888 vs Brawlers II Week 10 2002</li>
-                    <li>L 424-988 vs Marauding Nomads Week 11 2002</li>
-                    <li>W 619-481 vs TD Matrix Week 12 2002</li>
-                    <li>L 862-1108 vs Wolves Week 13 2002</li>
-                    <li>W 915-461 vs Demons Week 14 2002</li>
-                    <li>L 624-911 vs TD Matrix Wild Card 2002</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2001</strong> 12-2 <i>(0.857)</i>
-            <ol>
-                    <li>W 936-751 vs Marauding Nomads Week 1 2001</li>
-                    <li>W 1216-978 vs Brawlers II Week 2 2001</li>
-                    <li>W 779-299 vs Rocky Mountain Oysters Week 3 2001</li>
-                    <li>W 714-569 vs Spokanites Week 4 2001</li>
-                    <li>L 734-888 vs Bayou Boys Week 5 2001</li>
-                    <li>W 917-346 vs Red Raiders Week 6 2001</li>
-                    <li>W 1084-822 vs TD Matrix Week 7 2001</li>
-                    <li>W 803-751 vs Buffy&#39;s Bombardiers Week 8 2001</li>
-                    <li>W 1184-1043 vs Demons Week 9 2001</li>
-                    <li>L 835-972 vs Marauding Nomads Week 10 2001</li>
-                    <li>W 931-642 vs Brawlers II Week 11 2001</li>
-                    <li>W 1027-579 vs Rocky Mountain Oysters Week 12 2001</li>
-                    <li>W 1118-582 vs Spokanites Week 13 2001</li>
-                    <li>W 1016-994 vs Bayou Boys Week 14 2001</li>
-                    <li>L 536-772 vs Brawlers II Conference Championship 2001</li>
-            </ol>
-        </li>
-        <li>
-            <strong>2000</strong> 5-9 <i>(0.357)</i>
-            <ol>
-                    <li>L 598-1018 vs Spokanites Week 1 2000</li>
-                    <li>W 1038-784 vs Marauding Nomads Week 2 2000</li>
-                    <li>W 756-655 vs Anal Cleansing Technicians Week 3 2000</li>
-                    <li>L 325-819 vs Team Bean Week 4 2000</li>
-                    <li>W 968-763 vs TD Matrix Week 5 2000</li>
-                    <li>L 783-1211 vs Buffy&#39;s Bombardiers Week 6 2000</li>
-                    <li>L 603-820 vs Wolves Week 7 2000</li>
-                    <li>L 1013-1184 vs Brawlers II Week 8 2000</li>
-                    <li>W 756-698 vs Bayou Boys Week 9 2000</li>
-                    <li>L 1054-1124 vs Spokanites Week 10 2000</li>
-                    <li>L 487-1144 vs Marauding Nomads Week 11 2000</li>
-                    <li>W 1096-943 vs Anal Cleansing Technicians Week 12 2000</li>
-                    <li>L 1018-1210 vs Team Bean Week 13 2000</li>
-                    <li>L 911-957 vs TD Matrix Week 14 2000</li>
-            </ol>
-        </li>
-</ul>
-
+        <div class="section-title">Seasons:</div>
+        <ul>
+                <li>
+                    <span class="season-title">2024</span>
+                    <span> 11-3 <i>(0.786)</i></span>
+                    <ol>
+                            <li class="game-details">W 1133-670 vs Koothrapaulli Browns Week 1 2024</li>
+                            <li class="game-details">W 1053-934 vs Just Too Lucky Week 2 2024</li>
+                            <li class="game-details">W 1240-750 vs Rocky Mountain Oysters Week 3 2024</li>
+                            <li class="game-details">L 969-1051 vs Wolves Week 4 2024</li>
+                            <li class="game-details">W 1044-851 vs Dominators Week 5 2024</li>
+                            <li class="game-details">W 967-961 vs Team Bean Week 6 2024</li>
+                            <li class="game-details">W 1222-980 vs The TecmoBowlers Week 7 2024</li>
+                            <li class="game-details">W 1184-625 vs Truffle Shuffle Week 8 2024</li>
+                            <li class="game-details">W 929-723 vs Marauding Nomads Week 9 2024</li>
+                            <li class="game-details">W 728-578 vs Bayou Boys Week 10 2024</li>
+                            <li class="game-details">L 858-1174 vs Ultracogs Week 11 2024</li>
+                            <li class="game-details">W 1941-740 vs Rocky Mountain Oysters Week 12 2024</li>
+                            <li class="game-details">W 1354-721 vs Just Too Lucky Week 13 2024</li>
+                            <li class="game-details">L 632-1217 vs Koothrapaulli Browns Week 14 2024</li>
+                            <li class="game-details">W 1202-1163 vs Koothrapaulli Browns Divisional Week 2024</li>
+                            <li class="game-details">W 1580-1284 vs Ultracogs Conference Championship 2024</li>
+                            <li class="game-details">W 1080-825 vs Truffle Shuffle Fantasy Bowl XXIX 2024</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2023</span>
+                    <span> 7-7 <i>(0.500)</i></span>
+                    <ol>
+                            <li class="game-details">W 858-545 vs Rocky Mountain Oysters Week 1 2023</li>
+                            <li class="game-details">L 765-985 vs Just Too Lucky Week 2 2023</li>
+                            <li class="game-details">L 1025-1277 vs Koothrapaulli Browns Week 3 2023</li>
+                            <li class="game-details">W 1441-474 vs Ultracogs Week 4 2023</li>
+                            <li class="game-details">W 1054-560 vs Wolves Week 5 2023</li>
+                            <li class="game-details">W 654-593 vs Speed Demons Week 6 2023</li>
+                            <li class="game-details">L 858-992 vs Phantoms Week 7 2023</li>
+                            <li class="game-details">W 1122-1070 vs Fantasy Cognoscenti Week 8 2023</li>
+                            <li class="game-details">W 826-550 vs Low Expectations Week 9 2023</li>
+                            <li class="game-details">L 491-1362 vs Bayou Boys Week 10 2023</li>
+                            <li class="game-details">L 480-518 vs Dominators Week 11 2023</li>
+                            <li class="game-details">L 832-1108 vs Koothrapaulli Browns Week 12 2023</li>
+                            <li class="game-details">W 1027-656 vs Just Too Lucky Week 13 2023</li>
+                            <li class="game-details">L 727-958 vs Rocky Mountain Oysters Week 14 2023</li>
+                            <li class="game-details">L 697-1058 vs Ultracogs Wild Card Week 2023</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2022</span>
+                    <span> 7-7 <i>(0.500)</i></span>
+                    <ol>
+                            <li class="game-details">L 770-1210 vs Koothrapaulli Browns Week 1 2022</li>
+                            <li class="game-details">L 988-1146 vs Rocky Mountain Oysters Week 2 2022</li>
+                            <li class="game-details">W 728-703 vs Just Too Lucky Week 3 2022</li>
+                            <li class="game-details">L 956-1076 vs Bayou Boys Week 4 2022</li>
+                            <li class="game-details">W 923-818 vs Ultracogs Week 5 2022</li>
+                            <li class="game-details">L 653-859 vs The TecmoBowlers Week 6 2022</li>
+                            <li class="game-details">W 583-401 vs Truffle Shuffle Week 7 2022</li>
+                            <li class="game-details">W 1047-792 vs Marauding Nomads Week 8 2022</li>
+                            <li class="game-details">L 659-801 vs Team Bean Week 9 2022</li>
+                            <li class="game-details">W 979-836 vs Wolves Week 10 2022</li>
+                            <li class="game-details">W 1020-647 vs Dominators Week 11 2022</li>
+                            <li class="game-details">L 567-643 vs Just Too Lucky Week 12 2022</li>
+                            <li class="game-details">L 582-772 vs Rocky Mountain Oysters Week 13 2022</li>
+                            <li class="game-details">W 888-763 vs Koothrapaulli Browns Week 14 2022</li>
+                            <li class="game-details">L 843-974 vs Koothrapaulli Browns Wild Card Week 2022</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2021</span>
+                    <span> 10-4 <i>(0.714)</i></span>
+                    <ol>
+                            <li class="game-details">W 792-734 vs Just Too Lucky Week 1 2021</li>
+                            <li class="game-details">W 1050-877 vs Koothrapaulli Browns Week 2 2021</li>
+                            <li class="game-details">W 1395-598 vs Rocky Mountain Oysters Week 3 2021</li>
+                            <li class="game-details">W 1053-872 vs Wolves Week 4 2021</li>
+                            <li class="game-details">L 958-1215 vs Ultracogs Week 5 2021</li>
+                            <li class="game-details">W 1236-629 vs Fish On Week 6 2021</li>
+                            <li class="game-details">W 1082-1078 vs Phantoms Week 7 2021</li>
+                            <li class="game-details">W 1044-707 vs Low Expectations Week 8 2021</li>
+                            <li class="game-details">L 496-668 vs Speed Demons Week 9 2021</li>
+                            <li class="game-details">W 694-626 vs Bayou Boys Week 10 2021</li>
+                            <li class="game-details">L 592-608 vs Dominators Week 11 2021</li>
+                            <li class="game-details">W 1043-369 vs Rocky Mountain Oysters Week 12 2021</li>
+                            <li class="game-details">L 798-1226 vs Koothrapaulli Browns Week 13 2021</li>
+                            <li class="game-details">W 880-457 vs Just Too Lucky Week 14 2021</li>
+                            <li class="game-details">W 1335-565 vs Ultracogs Divisional Week 2021</li>
+                            <li class="game-details">W 1532-999 vs Bayou Boys Conference Championship 2021</li>
+                            <li class="game-details">L 713-1306 vs Marauding Nomads Fantasy Bowl XXVI 2021</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2020</span>
+                    <span> 9-5 <i>(0.643)</i></span>
+                    <ol>
+                            <li class="game-details">W 614-358 vs Rocky Mountain Oysters Week 1 2020</li>
+                            <li class="game-details">W 951-856 vs Koothrapaulli Browns Week 2 2020</li>
+                            <li class="game-details">L 877-922 vs Just Too Lucky Week 3 2020</li>
+                            <li class="game-details">W 957-954 vs Ultracogs Week 4 2020</li>
+                            <li class="game-details">W 961-867 vs Wolves Week 5 2020</li>
+                            <li class="game-details">W 1035-501 vs Marauding Nomads Week 6 2020</li>
+                            <li class="game-details">W 1056-607 vs Team Bean Week 7 2020</li>
+                            <li class="game-details">L 711-836 vs Truffle Shuffle Week 8 2020</li>
+                            <li class="game-details">L 876-1808 vs The TecmoBowlers Week 9 2020</li>
+                            <li class="game-details">W 813-739 vs Dominators Week 10 2020</li>
+                            <li class="game-details">W 1158-922 vs Bayou Boys Week 11 2020</li>
+                            <li class="game-details">L 1155-1212 vs Just Too Lucky Week 12 2020</li>
+                            <li class="game-details">L 742-987 vs Koothrapaulli Browns Week 13 2020</li>
+                            <li class="game-details">W 905-645 vs Rocky Mountain Oysters Week 14 2020</li>
+                            <li class="game-details">W 676-547 vs Koothrapaulli Browns Wild Card Week 2020</li>
+                            <li class="game-details">W 984-806 vs Wolves Conference Championship 2020</li>
+                            <li class="game-details">W 1214-1110 vs Marauding Nomads Fantasy Bowl XXV 2020</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2019</span>
+                    <span> 7-7 <i>(0.500)</i></span>
+                    <ol>
+                            <li class="game-details">W 1272-786 vs Rocky Mountain Oysters Week 1 2019</li>
+                            <li class="game-details">L 755-780 vs Koothrapaulli Browns Week 2 2019</li>
+                            <li class="game-details">L 830-1591 vs Just Too Lucky Week 3 2019</li>
+                            <li class="game-details">W 932-818 vs Ultracogs Week 4 2019</li>
+                            <li class="game-details">L 718-860 vs Bayou Boys Week 5 2019</li>
+                            <li class="game-details">W 916-539 vs Speed Demons Week 6 2019</li>
+                            <li class="game-details">L 743-915 vs Baldwin on a Budget Week 7 2019</li>
+                            <li class="game-details">W 858-736 vs X-Factor Week 8 2019</li>
+                            <li class="game-details">W 1532-769 vs Phantoms Week 9 2019</li>
+                            <li class="game-details">L 540-935 vs Wolves Week 10 2019</li>
+                            <li class="game-details">W 812-601 vs Dominators Week 11 2019</li>
+                            <li class="game-details">L 553-848 vs Rocky Mountain Oysters Week 12 2019</li>
+                            <li class="game-details">L 427-850 vs Koothrapaulli Browns Week 13 2019</li>
+                            <li class="game-details">W 1221-722 vs Just Too Lucky Week 14 2019</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2018</span>
+                    <span> 6-8 <i>(0.429)</i></span>
+                    <ol>
+                            <li class="game-details">W 987-622 vs Koothrapaulli Browns Week 1 2018</li>
+                            <li class="game-details">L 750-1388 vs Just Too Lucky Week 2 2018</li>
+                            <li class="game-details">W 584-445 vs Rocky Mountain Oysters Week 3 2018</li>
+                            <li class="game-details">W 902-896 vs Wolves Week 4 2018</li>
+                            <li class="game-details">W 947-711 vs Bayou Boys Week 5 2018</li>
+                            <li class="game-details">W 1248-981 vs The TecmoBowlers Week 6 2018</li>
+                            <li class="game-details">L 545-596 vs Team Bean Week 7 2018</li>
+                            <li class="game-details">L 851-1379 vs Truffle Shuffle Week 8 2018</li>
+                            <li class="game-details">L 641-1319 vs Marauding Nomads Week 9 2018</li>
+                            <li class="game-details">W 456-254 vs Ultracogs Week 10 2018</li>
+                            <li class="game-details">L 569-954 vs Dominators Week 11 2018</li>
+                            <li class="game-details">L 583-808 vs Koothrapaulli Browns Week 12 2018</li>
+                            <li class="game-details">L 906-1135 vs Just Too Lucky Week 13 2018</li>
+                            <li class="game-details">L 755-1159 vs Rocky Mountain Oysters Week 14 2018</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2017</span>
+                    <span> 8-6 <i>(0.571)</i></span>
+                    <ol>
+                            <li class="game-details">W 940-642 vs Rocky Mountain Oysters Week 1 2017</li>
+                            <li class="game-details">W 913-551 vs Phantoms Week 2 2017</li>
+                            <li class="game-details">L 1175-1325 vs Just Too Lucky Week 3 2017</li>
+                            <li class="game-details">L 902-1059 vs Suck My Hawks Week 4 2017</li>
+                            <li class="game-details">W 1400-421 vs Team Bean Week 5 2017</li>
+                            <li class="game-details">W 844-777 vs Kumar&#39;s Klan Week 6 2017</li>
+                            <li class="game-details">W 666-597 vs Ultracogs Week 7 2017</li>
+                            <li class="game-details">L 628-667 vs Dominators Week 8 2017</li>
+                            <li class="game-details">W 850-575 vs The TecmoBowlers Week 9 2017</li>
+                            <li class="game-details">L 577-1102 vs Truffle Shuffle Week 10 2017</li>
+                            <li class="game-details">W 1049-864 vs Marauding Nomads Week 11 2017</li>
+                            <li class="game-details">L 639-1106 vs Just Too Lucky Week 12 2017</li>
+                            <li class="game-details">W 780-529 vs Rocky Mountain Oysters Week 13 2017</li>
+                            <li class="game-details">L 549-1141 vs Phantoms Week 14 2017</li>
+                            <li class="game-details">L 933-1010 vs Just Too Lucky Wild Card Week 2017</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2016</span>
+                    <span> 4-10 <i>(0.286)</i></span>
+                    <ol>
+                            <li class="game-details">L 561-942 vs Just Too Lucky Week 1 2016</li>
+                            <li class="game-details">W 1499-1411 vs Rocky Mountain Oysters Week 2 2016</li>
+                            <li class="game-details">L 1121-1498 vs Phantoms Week 3 2016</li>
+                            <li class="game-details">L 621-773 vs Don&#39;t Tase Me Bro Week 4 2016</li>
+                            <li class="game-details">L 795-905 vs Truffle Shuffle Week 5 2016</li>
+                            <li class="game-details">W 1541-616 vs Wolves Week 6 2016</li>
+                            <li class="game-details">L 492-879 vs Monica Loves Clinton Dix Week 7 2016</li>
+                            <li class="game-details">L 523-1248 vs Bayou Boys Week 8 2016</li>
+                            <li class="game-details">W 592-478 vs Speed Demons Week 9 2016</li>
+                            <li class="game-details">W 581-567 vs Marauding Nomads Week 10 2016</li>
+                            <li class="game-details">L 277-753 vs Team Bean Week 11 2016</li>
+                            <li class="game-details">L 916-990 vs Just Too Lucky Week 12 2016</li>
+                            <li class="game-details">L 700-1365 vs Rocky Mountain Oysters Week 13 2016</li>
+                            <li class="game-details">L 692-1003 vs Phantoms Week 14 2016</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2015</span>
+                    <span> 4-10 <i>(0.286)</i></span>
+                    <ol>
+                            <li class="game-details">L 1000-1117 vs Just Too Lucky Week 1 2015</li>
+                            <li class="game-details">L 689-1245 vs Rocky Mountain Oysters Week 2 2015</li>
+                            <li class="game-details">L 1205-1734 vs Phantoms Week 3 2015</li>
+                            <li class="game-details">L 899-1058 vs Don&#39;t Tase Me Bro Week 4 2015</li>
+                            <li class="game-details">L 817-1203 vs Truffle Shuffle Week 5 2015</li>
+                            <li class="game-details">W 981-868 vs Dominators Week 6 2015</li>
+                            <li class="game-details">W 1232-860 vs Ultracogs Week 7 2015</li>
+                            <li class="game-details">W 1103-1093 vs Doom Patrol Week 8 2015</li>
+                            <li class="game-details">L 787-1135 vs Fighting Calrissians Week 9 2015</li>
+                            <li class="game-details">L 571-816 vs Marauding Nomads Week 10 2015</li>
+                            <li class="game-details">L 850-857 vs Team Bean Week 11 2015</li>
+                            <li class="game-details">L 583-853 vs Just Too Lucky Week 12 2015</li>
+                            <li class="game-details">L 693-759 vs Phantoms Week 13 2015</li>
+                            <li class="game-details">W 671-606 vs Rocky Mountain Oysters Week 14 2015</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2014</span>
+                    <span> 8-6 <i>(0.571)</i></span>
+                    <ol>
+                            <li class="game-details">W 1073-766 vs Rocky Mountain Oysters Week 1 2014</li>
+                            <li class="game-details">W 855-751 vs Phantoms Week 2 2014</li>
+                            <li class="game-details">L 660-931 vs Just Too Lucky Week 3 2014</li>
+                            <li class="game-details">L 629-758 vs Don&#39;t Tase Me Bro Week 4 2014</li>
+                            <li class="game-details">W 1141-685 vs Truffle Shuffle Week 5 2014</li>
+                            <li class="game-details">W 1187-877 vs Bayou Boys Week 6 2014</li>
+                            <li class="game-details">W 672-670 vs Wolves Week 7 2014</li>
+                            <li class="game-details">L 773-1274 vs X-Factor Week 8 2014</li>
+                            <li class="game-details">W 1016-991 vs Speed Demons Week 9 2014</li>
+                            <li class="game-details">L 774-1189 vs Marauding Nomads Week 10 2014</li>
+                            <li class="game-details">W 1222-850 vs Team Bean Week 11 2014</li>
+                            <li class="game-details">L 498-728 vs Just Too Lucky Week 12 2014</li>
+                            <li class="game-details">L 618-1374 vs Phantoms Week 13 2014</li>
+                            <li class="game-details">W 1260-1247 vs Rocky Mountain Oysters Week 14 2014</li>
+                            <li class="game-details">L 224-813 vs Rocky Mountain Oysters Wild Card Week 2014</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2013</span>
+                    <span> 8-6 <i>(0.571)</i></span>
+                    <ol>
+                            <li class="game-details">W 1574-1081 vs Rocky Mountain Oysters Week 1 2013</li>
+                            <li class="game-details">W 1404-1308 vs Just Too Lucky Week 2 2013</li>
+                            <li class="game-details">L 605-849 vs Phantoms Week 3 2013</li>
+                            <li class="game-details">L 694-1022 vs Truffle Shuffle Week 4 2013</li>
+                            <li class="game-details">W 867-762 vs Marauding Nomads Week 5 2013</li>
+                            <li class="game-details">W 938-693 vs Dominators Week 6 2013</li>
+                            <li class="game-details">W 841-742 vs Fighting Calrissians Week 7 2013</li>
+                            <li class="game-details">L 900-1442 vs Doom Patrol Week 8 2013</li>
+                            <li class="game-details">L 851-1197 vs Ultracogs Week 9 2013</li>
+                            <li class="game-details">W 981-540 vs Don&#39;t Tase Me Bro Week 10 2013</li>
+                            <li class="game-details">W 1259-580 vs Team Bean Week 11 2013</li>
+                            <li class="game-details">L 705-759 vs Phantoms Week 12 2013</li>
+                            <li class="game-details">W 1034-888 vs Just Too Lucky Week 13 2013</li>
+                            <li class="game-details">L 850-927 vs Rocky Mountain Oysters Week 14 2013</li>
+                            <li class="game-details">L 1078-1201 vs Team Bean Wild Card Week 2013</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2012</span>
+                    <span> 8-6 <i>(0.571)</i></span>
+                    <ol>
+                            <li class="game-details">W 848-814 vs Rocky Mountain Oysters Week 1 2012</li>
+                            <li class="game-details">L 522-839 vs Just Too Lucky Week 2 2012</li>
+                            <li class="game-details">L 1084-1405 vs Phantoms Week 3 2012</li>
+                            <li class="game-details">L 812-1038 vs Truffle Shuffle Week 4 2012</li>
+                            <li class="game-details">W 1366-1100 vs Marauding Nomads Week 5 2012</li>
+                            <li class="game-details">W 1115-631 vs No Luck Needed Week 6 2012</li>
+                            <li class="game-details">W 1221-876 vs Bayou Boys Week 7 2012</li>
+                            <li class="game-details">W 1319-701 vs X-Factor Week 8 2012</li>
+                            <li class="game-details">W 968-967 vs Wolves Week 9 2012</li>
+                            <li class="game-details">L 775-910 vs Don&#39;t Tase Me Bro Week 10 2012</li>
+                            <li class="game-details">W 509-481 vs Team Bean Week 11 2012</li>
+                            <li class="game-details">L 862-1075 vs Phantoms Week 12 2012</li>
+                            <li class="game-details">L 731-893 vs Just Too Lucky Week 13 2012</li>
+                            <li class="game-details">W 1075-527 vs Rocky Mountain Oysters Week 14 2012</li>
+                            <li class="game-details">W 877-457 vs Phantoms Wild Card Week 2012</li>
+                            <li class="game-details">W 800-755 vs Don&#39;t Tase Me Bro Conference Championship 2012</li>
+                            <li class="game-details">W 1136-867 vs Dominators Fantasy Bowl XVII 2012</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2011</span>
+                    <span> 11-3 <i>(0.786)</i></span>
+                    <ol>
+                            <li class="game-details">L 555-666 vs Just Too Lucky Week 1 2011</li>
+                            <li class="game-details">W 954-845 vs Phantoms Week 2 2011</li>
+                            <li class="game-details">L 1099-1205 vs Rocky Mountain Oysters Week 3 2011</li>
+                            <li class="game-details">L 712-977 vs Don&#39;t Tase Me Bro Week 4 2011</li>
+                            <li class="game-details">W 1151-1121 vs Truffle Shuffle Week 5 2011</li>
+                            <li class="game-details">W 845-708 vs Fighting Calrissians Week 6 2011</li>
+                            <li class="game-details">W 1027-975 vs Doom Patrol Week 7 2011</li>
+                            <li class="game-details">W 848-782 vs Dominators Week 8 2011</li>
+                            <li class="game-details">W 903-671 vs Ultracogs Week 9 2011</li>
+                            <li class="game-details">W 1050-576 vs Marauding Nomads Week 10 2011</li>
+                            <li class="game-details">W 900-626 vs Team Bean Week 11 2011</li>
+                            <li class="game-details">W 1160-615 vs Rocky Mountain Oysters Week 12 2011</li>
+                            <li class="game-details">W 933-843 vs Phantoms Week 13 2011</li>
+                            <li class="game-details">W 1120-1068 vs Just Too Lucky Week 14 2011</li>
+                            <li class="game-details">L 699-772 vs Truffle Shuffle Wild Card Week 2011</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2010</span>
+                    <span> 6-8 <i>(0.429)</i></span>
+                    <ol>
+                            <li class="game-details">L 613-1290 vs Rocky Mountain Oysters Week 1 2010</li>
+                            <li class="game-details">W 914-741 vs Just Too Lucky Week 2 2010</li>
+                            <li class="game-details">W 1196-690 vs Phantoms Week 3 2010</li>
+                            <li class="game-details">L 575-688 vs Truffle Shuffle Week 4 2010</li>
+                            <li class="game-details">L 541-898 vs Marauding Nomads Week 5 2010</li>
+                            <li class="game-details">W 928-893 vs Everett Eternals Week 6 2010</li>
+                            <li class="game-details">W 1077-893 vs Bayou Boys Week 7 2010</li>
+                            <li class="game-details">L 935-990 vs X-Factor Week 8 2010</li>
+                            <li class="game-details">L 665-727 vs Wolves Week 9 2010</li>
+                            <li class="game-details">L 1205-1479 vs Don&#39;t Tase Me Bro Week 10 2010</li>
+                            <li class="game-details">L 666-815 vs Team Bean Week 11 2010</li>
+                            <li class="game-details">L 1037-1062 vs Phantoms Week 12 2010</li>
+                            <li class="game-details">W 924-915 vs Just Too Lucky Week 13 2010</li>
+                            <li class="game-details">W 646-523 vs Rocky Mountain Oysters Week 14 2010</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2009</span>
+                    <span> 5-9 <i>(0.357)</i></span>
+                    <ol>
+                            <li class="game-details">W 1091-720 vs Rocky Mountain Oysters Week 1 2009</li>
+                            <li class="game-details">L 887-1331 vs Bayou Boys Week 2 2009</li>
+                            <li class="game-details">L 783-848 vs Wolves Week 3 2009</li>
+                            <li class="game-details">L 493-1005 vs TD Matrix Week 4 2009</li>
+                            <li class="game-details">W 1157-756 vs Fighting Calrissians Week 5 2009</li>
+                            <li class="game-details">L 771-843 vs Truffle Shuffle Week 6 2009</li>
+                            <li class="game-details">W 947-621 vs Team Bean Week 7 2009</li>
+                            <li class="game-details">W 982-913 vs Marauding Nomads Week 8 2009</li>
+                            <li class="game-details">L 375-980 vs Phantoms Week 9 2009</li>
+                            <li class="game-details">L 589-711 vs Dominators Week 10 2009</li>
+                            <li class="game-details">L 787-846 vs Ultracogs Week 11 2009</li>
+                            <li class="game-details">W 1038-730 vs Rocky Mountain Oysters Week 12 2009</li>
+                            <li class="game-details">L 960-1094 vs Bayou Boys Week 13 2009</li>
+                            <li class="game-details">L 671-793 vs Wolves Week 14 2009</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2008</span>
+                    <span> 8-6 <i>(0.571)</i></span>
+                    <ol>
+                            <li class="game-details">W 953-751 vs Wolves Week 1 2008</li>
+                            <li class="game-details">W 1084-932 vs Rocky Mountain Oysters Week 2 2008</li>
+                            <li class="game-details">L 494-848 vs Bayou Boys Week 3 2008</li>
+                            <li class="game-details">L 841-951 vs Ultracogs Week 4 2008</li>
+                            <li class="game-details">W 979-684 vs Team Bean Week 5 2008</li>
+                            <li class="game-details">L 549-715 vs Wishbone Week 6 2008</li>
+                            <li class="game-details">L 476-1862 vs TD Matrix Week 7 2008</li>
+                            <li class="game-details">W 1049-441 vs Everett Eternals Week 8 2008</li>
+                            <li class="game-details">L 557-679 vs Blitzkrieg Week 9 2008</li>
+                            <li class="game-details">W 1155-907 vs Fighting Calrissians Week 10 2008</li>
+                            <li class="game-details">W 881-805 vs Dominators Week 11 2008</li>
+                            <li class="game-details">L 614-821 vs Wolves Week 12 2008</li>
+                            <li class="game-details">W 918-408 vs Rocky Mountain Oysters Week 13 2008</li>
+                            <li class="game-details">W 758-739 vs Bayou Boys Week 14 2008</li>
+                            <li class="game-details">L 551-962 vs Wolves Wild Card Week 2008</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2007</span>
+                    <span> 7-7 <i>(0.500)</i></span>
+                    <ol>
+                            <li class="game-details">L 997-1160 vs Dominators Week 1 2007</li>
+                            <li class="game-details">L 587-1289 vs Everett Eternals Week 2 2007</li>
+                            <li class="game-details">L 891-995 vs Bayou Boys Week 3 2007</li>
+                            <li class="game-details">W 521-433 vs Rocky Mountain Oysters Week 4 2007</li>
+                            <li class="game-details">L 640-689 vs Phantoms Week 5 2007</li>
+                            <li class="game-details">L 306-1327 vs TD Matrix Week 6 2007</li>
+                            <li class="game-details">W 975-638 vs Team Bean Week 7 2007</li>
+                            <li class="game-details">L 1035-1095 vs Fighting Calrissians Week 8 2007</li>
+                            <li class="game-details">L 456-886 vs Ultracogs Week 9 2007</li>
+                            <li class="game-details">W 638-533 vs Wolves Week 10 2007</li>
+                            <li class="game-details">W 843-654 vs Wishbone Week 11 2007</li>
+                            <li class="game-details">W 1255-809 vs Dominators Week 12 2007</li>
+                            <li class="game-details">W 780-462 vs Everett Eternals Week 13 2007</li>
+                            <li class="game-details">W 726-598 vs Bayou Boys Week 14 2007</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2006</span>
+                    <span> 3-11 <i>(0.214)</i></span>
+                    <ol>
+                            <li class="game-details">L 781-894 vs Dominators Week 1 2006</li>
+                            <li class="game-details">L 866-958 vs Red Raiders Week 2 2006</li>
+                            <li class="game-details">L 461-757 vs Bayou Boys Week 3 2006</li>
+                            <li class="game-details">L 367-612 vs Rocky Mountain Oysters Week 4 2006</li>
+                            <li class="game-details">W 842-780 vs Fighting Calrissians Week 5 2006</li>
+                            <li class="game-details">L 702-1082 vs Overpaid Crybabies Week 6 2006</li>
+                            <li class="game-details">L 590-676 vs Team Bean Week 7 2006</li>
+                            <li class="game-details">L 391-412 vs Wolfins Week 8 2006</li>
+                            <li class="game-details">W 806-760 vs Ultracogs Week 9 2006</li>
+                            <li class="game-details">L 702-966 vs Phantoms Week 10 2006</li>
+                            <li class="game-details">W 888-500 vs TD Matrix Week 11 2006</li>
+                            <li class="game-details">L 565-833 vs Dominators Week 12 2006</li>
+                            <li class="game-details">L 809-1177 vs Red Raiders Week 13 2006</li>
+                            <li class="game-details">L 820-1016 vs Bayou Boys Week 14 2006</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2005</span>
+                    <span> 8-6 <i>(0.571)</i></span>
+                    <ol>
+                            <li class="game-details">L 511-985 vs Overpaid Crybabies Week 1 2005</li>
+                            <li class="game-details">W 762-343 vs Wolves Week 2 2005</li>
+                            <li class="game-details">L 902-919 vs Phantoms Week 3 2005</li>
+                            <li class="game-details">W 960-892 vs Red Raiders Week 4 2005</li>
+                            <li class="game-details">L 766-1137 vs Rocky Mountain Oysters Week 5 2005</li>
+                            <li class="game-details">W 850-777 vs Drunken Squirrels Week 6 2005</li>
+                            <li class="game-details">W 834-816 vs Dominators Week 7 2005</li>
+                            <li class="game-details">W 808-568 vs Fighting Calrissians Week 8 2005</li>
+                            <li class="game-details">L 613-1058 vs Team Bean Week 9 2005</li>
+                            <li class="game-details">W 774-578 vs Ultracogs Week 10 2005</li>
+                            <li class="game-details">W 1224-781 vs Bayou Boys Week 11 2005</li>
+                            <li class="game-details">L 730-957 vs Overpaid Crybabies Week 12 2005</li>
+                            <li class="game-details">L 820-1306 vs Wolves Week 13 2005</li>
+                            <li class="game-details">W 871-482 vs Phantoms Week 14 2005</li>
+                            <li class="game-details">W 1034-894 vs Ultracogs Wild Card Week 2005</li>
+                            <li class="game-details">W 986-537 vs Wolves Conference Championship 2005</li>
+                            <li class="game-details">W 823-427 vs Dominators Fantasy Bowl X 2005</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2004</span>
+                    <span> 5-9 <i>(0.357)</i></span>
+                    <ol>
+                            <li class="game-details">L 811-972 vs Team Bean Week 1 2004</li>
+                            <li class="game-details">L 754-938 vs Phantoms Week 2 2004</li>
+                            <li class="game-details">L 664-1113 vs Dominators Week 3 2004</li>
+                            <li class="game-details">L 772-953 vs Marauding Nomads Week 4 2004</li>
+                            <li class="game-details">W 906-869 vs TD Matrix Week 5 2004</li>
+                            <li class="game-details">L 697-900 vs Wolves Week 6 2004</li>
+                            <li class="game-details">L 461-626 vs Ultracogs Week 7 2004</li>
+                            <li class="game-details">W 1876-1001 vs Brawlers II Week 8 2004</li>
+                            <li class="game-details">W 983-741 vs Rocky Mountain Oysters Week 9 2004</li>
+                            <li class="game-details">W 629-449 vs Red Raiders Week 10 2004</li>
+                            <li class="game-details">L 873-1665 vs Bayou Boys Week 11 2004</li>
+                            <li class="game-details">W 1084-824 vs Team Bean Week 12 2004</li>
+                            <li class="game-details">L 692-1212 vs Phantoms Week 13 2004</li>
+                            <li class="game-details">L 703-966 vs Dominators Week 14 2004</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2003</span>
+                    <span> 9-5 <i>(0.643)</i></span>
+                    <ol>
+                            <li class="game-details">W 907-706 vs Marauding Nomads Week 1 2003</li>
+                            <li class="game-details">W 828-592 vs Team Bean Week 2 2003</li>
+                            <li class="game-details">W 882-638 vs Rocky Mountain Oysters Week 3 2003</li>
+                            <li class="game-details">L 490-1087 vs TD Matrix Week 4 2003</li>
+                            <li class="game-details">W 747-733 vs Brawlers II Week 5 2003</li>
+                            <li class="game-details">W 949-723 vs Nuclear181 Week 6 2003</li>
+                            <li class="game-details">L 846-1117 vs Wolves Week 7 2003</li>
+                            <li class="game-details">L 801-846 vs Marauding Nomads Week 8 2003</li>
+                            <li class="game-details">L 642-773 vs Brawlers II Week 9 2003</li>
+                            <li class="game-details">W 1328-758 vs Phantoms Week 10 2003</li>
+                            <li class="game-details">W 830-479 vs Nuclear181 Week 11 2003</li>
+                            <li class="game-details">W 893-627 vs Team Bean Week 12 2003</li>
+                            <li class="game-details">W 1214-533 vs Bayou Boys Week 13 2003</li>
+                            <li class="game-details">L 1045-1059 vs TD Matrix Week 14 2003</li>
+                            <li class="game-details">W 1057-844 vs Team Bean Conference Championship 2003</li>
+                            <li class="game-details">W 790-630 vs TD Matrix Fantasy Bowl VIII 2003</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2002</span>
+                    <span> 7-7 <i>(0.500)</i></span>
+                    <ol>
+                            <li class="game-details">W 1118-750 vs Brawlers II Week 1 2002</li>
+                            <li class="game-details">L 872-900 vs Marauding Nomads Week 2 2002</li>
+                            <li class="game-details">W 1024-641 vs TD Matrix Week 3 2002</li>
+                            <li class="game-details">L 558-1036 vs Wolves Week 4 2002</li>
+                            <li class="game-details">L 745-748 vs Demons Week 5 2002</li>
+                            <li class="game-details">W 797-600 vs Bayou Boys Week 6 2002</li>
+                            <li class="game-details">L 670-1136 vs Team Bean Week 7 2002</li>
+                            <li class="game-details">L 618-758 vs Red Raiders Week 8 2002</li>
+                            <li class="game-details">W 913-421 vs Buffy&#39;s Bombardiers Week 9 2002</li>
+                            <li class="game-details">W 1538-888 vs Brawlers II Week 10 2002</li>
+                            <li class="game-details">L 424-988 vs Marauding Nomads Week 11 2002</li>
+                            <li class="game-details">W 619-481 vs TD Matrix Week 12 2002</li>
+                            <li class="game-details">L 862-1108 vs Wolves Week 13 2002</li>
+                            <li class="game-details">W 915-461 vs Demons Week 14 2002</li>
+                            <li class="game-details">L 624-911 vs TD Matrix Wild Card 2002</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2001</span>
+                    <span> 12-2 <i>(0.857)</i></span>
+                    <ol>
+                            <li class="game-details">W 936-751 vs Marauding Nomads Week 1 2001</li>
+                            <li class="game-details">W 1216-978 vs Brawlers II Week 2 2001</li>
+                            <li class="game-details">W 779-299 vs Rocky Mountain Oysters Week 3 2001</li>
+                            <li class="game-details">W 714-569 vs Spokanites Week 4 2001</li>
+                            <li class="game-details">L 734-888 vs Bayou Boys Week 5 2001</li>
+                            <li class="game-details">W 917-346 vs Red Raiders Week 6 2001</li>
+                            <li class="game-details">W 1084-822 vs TD Matrix Week 7 2001</li>
+                            <li class="game-details">W 803-751 vs Buffy&#39;s Bombardiers Week 8 2001</li>
+                            <li class="game-details">W 1184-1043 vs Demons Week 9 2001</li>
+                            <li class="game-details">L 835-972 vs Marauding Nomads Week 10 2001</li>
+                            <li class="game-details">W 931-642 vs Brawlers II Week 11 2001</li>
+                            <li class="game-details">W 1027-579 vs Rocky Mountain Oysters Week 12 2001</li>
+                            <li class="game-details">W 1118-582 vs Spokanites Week 13 2001</li>
+                            <li class="game-details">W 1016-994 vs Bayou Boys Week 14 2001</li>
+                            <li class="game-details">L 536-772 vs Brawlers II Conference Championship 2001</li>
+                    </ol>
+                </li>
+                <li>
+                    <span class="season-title">2000</span>
+                    <span> 5-9 <i>(0.357)</i></span>
+                    <ol>
+                            <li class="game-details">L 598-1018 vs Spokanites Week 1 2000</li>
+                            <li class="game-details">W 1038-784 vs Marauding Nomads Week 2 2000</li>
+                            <li class="game-details">W 756-655 vs Anal Cleansing Technicians Week 3 2000</li>
+                            <li class="game-details">L 325-819 vs Team Bean Week 4 2000</li>
+                            <li class="game-details">W 968-763 vs TD Matrix Week 5 2000</li>
+                            <li class="game-details">L 783-1211 vs Buffy&#39;s Bombardiers Week 6 2000</li>
+                            <li class="game-details">L 603-820 vs Wolves Week 7 2000</li>
+                            <li class="game-details">L 1013-1184 vs Brawlers II Week 8 2000</li>
+                            <li class="game-details">W 756-698 vs Bayou Boys Week 9 2000</li>
+                            <li class="game-details">L 1054-1124 vs Spokanites Week 10 2000</li>
+                            <li class="game-details">L 487-1144 vs Marauding Nomads Week 11 2000</li>
+                            <li class="game-details">W 1096-943 vs Anal Cleansing Technicians Week 12 2000</li>
+                            <li class="game-details">L 1018-1210 vs Team Bean Week 13 2000</li>
+                            <li class="game-details">L 911-957 vs TD Matrix Week 14 2000</li>
+                    </ol>
+                </li>
+        </ul>
+    </div>
 </body>
 </html>
